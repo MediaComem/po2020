@@ -1,0 +1,25 @@
+{
+  "name": "po2020",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "rm -rf dist && parcel src/index.pug",
+    "build": "rm -rf dist && parcel build src/index.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MediaComem/po2020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-plugin-imagemin": "^4.0.1",
+    "pug": "^2.0.4",
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "alpinejs": "^2.2.1",
+    "normalize.css": "^8.0.1"
+  }
+}
