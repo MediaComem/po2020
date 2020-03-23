@@ -32,7 +32,7 @@
         url("../assets/fonts/Inter-Bold.woff?v=3.12") format("woff");
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -40,6 +40,7 @@
 
 html {
     scroll-snap-type: y mandatory;
+    overflow-x: hidden;
 }
 
 body>article {
@@ -47,10 +48,10 @@ body>article {
     height: 100vh;
     width: 100vw;
     display: grid;
-    justify-content: center;
     align-content: center;
+    justify-content: center;
     text-align: center;
-    padding: 50% 10%;
+    padding: 0 10%;
 }
 
 /** Base **/
@@ -82,6 +83,7 @@ article:first-child {
     h1 {
         font-size: 2rem;
         color: #FFF;
+        margin: auto;
     }
 }
 
