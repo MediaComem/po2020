@@ -27,7 +27,7 @@ article.cover {
 article.coronavirus {
 
     h2 {
-        margin-top:1rem;
+        margin-top: 1rem;
         font-size: 3rem;
     }
 
@@ -68,16 +68,17 @@ article.slider {
 
 
     .glide__slide article {
-        h2{
-            margin-top:0;
+        h2 {
+            margin-top: 0;
         }
+
         h2,
         p {
             text-align: center;
         }
 
         p {
-            margin-top:2rem;
+            margin-top: 2rem;
             font-size: 1rem;
         }
     }
@@ -85,40 +86,43 @@ article.slider {
 
 article.schemaCompetences {
     h2 {
-        margin-top:auto;
+        margin-top: auto;
         font-size: 2.5rem;
-        span{
-            font-size:1.2rem;
-            color:#000;
-            margin-top:1rem;
-            line-height:1.4rem;
-            display:inline-block;
+
+        span {
+            font-size: 1.2rem;
+            color: #000;
+            margin-top: 1rem;
+            line-height: 1.4rem;
+            display: inline-block;
         }
     }
-    img{
+
+    img {
         margin: 3rem -2vw auto -2vw;
     }
 }
 
 article.atoutsFormation {
     h2 {
-        margin-top:2rem;
         font-size: 2.5rem;
     }
-    h3{
-        color:var(--main-burgundy);
-        span{
-            color:var(--heig-red);
+
+    h3 {
+        color: var(--main-burgundy);
+
+        span {
+            color: var(--heig-red);
         }
     }
 
-    h3.statsfemmes{
-        font-size:1.6rem;
+    h3.statsfemmes {
+        font-size: 1.6rem;
     }
 
-    p strong{
-        color:var(--heig-red);
-        font-weight:600;
+    p strong {
+        color: var(--heig-red);
+        font-weight: 600;
     }
 
     ul {
@@ -134,13 +138,75 @@ article.atoutsFormation {
     }
 }
 
+article.ecole {
+    position:relative;
+    p {
+        color: var(--heig-red);
+    }
+
+    p.abbr {
+        margin-top: 3rem;
+    }
+
+    abbr {
+        text-decoration: none;
+    }
+
+    h2 {
+        margin-top: 0;
+        font-size: 2.7rem;
+        color: #000;
+    }
+
+    p.yverdon {
+        margin-top: 2rem;
+        display: flex;
+
+        img {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .carte{
+        z-index:-1;
+        position:absolute;
+        bottom:10vw;
+        left:25vw;
+        width: 150vw;
+        max-width: initial;
+    }
+}
+
 /** Call-to-action **/
 
 article.futurReady {
-    display: flex;
-    flex-direction: column;
 
-    h2 {
-        margin: auto;
+    .main {
+        margin-top: 3rem;
+        margin-bottom: auto;
+    }
+
+    p{
+        font-size:1.3rem;
+        margin: 3rem 0;
+    }
+
+    p a{
+        display:inline-block;
+        margin:0.5rem;
+    }
+
+    .icondownload{
+        width:24px;
+    }
+
+    .reseauxsociaux {
+        list-style: none;
+        margin-top: 8rem;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
     }
 }

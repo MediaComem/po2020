@@ -8,7 +8,7 @@ html(lang="fr")
     link(rel="icon" href="assets/images/favicon.svg")
   body
     article.cover
-        img(class="logoHeigvd" src="assets/images/Logo_HEIG-VD_Etiquette_RVB_Rouge.svg" alt="Logo HEIG-VD: Haute Ecole d'Ingénierie et de Gestion du Canton de Vaud")
+        img.logoHeigvd(src="assets/images/Logo_HEIG-VD_Etiquette_RVB_Rouge.svg" alt="Logo HEIG-VD: Haute Ecole d'Ingénierie et de Gestion du Canton de Vaud")
         h1 Deviens acteur·trice de la transition numérique
         p La formation HES
             br
@@ -25,14 +25,14 @@ html(lang="fr")
             br
             | pouvoir faire...
         h3 A bout d’inspiration&nbsp;?
-        p(class="u-text-center") Laisse-moi
+        p.u-text-center Laisse-moi
             br
             | te présenter
             br
             | ce qui pourrait
             br
             strong  changer ta vie...
-        img(src="assets/images/Icons_Bubbles.svg" alt="" role="presentation")
+        img(src="assets/images/Icon_Bubbles.svg" alt="" role="presentation")
     article.ultraconnect
         h2 Aujourd’hui, tu es
             strong  ultra connecté·e
@@ -57,34 +57,34 @@ html(lang="fr")
             strong Deviens Ingénieur·e
                 br
                 |  des médias
-        h2(class="u-text-center" id="apprends") Apprends
+        h2.u-text-center#apprends Apprends
         section.glide
 
             .glide__track(data-glide-el='track')
                 ul.glide__slides
                     li.glide__slide
                         article
-                            h2(id="gerer_projets" aria-labelledby="apprends gerer_projets")
+                            h2#gerer_projets(aria-labelledby="apprends gerer_projets")
                                 strong à gérer des projets
                             p Savoir organiser, planifier et budgéter un projet numérique sont des compétences essentielles dans le monde digital. Centrée sur des projets pratiques et une approche agile, la formation développera tes capacités opérationnelles.
                     li.glide__slide
                         article
-                            h2(id="coder_decoder" aria-labelledby="apprends coder_decoder")
+                            h2#coder_decoder(aria-labelledby="apprends coder_decoder")
                                 strong  à coder et
                                     br
                                     |  à décoder
                             p À travers différents cours d’informatique, tu auras en main tous les atouts techniques nécessaires pour développer des solutions digitales: HTML/CSS, bases de données, JavaScript, technologies serveur et cloud.
                     li.glide__slide
                         article
-                            h2(id="marketing_digital" aria-labelledby="apprends marketing_digital")
+                            h2#marketing_digital(aria-labelledby="apprends marketing_digital")
                                 strong le marketing digital
                             p De la publicité aux réseaux sociaux, des newsletters au marketing automatisé, de la communication classique à l’e-commerce, tu comprendras le stratégies des marques pour attirer, convertir et fidéliser les clients connectés.
             .glide__bullets(data-glide-el='controls[nav]')
                 button.glide__bullet(data-glide-dir='=0')
                 button.glide__bullet(data-glide-dir='=1')
                 button.glide__bullet(data-glide-dir='=2')
-    article(class="schemaCompetences")
-        h2(class="schemaCompetences u-text-center") Le Bachelor
+    article.schemaCompetences
+        h2.schemaCompetences.u-text-center Le Bachelor
             br
             | en
             strong  Ingénierie des médias
@@ -95,7 +95,7 @@ html(lang="fr")
                 br
                 |  dans le monde du digital.
         img(src="assets/images/IngenierieMedias_Schema_Competences.svg")
-    article(class="atoutsFormation")
+    article.atoutsFormation.u-vertical-center
         h2
             strong Une formation unique en Suisse
         p
@@ -110,22 +110,50 @@ html(lang="fr")
             span  chose
                 br
                 |  encore
-        p(class="u-text-center") Peu importe d’où tu viens,
+        p.u-text-center Peu importe ton parcours,
             br
             |  chaque année des étudiants
             br
             |  viennent de
             strong  beaucoup d’horizons:
             br
-            |  art, commerce, technique, ....
-        h3(class="statsfemmes") Et en plus,
+            |  technique, comemrce, art, …
+        h3.statsfemmes Et en plus,
             span  40% sont
                 br
                 |   des femmes!
-    article(class="futurReady u-text-center")
+    article.ecole
+        p.abbr
+            abbr(title="Haute Ecole d’Ingénierie et de Gestion du canton de Vaud") HEIG-VD
+        h2 Haute Ecole d’Ingénierie et
+            br
+            |  de Gestion
+        p.yverdon
+            img(src="assets/images/Icon_MapPin.svg" alt="" role="presentation")
+            |  Yverdon-les-Bains
+        img.carte(src="assets/images/Carte_Suisse_Yverdon.svg" alt="Carte de la Suisse avec un point sur Yverdon-les-Bains")
+    article.futurReady.u-text-center.u-vertical-center
         h2
             strong Cher futur,
             br
             | I am ready.
-        a(href="https://heig.ch/im") heig.ch/im
+        div.main
+            p Inscris-toi
+                br
+                a(href="https://heig.ch/im") heig.ch/im
+            p La brochure
+                br
+                a(href="assets/pdf/ingenieriemedias_brochure2020.pdf")
+                    img.icondownload(src="assets/images/Icon_Download.svg" alt="Télécharger la brochure")
+        ul.reseauxsociaux
+            li
+                a(href='https://www.facebook.com/ingenierie.media/' rel='noopener noreferrer' target='_blank')
+                    img(alt='Facebook' src="assets/images/Icon_Facebook.svg")
+            li
+                a(href='https://www.instagram.com/ingenierie.media/' rel='noopener noreferrer' target='_blank')
+                    img(alt='Instagram' src="assets/images/Icon_Instagram.svg" width='25')
+            li
+                a(href='https://www.youtube.com/channel/UCqs-odXr4ZkntlXSHJiDfUA/' rel='noopener noreferrer' target='_blank')
+                    img(alt='Youtube' src="assets/images/Icon_Youtube.svg")
+
     script(src="js/main.js")

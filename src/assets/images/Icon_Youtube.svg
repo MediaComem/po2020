@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34" height="25" viewBox="0 0 34 25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="Canvas" transform="translate(-6058 -6894)">
+    <use xlink:href="#path0_fill" transform="translate(6058 6894)" fill="#630b00" id="Youtube"/>
+  </g>
+  <defs>
+    <path id="path0_fill" d="M33.258 3.765A4.285 4.285 0 0 0 30.255.72C27.606 0 16.984 0 16.984 0S6.362 0 3.713.72A4.285 4.285 0 0 0 .71 3.765C0 6.452 0 12.056 0 12.056s0 5.605.71 8.292c.39 1.482 1.541 2.6 3.003 2.997 2.649.72 13.27.72 13.27.72s10.623 0 13.272-.72c1.461-.396 2.612-1.515 3.003-2.997.71-2.687.71-8.291.71-8.291s0-5.605-.71-8.292zM13.51 17.145V6.968l8.878 5.089-8.878 5.088z"/>
+  </defs>
+</svg>
