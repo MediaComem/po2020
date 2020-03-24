@@ -2,40 +2,121 @@ doctype html
 html(lang="fr")
   head
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     title Deviens acteur-trice de la transition numérique
-    link(rel="stylesheet", href="style/index.scss")
+    link(rel="stylesheet" href="style/index.scss")
+    link(rel="icon" href="assets/images/favicon.svg")
   body
-    article
-        h1 Deviens acteur-trice de la transition numérique
-    article
-        h2 Maîtrise les
-            strong  technologies de demain
-        p Le numérique évolue très rapidement. La proximité avec notre institut de recherche te fera découvrir les dernières technologies et les approches émergentes pour anticiper l’évolution des métiers du digital.
-    article
-        h2 Apprends à
-            strong  coder
-            |  et à
-            strong  décoder
-        p À travers différents cours d’informatique, tu auras en main tous les atouts techniques nécessaires pour développer des solutions digitales: HTML/CSS, bases de données, JavaScript, technologies serveur et cloud.
+    article.cover
+        img(class="logoHeigvd" src="assets/images/Logo_HEIG-VD_Etiquette_RVB_Rouge.svg" alt="Logo HEIG-VD: Haute Ecole d'Ingénierie et de Gestion du Canton de Vaud")
+        h1 Deviens acteur·trice de la transition numérique
+        p La formation HES
+            br
+            |
+            strong  que tu n’es pas prêt·e d’oublier
+    article.coronavirus
+        h2 Le coronavirus force au
+            strong  confinement.
+        p Du coup, tu es devant
+            br
+            | ton écran à te demander
+            br
+            | ce que tu vas bien
+            br
+            | pouvoir faire...
+        h3 A bout d’inspiration&nbsp;?
+        p(class="u-text-center") Laisse-moi
+            br
+            | te présenter
+            br
+            | ce qui pourrait
+            br
+            strong  changer ta vie...
+        img(src="assets/images/Icons_Bubbles.svg" alt="" role="presentation")
+    article.ultraconnect
+        h2 Aujourd’hui, tu es
+            strong  ultra connecté·e
+        p Tu communiques via
+            br
+            strong  les réseaux sociaux.
+        p Tu navigues sur
+            strong  internet.
+        p Tu télécharges et utilises
+            br
+            strong  des applications.
+        p Tu planifies
+            strong  des rendez-vous.
+        h3 Et si être connecté·e devenait un atout professionnel&nbsp;?
+    article.slider
+        p En
+            strong  trois ans
+            |  seulement,
+            br
+            |  deviens un·e pro du digital.
+        p
+            strong Deviens Ingénieur·e
+                br
+                |  des médias
+        h2(class="u-text-center" id="apprends") Apprends
+        section.glide
+
+            .glide__track(data-glide-el='track')
+                ul.glide__slides
+                    li.glide__slide
+                        article
+                            h2(id="gerer_projets" aria-labelledby="apprends gerer_projets")
+                                strong à gérer des projets
+                            p Savoir organiser, planifier et budgéter un projet numérique sont des compétences essentielles dans le monde digital. Centrée sur des projets pratiques et une approche agile, la formation développera tes capacités opérationnelles.
+                    li.glide__slide
+                        article
+                            h2(id="coder_decoder" aria-labelledby="apprends coder_decoder")
+                                strong  à coder et
+                                    br
+                                    |  à décoder
+                            p À travers différents cours d’informatique, tu auras en main tous les atouts techniques nécessaires pour développer des solutions digitales: HTML/CSS, bases de données, JavaScript, technologies serveur et cloud.
+                    li.glide__slide
+                        article
+                            h2(id="marketing_digital" aria-labelledby="apprends marketing_digital")
+                                strong le marketing digital
+                            p De la publicité aux réseaux sociaux, des newsletters au marketing automatisé, de la communication classique à l’e-commerce, tu comprendras le stratégies des marques pour attirer, convertir et fidéliser les clients connectés.
+            .glide__bullets(data-glide-el='controls[nav]')
+                button.glide__bullet(data-glide-dir='=0')
+                button.glide__bullet(data-glide-dir='=1')
+                button.glide__bullet(data-glide-dir='=2')
     article(class="schemaCompetences")
-        h2 Le Bachelor en
-            strong  ingénierie des médias
-            |  te prépare aux métiers les plus demandés dans
-            strong  le monde du digital
+        h2(class="schemaCompetences u-text-center") Le Bachelor
+            br
+            | en
+            strong  Ingénierie des médias
+            br
+            span  te prépare aux métiers
+                br
+                |  les plus demandés
+                br
+                |  dans le monde du digital.
         img(src="assets/images/IngenierieMedias_Schema_Competences.svg")
     article(class="atoutsFormation")
-        h2 Les atouts d'une formation unique en Suisse romande
-        h3 95% des diplômé•e•s trouvent un emploi dans les trois mois après la formation.
-        ul
-            li une formation ouverte à plusieurs profils
-            li une proportion de 40% d’étudiantes
-            li une polyvalence professionnelle très demandée
-            li des connaissances informatiques solides
-            li un enseignement basé sur la pratique
-            li des liens forts avec l’économie
-            li un budget de formation raisonnable
-    article
+        h2
+            strong Une formation unique en Suisse
+        p
+            strong 95% des diplômé•e•s
+            |  trouvent un emploi dans les trois mois après la formation.
+        p La formation de type HES te permet d’apprendre en
+            strong  pratiquant
+            |  de manière
+            strong  professionnelle
+            |  , et ce durant toute la formation.
+        h3 Ah, une chose encore
+        p(class="u-text-center") Peu importe d’où tu viens,
+            br
+            |  chaque année des étudiants
+            br
+            |  viennent de
+            strong  beaucoup d’horizons:
+            br
+            |  art, commerce, technique, ....
+        h3 Et en plus, 40% sont des femmes!
+    article(class="futurReady u-text-center")
         h2
             strong Cher futur,
             br

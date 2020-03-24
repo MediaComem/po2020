@@ -1,0 +1,136 @@
+article.cover {
+    background-image: linear-gradient(to right, rgba(237, 29, 42, .95), rgba(237, 29, 42, .95)), url("../assets/images/IM_Banner.jpg");
+    background-size: cover, cover;
+    background-position: 100% 100%, 50% 50%;
+    background-blend-mode: multiply;
+
+    color: #FFF;
+
+    .logoHeigvd {
+        margin-left: -8vw;
+        align-self: flex-start;
+        padding-top: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin: auto 0;
+        font-weight: 400;
+    }
+}
+
+article.coronavirus {
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    img {
+        margin: auto 0;
+        align-self: center;
+    }
+}
+
+article.ultraconnect {
+    h2 {
+        margin-top: 8rem;
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        margin: auto 0;
+    }
+}
+
+article.slider {
+    >*:not(.glide) {
+        padding: 0 8vw;
+    }
+
+    >p:nth-of-type(1) {
+        margin-top: 4rem;
+    }
+
+    >p strong {
+        color: var(--heig-red);
+        font-weight: 600;
+    }
+
+
+    .glide__slide article {
+        h2{
+            margin-top:0;
+        }
+        h2,
+        p {
+            text-align: center;
+        }
+
+        p {
+            margin-top:2rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+article.schemaCompetences {
+    h2 {
+        margin-top:auto;
+        font-size: 2.8rem;
+        span{
+            font-size:1.3rem;
+            color:#000;
+            margin-top:1rem;
+            line-height:1.4rem;
+            display:inline-block;
+        }
+    }
+    img{
+        margin-top:2rem;
+        margin-bottom:auto;
+    }
+}
+
+article.atoutsFormation {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p strong{
+        color:var(--heig-red);
+        font-weight:600;
+    }
+
+    ul {
+        padding-left: 1.2rem;
+    }
+
+    li {
+        font-size: 0.8rem;
+    }
+
+    li:nth-child(3n) {
+        margin-top: 1rem;
+    }
+}
+
+/** Call-to-action **/
+
+article.futurReady {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        margin: auto;
+    }
+}

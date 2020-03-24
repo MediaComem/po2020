@@ -19,6 +19,7 @@
     "sass": "^1.26.3"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "alpinejs": "^2.2.1",
     "normalize.css": "^8.0.1"
   }

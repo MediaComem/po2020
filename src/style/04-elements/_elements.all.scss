@@ -1,0 +1,51 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body>article {
+  scroll-snap-align: start;
+  height: 100vh;
+
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+article:not(.slider) {
+  padding: 0 8vw;
+}
+
+h2 {
+  color: var(--main-burgundy);
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 0.95;
+  margin-bottom: 0;
+
+  >strong {
+    color: var(--heig-red);
+    font-weight: 700;
+  }
+}
+
+h3 {
+  color: var(--heig-red);
+  font-size: 2rem;
+  line-height: 0.95;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+p {
+  font-weight: 600;
+  font-size: 1.26rem;
+  line-height: 0.95;
+}
+
+p+p {
+  margin-top: 0;
+}

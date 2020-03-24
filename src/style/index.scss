@@ -1,126 +1,30 @@
+// ITCSS structure
+// Original post by Harry Roberts https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
+
+// 01. Settings
+@import '01-settings/settings.colors';
+@import '01-settings/settings.typography';
+
+// 02. Tools
+@import '02-tools/tools.hidden';
+@import '02-tools/tools.on-event';
+
+// 03. Generic
 @import 'normalize.css';
+@import '03-generic/generic.selection';
 
-:root {
-    --heig-red: #E2051C;
-    --main-brown: #630b00;
-}
+// 04. Elements
+@import '04-elements/elements.all';
+@import '04-elements/elements.body';
+@import '04-elements/elements.html';
+@import '04-elements/elements.links';
 
-/* (Fluid) Typography */
+// 05. Objects
+@import '05-objects/objects.pages';
 
-:root {
-    font-size: 16px;
-}
+// 06. Components
+@import '06-components/components.slider';
 
-@media screen and (min-width: 320px) {
-    :root {
-        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    :root {
-        font-size: 22px;
-    }
-}
-
-@font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url("../assets/fonts/Inter-Bold.woff2?v=3.12") format("woff2"),
-        url("../assets/fonts/Inter-Bold.woff?v=3.12") format("woff");
-}
-
-* {
-    box-sizing: border-box;
-}
-
-/** Scroll snap **/
-
-html {
-    scroll-snap-type: y mandatory;
-    overflow-x: hidden;
-}
-
-body>article {
-    scroll-snap-align: start;
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 10%;
-}
-
-/** Base **/
-
-body {
-    font-family: "Inter";
-    font-weight: 700;
-}
-
-article>img {
-    max-width: 100%;
-    max-height: 100vh;
-}
-
-h2 {
-    color: var(--main-brown);
-    font-size: 3rem;
-}
-
-h2>strong {
-    color: var(--heig-red);
-}
-
-/** Cover **/
-
-article:first-child {
-    background-color: var(--heig-red);
-
-    h1 {
-        font-size: 2rem;
-        color: #FFF;
-        margin: auto;
-    }
-}
-
-article.schemaCompetences {
-    h2 {
-        font-size: 1rem;
-    }
-}
-
-article.atoutsFormation {
-    text-align: left;
-
-    h2 {
-        font-size: 1.5rem;
-        color: var(--heig-red);
-    }
-
-    h3 {
-        font-size: 1rem;
-        color: var(--main-brown);
-    }
-
-    ul {
-        padding-left: 1.2rem;
-    }
-
-    li {
-        font-size: 0.8rem;
-    }
-
-    li:nth-child(3n) {
-        margin-top: 1rem;
-    }
-}
-
-article:last-child {
-    h2 {
-        color: #000;
-    }
-}
+// 99. Utilities
+@import '99-utilities/utilities.text';
+@import '99-utilities/utilities.visibility';
