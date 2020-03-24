@@ -139,7 +139,8 @@ article.atoutsFormation {
 }
 
 article.ecole {
-    position:relative;
+    position: relative;
+
     p {
         color: var(--heig-red);
     }
@@ -167,14 +168,22 @@ article.ecole {
         }
     }
 
-    .carte{
-        z-index:-1;
-        position:absolute;
-        bottom:10vw;
-        left:25vw;
-        width: 150vw;
-        max-width: initial;
+    .carte {
+        z-index: -1;
+        position: absolute;
+        bottom: 0;
+        left: 25vw;
+        height: 150vw;
+        max-height: 100vh;
     }
+}
+
+@media screen and (orientation: landscape) {
+  article.ecole{
+      .carte{
+          left:70vw;
+      }
+  }
 }
 
 /** Call-to-action **/
@@ -186,18 +195,18 @@ article.futurReady {
         margin-bottom: auto;
     }
 
-    p{
-        font-size:1.3rem;
+    p {
+        font-size: 1.3rem;
         margin: 3rem 0;
     }
 
-    p a{
-        display:inline-block;
-        margin:0.5rem;
+    p a {
+        display: inline-block;
+        margin: 0.5rem 0;
     }
 
-    .icondownload{
-        width:24px;
+    .icondownload {
+        width: 24px;
     }
 
     .reseauxsociaux {
