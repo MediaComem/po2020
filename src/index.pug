@@ -1,12 +1,15 @@
 doctype html
 html(lang="fr")
   head
+    include includes/GTManager_Head.html
+
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title Deviens acteur-trice de la transition numérique
     link(rel="stylesheet" href="style/index.scss")
     link(rel="icon" href="assets/images/favicon.svg")
   body
+    include includes/GTManager_NoScript.html
     article.cover
         img.logoHeigvd(src="assets/images/Logo_HEIG-VD_Etiquette_RVB_Rouge.svg" alt="Logo HEIG-VD: Haute Ecole d'Ingénierie et de Gestion du Canton de Vaud")
         h1 Deviens acteur·trice de la transition numérique
@@ -140,20 +143,20 @@ html(lang="fr")
         div.main
             p Inscris-toi
                 br
-                a(href="https://heig.ch/im") heig.ch/im
+                a#inscristoi(href="https://heig.ch/im") heig.ch/im
             p La brochure
                 br
-                a(href="assets/pdf/ingenieriemedias_brochure2020.pdf")
+                a#brochuredownload(href="assets/pdf/ingenieriemedias_brochure2020.pdf")
                     img.icondownload(src="assets/images/Icon_Download.svg" alt="Télécharger la brochure")
         ul.reseauxsociaux
             li
-                a(href='https://www.facebook.com/ingenierie.media/' rel='noopener noreferrer' target='_blank')
+                a#facebook(href='https://www.facebook.com/ingenierie.media/' rel='noopener noreferrer' target='_blank')
                     img(alt='Facebook' src="assets/images/Icon_Facebook.svg")
             li
-                a(href='https://www.instagram.com/ingenierie.media/' rel='noopener noreferrer' target='_blank')
+                a#instagram(href='https://www.instagram.com/ingenierie.media/' rel='noopener noreferrer' target='_blank')
                     img(alt='Instagram' src="assets/images/Icon_Instagram.svg" width='25')
             li
-                a(href='https://www.youtube.com/channel/UCqs-odXr4ZkntlXSHJiDfUA/' rel='noopener noreferrer' target='_blank')
+                a#youtube(href='https://www.youtube.com/channel/UCqs-odXr4ZkntlXSHJiDfUA/' rel='noopener noreferrer' target='_blank')
                     img(alt='Youtube' src="assets/images/Icon_Youtube.svg")
 
     script(src="js/main.js")
