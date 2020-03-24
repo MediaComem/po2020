@@ -14,8 +14,7 @@ article.cover {
 
     h1 {
         font-size: 2.5rem;
-        margin: auto;
-        margin-top: 3rem;
+        margin: 3rem 0 0 0;
     }
 
     p {
@@ -28,6 +27,7 @@ article.cover {
 article.coronavirus {
 
     h2 {
+        margin-top:1rem;
         font-size: 3rem;
     }
 
@@ -43,7 +43,7 @@ article.coronavirus {
 
 article.ultraconnect {
     h2 {
-        margin-top: 8rem;
+        margin-top: 6rem;
         font-size: 2.5rem;
     }
 
@@ -58,7 +58,7 @@ article.slider {
     }
 
     >p:nth-of-type(1) {
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
 
     >p strong {
@@ -86,9 +86,9 @@ article.slider {
 article.schemaCompetences {
     h2 {
         margin-top:auto;
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         span{
-            font-size:1.3rem;
+            font-size:1.2rem;
             color:#000;
             margin-top:1rem;
             line-height:1.4rem;
@@ -96,14 +96,24 @@ article.schemaCompetences {
         }
     }
     img{
-        margin-top:2rem;
-        margin-bottom:auto;
+        margin: 3rem -2vw auto -2vw;
     }
 }
 
 article.atoutsFormation {
     h2 {
+        margin-top:2rem;
         font-size: 2.5rem;
+    }
+    h3{
+        color:var(--main-burgundy);
+        span{
+            color:var(--heig-red);
+        }
+    }
+
+    h3.statsfemmes{
+        font-size:1.6rem;
     }
 
     p strong{
