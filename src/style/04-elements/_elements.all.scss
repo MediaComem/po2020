@@ -9,7 +9,7 @@ body>article {
   height: 100vh;
 }
 
-@media screen and (orientation: landscape) and (max-height: 767px) {
+@media screen and (orientation: landscape) and (max-width: 767px) {
   body>article {
     scroll-snap-align: initial;
     height: initial;
