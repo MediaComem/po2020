@@ -251,6 +251,40 @@ article.atoutsFormation {
     li:nth-child(3n) {
         margin-top: 1rem;
     }
+    @media only screen and (min-width: 768px) {
+        div.twocolumns {
+            display: flex;
+            flex-direction: row;
+            padding: 5% 10% 0 10%;
+            h2 {
+                max-width: 45%;
+                font-size: 2rem;
+                padding-right: 1rem;
+            }
+            div.together {
+                max-width: 50%;
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        br {
+            display: none;
+        }
+        h3:not(.statsfemmes) {
+            font-size: 1.7rem;
+            margin-top: 8rem;
+        }
+        h3.statsfemmes {
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+        p.u-text-center {
+            font-size: 1rem;
+            max-width: 70%;
+            margin: 1rem auto;
+        }
+    }
 }
 
 article.ecole {
@@ -292,12 +326,17 @@ article.ecole {
         height: 150vw;
         max-height: 100vh;
     }
+    @media only screen and (min-width: 768px) {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
 }
 
 @media screen and (orientation: landscape) {
     article.ecole {
         .carte {
-            left: 70vw;
+            left: 60vw;
         }
     }
 }
@@ -335,5 +374,22 @@ article.futurReady {
         width: 100%;
         align-items: center;
         justify-content: space-around;
+    }
+    @media only screen and (min-width: 768px) {
+        h2 {
+            font-size: 2.5rem;
+        }
+        .main {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .icondownload {
+            width: 40px;
+        }
+        .reseauxsociaux {
+            max-width: 20%;
+            margin: auto;
+            margin-bottom: 3rem;
+        }
     }
 }
