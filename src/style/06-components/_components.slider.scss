@@ -4,8 +4,8 @@
     margin: 0;
 }
 
-.glide__slides{
-    margin-top:0;
+.glide__slides {
+    margin-top: 0;
 }
 
 .glide__bullets {
@@ -36,4 +36,9 @@
 
 .glide__bullet[class*="active"] {
     background-color: var(--heig-red);
+}
+
+.glide__bullet:hover {
+    border: 2px solid var(--heig-red);
+    background-color: hsla(0, 0%, 100%, .5);
 }
