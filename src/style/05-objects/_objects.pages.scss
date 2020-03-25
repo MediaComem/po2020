@@ -140,8 +140,8 @@ article.slider {
         font-weight: 600;
     }
 
-    #apprends{
-        margin-top:auto;
+    #apprends {
+        margin-top: auto;
     }
 
 
@@ -195,18 +195,20 @@ article.schemaCompetences {
         margin: 3rem -2vw auto -2vw;
     }
 
-    @media only screen and (min-width: 768px) {
-        div.twocolumns {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            height: 100vh;
+    @media only screen and (min-width: 1024px) {
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+
+        br{
+            display:none;
         }
 
         h2 {
-            max-width: 30%;
-            padding: 0 10%;
             margin-top: 0;
+            text-align: left;
+            margin-right:3rem;
+            max-width: 50%;
         }
 
         img {
