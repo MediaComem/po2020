@@ -18,6 +18,7 @@ article.cover {
         margin-bottom: 4rem;
         font-weight: 400;
     }
+
     @media only screen and (min-width: 768px) {
         h1 {
             max-width: 60%;
@@ -51,6 +52,7 @@ article.coronavirus {
         margin: auto 0;
         align-self: center;
     }
+
     @media only screen and (min-width: 768px) {
         h2 {
             max-width: 45%;
@@ -58,18 +60,23 @@ article.coronavirus {
             margin-top: 3rem;
             font-size: 2.5rem;
         }
+
         br {
             display: none;
         }
+
         p {
             font-size: 1rem;
+
             &:not(.u-text-center) {
                 max-width: 40%;
             }
+
             strong {
                 display: block;
             }
         }
+
         h3 {
             font-size: 1.8rem;
             margin-top: 6rem;
@@ -86,26 +93,32 @@ article.ultraconnect {
     h3 {
         margin: auto 0;
     }
+
     @media only screen and (min-width: 768px) {
         h2 {
-            max-width:45%;
+            max-width: 45%;
         }
+
         br {
-            display:none;
+            display: none;
         }
+
         div.twocolumns {
             display: flex;
             flex-direction: row;
         }
+
         div.actions {
             max-width: 45%;
             margin-top: 6rem;
             margin-left: 3rem;
         }
+
         p {
             font-size: 1rem;
             line-height: 0.6rem;
         }
+
         h3 {
             max-width: 60%;
             margin: auto;
@@ -143,13 +156,16 @@ article.slider {
             font-size: 1rem;
         }
     }
+
     @media only screen and (min-width: 768px) {
         h2 {
             margin-top: 0;
         }
+
         .glide__slide article {
             max-width: 60%;
             margin: auto;
+
             p {
                 margin-top: 1rem;
             }
@@ -174,6 +190,7 @@ article.schemaCompetences {
     img {
         margin: 3rem -2vw auto -2vw;
     }
+
     @media only screen and (min-width: 768px) {
         div.twocolumns {
             display: flex;
@@ -181,13 +198,15 @@ article.schemaCompetences {
             align-items: center;
             height: 100vh;
         }
+
         h2 {
             max-width: 30%;
             padding: 0 10%;
             margin-top: 0;
         }
+
         img {
-            max-width:65vh;
+            max-width: 65vh;
             margin: 0;
         }
     }
@@ -280,6 +299,8 @@ article.ecole {
 
 article.futurReady {
 
+    align-content: space-around;
+
     .main {
         margin-top: 3rem;
         margin-bottom: auto;
@@ -301,7 +322,7 @@ article.futurReady {
 
     .reseauxsociaux {
         list-style: none;
-        margin-top: 8rem;
+        margin-top: auto;
         padding: 0;
         display: flex;
         width: 100%;
