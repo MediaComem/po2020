@@ -19,6 +19,14 @@ article.cover {
     }
 }
 
+@media screen and (orientation: landscape) {
+    article.cover {
+        p {
+            margin-top: 2rem;
+        }
+    }
+}
+
 article.coronavirus {
 
     h2 {
@@ -174,11 +182,11 @@ article.ecole {
 }
 
 @media screen and (orientation: landscape) {
-  article.ecole{
-      .carte{
-          left:70vw;
-      }
-  }
+    article.ecole {
+        .carte {
+            left: 70vw;
+        }
+    }
 }
 
 /** Call-to-action **/

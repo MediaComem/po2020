@@ -12,19 +12,23 @@
 }
 
 @media screen and (orientation: landscape) {
-  body>article.cover{
-    padding-top:0 !important;
+  body>article.cover {
+    padding-top: 0 !important;
   }
+
   article:not(.slider) {
-    padding:8vw 8vw !important;
+    padding: 8vw 8vw !important;
   }
-  .glide__slide article{
-    padding:0 8vw !important;
+
+  .glide__slide article {
+    padding: 0 8vw !important;
   }
-  h2{
-    margin-top:0 !important;
+
+  h2 {
+    margin-top: 0 !important;
   }
-  *:not(.glide__bullets){
+
+  *:not(.glide__bullets) {
     text-align: left !important;
   }
 }
