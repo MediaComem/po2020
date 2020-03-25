@@ -8,6 +8,8 @@ body>article {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   height: 100vh;
+  /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 @media screen and (orientation: landscape) and (max-width: 767px) {
