@@ -22,6 +22,13 @@ article.cover {
         margin: auto 0;
         font-weight: 400;
     }
+    @media only screen and (min-width: 768px) {
+        h1 {
+            max-width: 60%;
+            font-size: 3rem;
+            line-height: 2.7rem;
+        }
+    }
 }
 
 article.coronavirus {
@@ -39,6 +46,30 @@ article.coronavirus {
         margin: auto 0;
         align-self: center;
     }
+    @media only screen and (min-width: 768px) {
+        h2 {
+            max-width: 45%;
+            line-height: 2.7rem;
+            margin-top: 3rem;
+            font-size: 2.5rem;
+        }
+        br {
+            display: none;
+        }
+        p {
+            font-size: 1rem;
+            &:not(.u-text-center) {
+                max-width: 40%;
+            }
+            strong {
+                display: block;
+            }
+        }
+        h3 {
+            font-size: 1.8rem;
+            margin-top: 6rem;
+        }
+    }
 }
 
 article.ultraconnect {
@@ -49,6 +80,31 @@ article.ultraconnect {
 
     h3 {
         margin: auto 0;
+    }
+    @media only screen and (min-width: 768px) {
+        h2 {
+            max-width:45%;
+        }
+        br {
+            display:none;
+        }
+        div.twocolumns {
+            display: flex;
+            flex-direction: row;
+        }
+        div.actions {
+            max-width: 45%;
+            margin-top: 6rem;
+            margin-left: 3rem;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 0.6rem;
+        }
+        h3 {
+            max-width: 60%;
+            margin: auto;
+        }
     }
 }
 
