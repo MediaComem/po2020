@@ -9,7 +9,7 @@ article.cover {
 
     h1 {
         font-size: 2.5rem;
-        margin: 3rem 0 0 0;
+        margin-top: 3rem;
     }
 
     p {
@@ -40,7 +40,7 @@ article.cover {
 article.coronavirus {
 
     h2 {
-        margin-top: 1rem;
+        margin-top: auto;
         font-size: 3rem;
     }
 
@@ -57,7 +57,7 @@ article.coronavirus {
         h2 {
             max-width: 45%;
             line-height: 2.7rem;
-            margin-top: 3rem;
+            margin-top: auto;
             font-size: 2.5rem;
         }
 
@@ -85,8 +85,13 @@ article.coronavirus {
 }
 
 article.ultraconnect {
+    justify-content: space-around;
+
+    div.twocolumns {
+        margin-top: auto;
+    }
+
     h2 {
-        margin-top: 6rem;
         font-size: 2.5rem;
     }
 
@@ -96,7 +101,7 @@ article.ultraconnect {
 
     @media only screen and (min-width: 768px) {
         h2 {
-            max-width: 45%;
+            margin-top: 0;
         }
 
         br {
@@ -104,19 +109,14 @@ article.ultraconnect {
         }
 
         div.twocolumns {
-            display: flex;
-            flex-direction: row;
-        }
-
-        div.actions {
-            max-width: 45%;
-            margin-top: 6rem;
-            margin-left: 3rem;
+            display: grid;
+            grid-template-columns: 1fr max-content;
+            grid-gap: 1rem;
+            align-items: center;
         }
 
         p {
             font-size: 1rem;
-            line-height: 0.6rem;
         }
 
         h3 {
@@ -138,6 +138,10 @@ article.slider {
     >p strong {
         color: var(--heig-red);
         font-weight: 600;
+    }
+
+    #apprends {
+        margin-top: auto;
     }
 
 
@@ -163,7 +167,7 @@ article.slider {
         }
 
         .glide__slide article {
-            max-width: 60%;
+            max-width: 80%;
             margin: auto;
 
             p {
@@ -191,18 +195,20 @@ article.schemaCompetences {
         margin: 3rem -2vw auto -2vw;
     }
 
-    @media only screen and (min-width: 768px) {
-        div.twocolumns {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            height: 100vh;
+    @media only screen and (min-width: 1024px) {
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+
+        br{
+            display:none;
         }
 
         h2 {
-            max-width: 30%;
-            padding: 0 10%;
             margin-top: 0;
+            text-align: left;
+            margin-right:3rem;
+            max-width: 50%;
         }
 
         img {
