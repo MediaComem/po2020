@@ -85,8 +85,13 @@ article.coronavirus {
 }
 
 article.ultraconnect {
+    justify-content: space-around;
+
+    div.twocolumns {
+        margin-top: auto;
+    }
+
     h2 {
-        margin-top: 6rem;
         font-size: 2.5rem;
     }
 
@@ -96,7 +101,7 @@ article.ultraconnect {
 
     @media only screen and (min-width: 768px) {
         h2 {
-            max-width: 45%;
+            margin-top: 0;
         }
 
         br {
@@ -104,19 +109,14 @@ article.ultraconnect {
         }
 
         div.twocolumns {
-            display: flex;
-            flex-direction: row;
-        }
-
-        div.actions {
-            max-width: 45%;
-            margin-top: 6rem;
-            margin-left: 3rem;
+            display: grid;
+            grid-template-columns: 1fr max-content;
+            grid-gap: 1rem;
+            align-items: center;
         }
 
         p {
             font-size: 1rem;
-            line-height: 0.6rem;
         }
 
         h3 {
