@@ -6,12 +6,14 @@
 
 body>article {
   scroll-snap-align: start;
+  scroll-snap-stop: always;
   height: 100vh;
 }
 
 @media screen and (orientation: landscape) and (max-width: 767px) {
   body>article {
     scroll-snap-align: initial;
+    scroll-snap-stop: initial;
     height: initial;
   }
 
