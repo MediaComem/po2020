@@ -137,6 +137,18 @@ article.slider {
             font-size: 1rem;
         }
     }
+    @media only screen and (min-width: 768px) {
+        h2 {
+            margin-top: 0;
+        }
+        .glide__slide article {
+            max-width: 60%;
+            margin: auto;
+            p {
+                margin-top: 1rem;
+            }
+        }
+    }
 }
 
 article.schemaCompetences {
@@ -153,6 +165,23 @@ article.schemaCompetences {
     }
     img{
         margin: 3rem -2vw auto -2vw;
+    }
+    @media only screen and (min-width: 768px) {
+        div.twocolumns {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100vh;
+        }
+        h2 {
+            max-width: 30%;
+            padding: 0 10%;
+            margin-top: 0;
+        }
+        img {
+            max-width:65vh;
+            margin: 0;
+        }
     }
 }
 
