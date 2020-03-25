@@ -18,6 +18,13 @@ article.cover {
         margin-bottom: 4rem;
         font-weight: 400;
     }
+    @media only screen and (min-width: 768px) {
+        h1 {
+            max-width: 60%;
+            font-size: 3rem;
+            line-height: 2.7rem;
+        }
+    }
 }
 
 @media screen and (orientation: landscape) {
@@ -44,6 +51,30 @@ article.coronavirus {
         margin: auto 0;
         align-self: center;
     }
+    @media only screen and (min-width: 768px) {
+        h2 {
+            max-width: 45%;
+            line-height: 2.7rem;
+            margin-top: 3rem;
+            font-size: 2.5rem;
+        }
+        br {
+            display: none;
+        }
+        p {
+            font-size: 1rem;
+            &:not(.u-text-center) {
+                max-width: 40%;
+            }
+            strong {
+                display: block;
+            }
+        }
+        h3 {
+            font-size: 1.8rem;
+            margin-top: 6rem;
+        }
+    }
 }
 
 article.ultraconnect {
@@ -54,6 +85,31 @@ article.ultraconnect {
 
     h3 {
         margin: auto 0;
+    }
+    @media only screen and (min-width: 768px) {
+        h2 {
+            max-width:45%;
+        }
+        br {
+            display:none;
+        }
+        div.twocolumns {
+            display: flex;
+            flex-direction: row;
+        }
+        div.actions {
+            max-width: 45%;
+            margin-top: 6rem;
+            margin-left: 3rem;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 0.6rem;
+        }
+        h3 {
+            max-width: 60%;
+            margin: auto;
+        }
     }
 }
 
@@ -87,6 +143,18 @@ article.slider {
             font-size: 1rem;
         }
     }
+    @media only screen and (min-width: 768px) {
+        h2 {
+            margin-top: 0;
+        }
+        .glide__slide article {
+            max-width: 60%;
+            margin: auto;
+            p {
+                margin-top: 1rem;
+            }
+        }
+    }
 }
 
 article.schemaCompetences {
@@ -105,6 +173,23 @@ article.schemaCompetences {
 
     img {
         margin: 3rem -2vw auto -2vw;
+    }
+    @media only screen and (min-width: 768px) {
+        div.twocolumns {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100vh;
+        }
+        h2 {
+            max-width: 30%;
+            padding: 0 10%;
+            margin-top: 0;
+        }
+        img {
+            max-width:65vh;
+            margin: 0;
+        }
     }
 }
 
