@@ -13,7 +13,6 @@ article.cover {
     }
 
     p {
-        font-size: 1.2rem;
         margin-top: auto;
         margin-bottom: 4rem;
         font-weight: 400;
@@ -22,8 +21,6 @@ article.cover {
     @media only screen and (min-width: 768px) {
         h1 {
             max-width: 60%;
-            font-size: 3rem;
-            line-height: 2.7rem;
         }
     }
 }
@@ -41,13 +38,7 @@ article.coronavirus {
 
     h2 {
         margin-top: auto;
-        font-size: 3rem;
     }
-
-    h3 {
-        font-size: 2.5rem;
-    }
-
     img {
         margin: auto 0;
         align-self: center;
@@ -56,9 +47,7 @@ article.coronavirus {
     @media only screen and (min-width: 768px) {
         h2 {
             max-width: 45%;
-            line-height: 2.7rem;
             margin-top: auto;
-            font-size: 2.5rem;
         }
 
         br {
@@ -66,8 +55,6 @@ article.coronavirus {
         }
 
         p {
-            font-size: 1rem;
-
             &:not(.u-text-center) {
                 max-width: 40%;
             }
@@ -78,7 +65,6 @@ article.coronavirus {
         }
 
         h3 {
-            font-size: 1.8rem;
             margin-top: 6rem;
         }
     }
@@ -89,10 +75,6 @@ article.ultraconnect {
 
     div.twocolumns {
         margin-top: auto;
-    }
-
-    h2 {
-        font-size: 2.5rem;
     }
 
     h3 {
@@ -113,10 +95,6 @@ article.ultraconnect {
             grid-template-columns: 1fr max-content;
             grid-gap: 1rem;
             align-items: center;
-        }
-
-        p {
-            font-size: 1rem;
         }
 
         h3 {
@@ -157,7 +135,6 @@ article.slider {
 
         p {
             margin-top: 2rem;
-            font-size: 1rem;
         }
     }
 
@@ -180,15 +157,10 @@ article.slider {
 article.schemaCompetences {
     h2 {
         margin-top: auto;
-        font-size: 2.5rem;
-
-        span {
-            font-size: 1.2rem;
-            color: #000;
-            margin-top: 1rem;
-            line-height: 1.4rem;
-            display: inline-block;
-        }
+    }
+    span {
+        margin-top: 1rem;
+        font-weight: 700;
     }
 
     img {
@@ -220,9 +192,6 @@ article.schemaCompetences {
 }
 
 article.atoutsFormation {
-    h2 {
-        font-size: 2.5rem;
-    }
 
     h3 {
         color: var(--main-burgundy);
@@ -232,10 +201,6 @@ article.atoutsFormation {
         }
     }
 
-    h3.statsfemmes {
-        font-size: 1.6rem;
-    }
-
     p strong {
         color: var(--heig-red);
         font-weight: 600;
@@ -243,10 +208,6 @@ article.atoutsFormation {
 
     ul {
         padding-left: 1.2rem;
-    }
-
-    li {
-        font-size: 0.8rem;
     }
 
     li:nth-child(3n) {
@@ -259,29 +220,22 @@ article.atoutsFormation {
             padding: 5% 10% 0 10%;
             h2 {
                 max-width: 45%;
-                font-size: 2rem;
                 padding-right: 1rem;
             }
             div.together {
                 max-width: 50%;
-                p {
-                    font-size: 0.8rem;
-                }
             }
         }
         br {
             display: none;
         }
         h3:not(.statsfemmes) {
-            font-size: 1.7rem;
             margin-top: 8rem;
         }
         h3.statsfemmes {
             margin-top: 0;
-            font-size: 1.2rem;
         }
         p.u-text-center {
-            font-size: 1rem;
             max-width: 70%;
             margin: 1rem auto;
         }
@@ -305,9 +259,8 @@ article.ecole {
     }
 
     h2 {
-        margin-top: 0;
-        font-size: 2.7rem;
-        color: #000;
+        margin-top: 4rem;
+        color: var(--main-burgundy);
     }
 
     p.yverdon {
@@ -349,13 +302,12 @@ article.futurReady {
     align-content: space-around;
 
     .main {
-        margin-top: 3rem;
         margin-bottom: auto;
     }
 
     p {
-        font-size: 1.3rem;
         margin: 3rem 0;
+        font-weight: 700;
     }
 
     p a {
@@ -377,9 +329,6 @@ article.futurReady {
         justify-content: space-around;
     }
     @media only screen and (min-width: 768px) {
-        h2 {
-            font-size: 2.5rem;
-        }
         .main {
             margin-top: 0;
             margin-bottom: 0;
