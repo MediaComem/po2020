@@ -48,6 +48,22 @@ article.coronavirus {
     a {
         margin-top: 2rem;
         align-self: center;
+        -webkit-tap-highlight-color: transparent;
+
+        svg,
+        path {
+            transition: all .3s ease-in-out;
+        }
+
+        svg:active,
+        svg:focus,
+        svg:hover {
+            transform: scale(1.1);
+
+            path {
+                stroke: #FB1F36;
+            }
+        }
     }
 
     *:last-child {
