@@ -39,6 +39,7 @@ article.coronavirus {
     h2 {
         margin-top: auto;
     }
+
     img {
         margin: auto 0;
         align-self: center;
@@ -46,6 +47,7 @@ article.coronavirus {
 
     a {
         margin-top: 2rem;
+        align-self: center;
     }
 
     *:last-child {
@@ -166,6 +168,7 @@ article.schemaCompetences {
     h2 {
         margin-top: auto;
     }
+
     span {
         margin-top: 1rem;
         font-weight: 700;
@@ -280,6 +283,7 @@ article.ecole {
 
     h2 {
         color: var(--main-burgundy);
+
         a {
             text-decoration: none;
         }
@@ -287,7 +291,7 @@ article.ecole {
 
     p.yverdon {
         margin-top: 2rem;
-        margin-bottom:auto;
+        margin-bottom: auto;
         display: flex;
 
         img {
