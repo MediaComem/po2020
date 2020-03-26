@@ -53,11 +53,11 @@ article.coronavirus {
         align-self: center;
     }
 
-    a{
-        margin-top:2rem;
+    a {
+        margin-top: 2rem;
     }
 
-    *:last-child{
+    *:last-child {
         margin-bottom: auto;
     }
 
@@ -200,7 +200,8 @@ article.schemaCompetences {
     }
 
     img {
-        width:100%; /* Fix for Apple */
+        width: 100%;
+        /* Fix for Apple */
         margin: 3rem -2vw auto -2vw;
     }
 
@@ -210,13 +211,13 @@ article.schemaCompetences {
         height: 100vh;
 
         br {
-            display:none;
+            display: none;
         }
 
         h2 {
             margin-top: 0;
             text-align: left;
-            margin-right:3rem;
+            margin-right: 3rem;
             max-width: 50%;
         }
 
@@ -260,34 +261,42 @@ article.atoutsFormation {
     li:nth-child(3n) {
         margin-top: 1rem;
     }
+
     @media only screen and (min-width: 768px) {
         div.twocolumns {
             display: flex;
             flex-direction: row;
             padding: 5% 10% 0 10%;
+
             h2 {
                 max-width: 45%;
                 font-size: 2rem;
                 padding-right: 1rem;
             }
+
             div.together {
                 max-width: 50%;
+
                 p {
                     font-size: 0.8rem;
                 }
             }
         }
+
         br {
             display: none;
         }
+
         h3:not(.statsfemmes) {
             font-size: 1.7rem;
             margin-top: 8rem;
         }
+
         h3.statsfemmes {
             margin-top: 0;
             font-size: 1.2rem;
         }
+
         p.u-text-center {
             font-size: 1rem;
             max-width: 70%;
@@ -298,7 +307,11 @@ article.atoutsFormation {
 
 article.ecole {
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
+
+    *:not(.carte) {
+        z-index: 1;
+    }
 
     p {
         color: var(--heig-red);
@@ -315,7 +328,9 @@ article.ecole {
     h2 {
         margin-top: 0;
         font-size: 2.7rem;
-        color: #000;
+        a {
+            text-decoration: none;
+        }
     }
 
     p.yverdon {
@@ -335,6 +350,7 @@ article.ecole {
         height: 150vw;
         max-height: 100vh;
     }
+
     @media only screen and (min-width: 768px) {
         h2 {
             font-size: 2.5rem;
@@ -384,17 +400,21 @@ article.futurReady {
         align-items: center;
         justify-content: space-around;
     }
+
     @media only screen and (min-width: 768px) {
         h2 {
             font-size: 2.5rem;
         }
+
         .main {
             margin-top: 0;
             margin-bottom: 0;
         }
+
         .icondownload {
             width: 40px;
         }
+
         .reseauxsociaux {
             max-width: 20%;
             margin: auto;
