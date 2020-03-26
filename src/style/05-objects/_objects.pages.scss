@@ -280,7 +280,6 @@ article.ecole {
 
     h2 {
         color: var(--main-burgundy);
-        margin-top: 0;
         a {
             text-decoration: none;
         }
@@ -288,6 +287,7 @@ article.ecole {
 
     p.yverdon {
         margin-top: 2rem;
+        margin-bottom:auto;
         display: flex;
 
         img {
