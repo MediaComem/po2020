@@ -107,6 +107,7 @@ article.ultraconnect {
         p {
             margin: .3rem 0;
         }
+
         h2 {
             margin-top: auto;
             margin-bottom: 1rem;
@@ -175,15 +176,16 @@ article.slider {
 }
 
 article.schemaCompetences {
-    h2 {
+    .twocolumns {
         margin-top: auto;
     }
+
     p {
         margin-top: 1rem;
         font-weight: 700;
     }
 
-    img {
+    svg {
         width: 100%;
         /* Fix for Apple */
         margin: 3rem -2vw auto -2vw;
@@ -197,13 +199,15 @@ article.schemaCompetences {
         br {
             display: none;
         }
+
         .twocolumns {
             margin-top: 0;
             text-align: left;
             margin-right: 3rem;
             max-width: 50%;
         }
-        img {
+
+        svg {
             max-width: 65vh;
             margin: 0;
         }
@@ -275,6 +279,7 @@ article.ecole {
     h2 {
         color: var(--main-burgundy);
         margin-top: 3rem;
+
         a {
             text-decoration: none;
         }
@@ -301,10 +306,13 @@ article.ecole {
 
     @media only screen and (min-width: 768px) {
         h2 {
-          margin-top: 3rem;
-          max-width: 40%;
+            margin-top: 3rem;
+            max-width: 40%;
         }
-        p { max-width: 30%;}
+
+        p {
+            max-width: 30%;
+        }
     }
 }
 
