@@ -81,28 +81,22 @@ article.coronavirus {
 article.ultraconnect {
     justify-content: space-around;
 
-    div.twocolumns {
-        margin-top: auto;
-    }
-
     h3 {
         margin: auto 0;
     }
 
     @media only screen and (min-width: 768px) {
+        p {
+            margin: .3rem 0;
+        }
         h2 {
-            margin-top: 0;
+            margin-top: auto;
+            margin-bottom: 1rem;
+            max-width: 40%;
         }
 
         br {
             display: none;
-        }
-
-        div.twocolumns {
-            display: grid;
-            grid-template-columns: 1fr max-content;
-            grid-gap: 1rem;
-            align-items: center;
         }
 
         h3 {
@@ -166,7 +160,7 @@ article.schemaCompetences {
     h2 {
         margin-top: auto;
     }
-    span {
+    p {
         margin-top: 1rem;
         font-weight: 700;
     }
@@ -185,14 +179,12 @@ article.schemaCompetences {
         br {
             display: none;
         }
-
-        h2 {
+        .twocolumns {
             margin-top: 0;
             text-align: left;
             margin-right: 3rem;
             max-width: 50%;
         }
-
         img {
             max-width: 65vh;
             margin: 0;
@@ -243,12 +235,8 @@ article.atoutsFormation {
             display: none;
         }
 
-        h3:not(.statsfemmes) {
+        h3 {
             margin-top: 8rem;
-        }
-
-        h3.statsfemmes {
-            margin-top: 0;
         }
 
         p.u-text-center {
@@ -266,21 +254,9 @@ article.ecole {
         z-index: 1;
     }
 
-    p {
-        color: var(--heig-red);
-    }
-
-    p.abbr {
-        margin-top: 3rem;
-    }
-
-    abbr {
-        text-decoration: none;
-    }
-
     h2 {
         color: var(--main-burgundy);
-        margin-top: 0;
+        margin-top: 3rem;
         a {
             text-decoration: none;
         }
@@ -289,6 +265,7 @@ article.ecole {
     p.yverdon {
         margin-top: 2rem;
         display: flex;
+        color: var(--heig-red);
 
         img {
             margin-right: 0.5rem;
@@ -300,14 +277,16 @@ article.ecole {
         position: absolute;
         bottom: 0;
         left: 25vw;
-        height: 150vw;
+        height: 100vw;
         max-height: 100vh;
     }
 
     @media only screen and (min-width: 768px) {
         h2 {
-            font-size: 2.5rem;
-        }
+          margin-top: 3rem;
+          max-width: 40%;
+        } 
+        p { max-width: 30%;}
     }
 }
 
