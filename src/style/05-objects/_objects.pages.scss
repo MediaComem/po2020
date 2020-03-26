@@ -39,6 +39,7 @@ article.coronavirus {
     h2 {
         margin-top: auto;
     }
+
     img {
         margin: auto 0;
         align-self: center;
@@ -46,6 +47,7 @@ article.coronavirus {
 
     a {
         margin-top: 2rem;
+        align-self: center;
     }
 
     *:last-child {
@@ -285,7 +287,7 @@ article.ecole {
         h2 {
           margin-top: 3rem;
           max-width: 40%;
-        } 
+        }
         p { max-width: 30%;}
     }
 }
