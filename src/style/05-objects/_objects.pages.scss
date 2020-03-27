@@ -37,6 +37,9 @@ article.cover {
 article.coronavirus {
 
     h2 {
+        margin-top: 3rem;
+    }
+    h3 {
         margin-top: auto;
     }
 
@@ -98,7 +101,9 @@ article.coronavirus {
 
 article.ultraconnect {
     justify-content: space-around;
-
+    h2 {
+      margin-top: 3rem;  
+    }
     h3 {
         margin: auto 0;
     }
@@ -135,8 +140,7 @@ article.slider {
     }
 
     >p strong {
-        color: var(--heig-red);
-        font-weight: 600;
+        font-weight: 700;
     }
 
     #apprends {
@@ -177,12 +181,14 @@ article.slider {
 
 article.schemaCompetences {
     .twocolumns {
-        margin-top: auto;
+        margin-top: 3rem;
+    }
+    h2 {
+        margin-top: 0;
     }
 
     p {
         margin-top: 1rem;
-        font-weight: 700;
     }
 
     svg {
@@ -218,9 +224,13 @@ article.schemaCompetences {
 }
 
 article.atoutsFormation {
+    h2 {
+        margin-top: 3rem;
+    }
 
     h3 {
         color: var(--main-burgundy);
+        margin-top: auto;
 
         span {
             color: var(--heig-red);
@@ -228,8 +238,7 @@ article.atoutsFormation {
     }
 
     p strong {
-        color: var(--heig-red);
-        font-weight: 600;
+        font-weight: 700;
     }
 
     ul {
@@ -244,7 +253,7 @@ article.atoutsFormation {
         div.twocolumns {
             display: flex;
             flex-direction: row;
-            padding: 5% 10% 0 10%;
+            padding: 5% 10% 0 0;
 
             h2 {
                 max-width: 45%;
@@ -297,13 +306,16 @@ article.ecole {
             margin-right: 0.5rem;
         }
     }
+    p:not(.yverdon) {
+        margin-top: 18rem;
+    }
 
     .carte {
         display: inline-block;
         position: absolute;
-        bottom: 0;
-        left: 25vw;
-        height: 100vw;
+        top: 9rem;
+        left: 35vw;
+        height: 90vw;
         max-height: 100vh;
     }
 
@@ -315,6 +327,12 @@ article.ecole {
 
         p {
             max-width: 30%;
+            &:not(.yverdon) {
+                margin-top: auto;
+            }
+        }
+        .carte {
+            top: 0;
         }
     }
 }
