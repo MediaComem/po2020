@@ -77,7 +77,6 @@ article.coronavirus {
     @media only screen and (min-width: 768px) {
         h2 {
             max-width: 45%;
-            margin-top: auto;
         }
 
         br {
@@ -117,7 +116,6 @@ article.ultraconnect {
         }
 
         h2 {
-            margin-top: auto;
             margin-bottom: 1rem;
             max-width: 40%;
         }
@@ -139,7 +137,7 @@ article.slider {
     }
 
     >p:nth-of-type(1) {
-        margin-top: auto;
+        margin-top: 3rem;
     }
 
     >p strong {
@@ -203,15 +201,12 @@ article.schemaCompetences {
 
     @media only screen and (min-width: 1024px) {
         flex-direction: row;
-        align-items: center;
-        height: 100vh;
 
         br {
             display: none;
         }
 
         .twocolumns {
-            margin-top: 0;
             margin-right: 3rem;
             max-width: 50%;
         }
@@ -223,14 +218,13 @@ article.schemaCompetences {
 
         svg {
             max-width: 65vh;
-            margin: 0;
         }
     }
 }
 
 article.atoutsFormation {
     h2 {
-        margin-top: auto;
+        margin-top: 3rem;
     }
 
     p strong {
