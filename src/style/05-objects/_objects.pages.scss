@@ -39,6 +39,7 @@ article.coronavirus {
     h2 {
         margin-top: 3rem;
     }
+
     h3 {
         margin-top: auto;
     }
@@ -101,9 +102,11 @@ article.coronavirus {
 
 article.ultraconnect {
     justify-content: space-around;
+
     h2 {
-      margin-top: 3rem;  
+        margin-top: 3rem;
     }
+
     h3 {
         margin: auto 0;
     }
@@ -183,6 +186,7 @@ article.schemaCompetences {
     .twocolumns {
         margin-top: 3rem;
     }
+
     h2 {
         margin-top: 0;
     }
@@ -212,7 +216,8 @@ article.schemaCompetences {
             max-width: 50%;
         }
 
-        h2, p {
+        h2,
+        p {
             text-align: left !important;
         }
 
@@ -225,57 +230,41 @@ article.schemaCompetences {
 
 article.atoutsFormation {
     h2 {
-        margin-top: 3rem;
-    }
-
-    h3 {
-        color: var(--main-burgundy);
         margin-top: auto;
-
-        span {
-            color: var(--heig-red);
-        }
     }
 
     p strong {
         font-weight: 700;
     }
 
-    ul {
-        padding-left: 1.2rem;
+    h2:nth-of-type(2) {
+        text-align: center;
+        margin-top: auto;
     }
 
-    li:nth-child(3n) {
-        margin-top: 1rem;
+    p:last-child {
+        margin-bottom: auto;
     }
 
     @media only screen and (min-width: 768px) {
-        div.twocolumns {
-            display: flex;
-            flex-direction: row;
-            padding: 5% 10% 0 0;
+        h2:nth-of-type(1) {
+            max-width: 45%;
+            padding-right: 1rem;
+        }
 
-            h2 {
-                max-width: 45%;
-                padding-right: 1rem;
-            }
-
-            div.together {
-                max-width: 50%;
-            }
+        div.together {
+            max-width: 50%;
         }
 
         br {
             display: none;
         }
 
-        h3 {
-            margin-top: 8rem;
-        }
+
 
         p.u-text-center {
             max-width: 70%;
-            margin: 1rem auto;
+            margin: 1rem auto auto auto;
         }
     }
 }
@@ -306,14 +295,11 @@ article.ecole {
             margin-right: 0.5rem;
         }
     }
-    p:not(.yverdon) {
-        margin-top: auto;
-    }
 
     .carte {
         display: inline-block;
         position: absolute;
-        top: 9rem;
+        bottom: 0;
         left: 35vw;
         height: 90vw;
         max-height: 100vh;
@@ -327,10 +313,8 @@ article.ecole {
 
         p {
             max-width: 30%;
-            &:not(.yverdon) {
-                margin-top: auto;
-            }
         }
+
         .carte {
             top: 0;
         }
@@ -379,6 +363,11 @@ article.futurReady {
         justify-content: space-around;
     }
 
+    .copyright{
+        font-size:.7rem;
+        margin-bottom:1rem;
+    }
+
     @media only screen and (min-width: 768px) {
         .main {
             margin-top: 0;
@@ -392,7 +381,6 @@ article.futurReady {
         .reseauxsociaux {
             max-width: 20%;
             margin: auto;
-            margin-bottom: 3rem;
         }
     }
 }
