@@ -12,28 +12,35 @@
         padding: 0 4vw 0 8vw;
     }
 
-    h3{
+    h3 {
+        text-align: left;
         margin-top: 5rem;
         margin-bottom: 1rem;
     }
 
-    h2{
-        font-size:2.5rem;
-        margin-top:0;
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 0;
         margin-bottom: 3rem;
     }
 
-    ul{
+    ul {
         list-style: none;
     }
 
-    li{
+    li {
         font-weight: 700;
         font-size: 1.2rem;
     }
 
-    li+li{
-        margin-top:0.8rem;
+    li+li {
+        margin-top: 0.8rem;
+    }
+
+    a{
+        font-weight:700;
+        color:#000;
+        text-decoration: none;;
     }
 
     button {

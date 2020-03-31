@@ -443,6 +443,78 @@ html(lang="fr")
             img(src="assets/images/Icon_MapPin.svg" alt="" role="presentation")
             |  Yverdon-les-Bains
         include assets/images/Carte_Suisse_Yverdon.svg
+    article.faq.no-padding(x-data="{ openQ1: false, openQ2: false, openQ3: false, openNewQuestion:false }")
+        h2 FAQ
+        .questions
+            button.question(@click="openQ1 = true") De quelle(s) école(s) viennent les étudiant·e·s ?
+            button.question(@click="openQ2 = true") Je suis au gymnase…
+            button.question(@click="openQ3 = true") Est-ce que nous allons réaliser des mandats avec de vrais clients?
+        button.newquestion(@click="openNewQuestion = true") Pose-nous
+            span  ta question
+        .modal(x-show="openQ1")
+            button(@click="openQ1 = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 De quelle(s) école(s) viennent les étudiant·e·s&nbsp;?
+                p Nous accueillons tant d’étudiants d’horizon différents. Que tu aies un CFC en
+                    strong  informatique
+                    | , en
+                    strong  commerce
+                    | , en
+                    strong  médiamatique
+                    | , que tu viennes du monde de l’
+                    strong art
+                    | , et même en venant du
+                    strong  gymnase
+                    | , tu trouveras ta place ici.
+                p Si ta motivation est la communication digitale alors n’hésite plus !
+                p Retrouve plus d’informations sur :
+                p
+                    a(href="https://heig-vd.ch/admission") heig-vd.ch/admission
+        .modal(x-show="openQ2")
+            button(@click="openQ2 = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 Je suis au gymnase et j’aimerai faire la formation, je dois faire comment&nbsp;?
+                p Après le gymnase, nous te conseillons de faire
+                    strong  un stage
+                    | . Ainsi, tu pourras être confronté·e au monde professionnel.
+                p Si tu ne trouves pas de stage, il existe différentes années préparatoires. Pour les filles, il y a l’
+                    strong APFI
+                    |  (Année Préparatoire Future Ingénieure) à la HEIG-VD. Sinon, il y a la
+                    strong  MCT
+                    |  (Modules complémentaires techniques) au CPNV.
+        .modal(x-show="openQ3")
+            button(@click="openQ3 = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 Est-ce que nous allons réaliser des mandats avec de vrais clients&nbsp;?
+                p
+                    strong Oui&nbsp;!
+                    br
+                    | Durant la formation, les professeurs proposent des exercices avec des clients de diverses entreprises.
+                p Le but de la formation est de préparer au mieux l’étudiant·e à la vie professionnelle et qu’il/elle soit
+                    strong  employable directement
+                    |  après les trois années de
+                    strong  Bachelor.
+        .modal.modal__newquestion(x-show="openNewQuestion")
+            button(@click="openNewQuestion = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 Pose-nous
+                    span  ta question
+                form#newquestion(action='https://formspree.io/xyydgeyo' method='POST')
+                    label Email:
+                    input(type='email' name='email')
+                    label Ta question:
+                    input(type='text' name='message')
+                    button#newquestion-button Go&nbsp;!
+                    p#newquestion-status
+
     article.futurReady.u-text-center.u-vertical-center
         h2
             strong Cher futur,
