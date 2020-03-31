@@ -308,6 +308,10 @@ article.boussole_glide {
         padding: 5px;
     }
 
+    .axes button:focus{
+        outline:5px solid  rgba(var(--heig-red-rgb), 0.2);
+    }
+
     .axes h4 {
         color: #fff;
         font-size: 2rem;
