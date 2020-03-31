@@ -27,7 +27,7 @@ html(lang="fr")
             br
             |  ce que tu vas bien
             br
-            |  pouvoir faire...
+            |  pouvoir faire…
         h3 A bout d’inspiration&nbsp;?
         p.u-text-center Laisse-nous
             br
@@ -35,7 +35,7 @@ html(lang="fr")
             br
             |  ce qui pourrait
             br
-            strong  changer ta vie...
+            strong  changer ta vie…
         a(href="#ultraconnect")
             include assets/images/Icon_Arrow.svg
     article.ultraconnect#ultraconnect
@@ -54,7 +54,7 @@ html(lang="fr")
                 br
                 strong  des rendez-vous.
             h3.u-text-center Et si être connecté·e devenait un atout professionnel&nbsp;?
-    article.slider
+    article.deviensim.no-padding
         p En
             strong  trois ans
             |  seulement,
@@ -63,7 +63,7 @@ html(lang="fr")
         p
             strong Deviens Ingénieur·e des médias, obtiens ton bachelor HES.
         h2.u-text-center#apprends Apprends à
-        section.glide
+        section.deviensim_glide
 
             .glide__track(data-glide-el='track')
                 ul.glide__slides
@@ -102,7 +102,7 @@ html(lang="fr")
                                 strong comprendre le
                                 br
                                 strong marketing digital
-                            p Toi qui es si connecté·e avec Instagram, Whatsapp, Facebook, Snapchat,... Ne t’es-tu jamais demandé comment les grandes marques faisaient pour nous attendrir ? Comment font-elles pour que nous soyons autant accros à ces applications ? Tu souhaiterais comprendre les stratégies des marques pour attirer, convertir et fidéliser les clients connectés ?
+                            p Toi qui es si connecté·e avec Instagram, Whatsapp, Facebook, Snapchat,… Ne t’es-tu jamais demandé comment les grandes marques faisaient pour nous attendrir ? Comment font-elles pour que nous soyons autant accros à ces applications ? Tu souhaiterais comprendre les stratégies des marques pour attirer, convertir et fidéliser les clients connectés ?
             .glide__bullets(data-glide-el='controls[nav]')
                 button.glide__bullet(data-glide-dir='=0')
                 button.glide__bullet(data-glide-dir='=1')
@@ -122,6 +122,273 @@ html(lang="fr")
                 br
                 |  dans le monde du digital.
         include assets/images/IngenierieMedias_Schema_Competences.svg
+    article.boussole_glide.no-padding(x-data="{ open1Info: false, open1Mark: false, open1Gest: false, open1Cult: false, open2Info: false, open2Mark: false, open2Gest: false, open2Cult: false, open3Info: false, open3Mark: false, open3Gest: false, open3Cult: false }")
+        .glide__track(data-glide-el='track')
+            ul.glide__slides
+                li.glide__slide
+                    article.premiereannee.no-padding
+                        h2#uneformation(aria-labelledby="uneformation en troisans") Une
+                            br
+                            |  formation…
+                        h3(data-glide-el="controls") 1ère année
+                            button(data-glide-dir=">").next_slide
+                                img(src="assets/images/Icon_ArrowNext.svg")
+                        p Apprends les bases
+                            br
+                            | de chaque discipline
+                        .axes
+                            p Alignement des connaissances
+                            .axe
+                                button(@click="open1Info = true")
+                                    img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
+                                    | Informatique &amp;
+                                    br
+                                    |  Interfaces
+                            .axe
+                                button(@click="open1Mark = true")
+                                    img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
+                                    | Marketing &amp;
+                                    br
+                                    |  Communication
+                            .axe
+                                button(@click="open1Gest = true")
+                                    img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
+                                    | Gestion de projet &amp;
+                                    br
+                                    |  Management
+                            .axe
+                                button(@click="open1Cult = true")
+                                    img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
+                                    | Culture digitale &amp;
+                                    br
+                                    |  Projet Intégration
+                li.glide__slide
+                    article.deuxiemeannee.no-padding
+                        h2#en(aria-labelledby="uneformation en troisans")
+                            br
+                            |  …en…
+                        h3(data-glide-el="controls") 2ème année
+                            button(data-glide-dir=">").next_slide
+                                img(src="assets/images/Icon_ArrowNext.svg")
+                        p Approfondir et mettre
+                            br
+                            |  en lien les connaissances
+                        .axes
+                            .axe
+                                button(@click="open2Info = true")
+                                    img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
+                                    | Informatique &amp;
+                                    br
+                                    |  Interfaces
+                            .empty(aria-hidden="true")
+                            .axe
+                                button(@click="open2Mark = true")
+                                    img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
+                                    | Marketing &amp;
+                                    br
+                                    |  Communication
+                            .empty(aria-hidden="true")
+                            .axe
+                                button(@click="open2Gest = true")
+                                    img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
+                                    | Gestion de projet &amp;
+                                    br
+                                    |  Management
+                            .empty(aria-hidden="true")
+                            .axe
+                                button(@click="open2Cult = true")
+                                    img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
+                                    | Culture digitale &amp;
+                                    br
+                                    |  Projet Intégration
+                            .empty(aria-hidden="true")
+                            p Projet pratique d'intégration 1
+                li.glide__slide
+                    article.troisiemeannee.no-padding
+                        h2#troisans(aria-labelledby="uneformation en troisans")
+                            br
+                            |  3 an&nbsp!
+                        h3 3ème année
+                        p Mettre en pratique
+                            br
+                            |  les compétences
+                        .axes
+                            .axe
+                                button(@click="open3Info = true")
+                                    img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
+                                    | Informatique &amp;
+                                    br
+                                    |  Interfaces
+                            img.arrow(src="assets/images/Icon_BoussoleTriangle.svg" alt="" role="presentation")
+                            .axe
+                                button(@click="open3Mark = true")
+                                    img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
+                                    | Marketing &amp;
+                                    br
+                                    |  Communication
+                            img.arrow(src="assets/images/Icon_BoussoleTriangle.svg" alt="" role="presentation")
+                            .axe
+                                button(@click="open3Gest = true")
+                                    img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
+                                    | Gestion de projet &amp;
+                                    br
+                                    |  Management
+                            img.arrow(src="assets/images/Icon_BoussoleTriangle.svg" alt="" role="presentation")
+                            .axe
+                                button(@click="open3Cult = true")
+                                    img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
+                                    | Culture digitale &amp;
+                                    br
+                                    |  Projet Intégration
+                            img.arrow(src="assets/images/Icon_BoussoleTriangle.svg" alt="" role="presentation")
+                            p Projet pratique d'intégration 2
+                            h4 Travail de Bachelor
+        .modal(x-show="open1Info")
+            button(@click="open1Info = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 1ère année
+                h2 Informatique &amp; interfaces
+                ul
+                    li Mathématiques
+                    li Médias numériques
+                    li De la donnée à l’information
+                    li Bases de la programmation
+                    li Protocoles et environnement Internet
+                    li Infrastructure de données
+                    li Programmation serveur
+        .modal(x-show="open1Mark")
+            button(@click="open1Mark = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 1ère année
+                h2 Marketing &amp; Communication
+                ul
+                    li Bases de la communication
+                    li Production de contenu média
+                    li Data visualization
+                    li Écriture pour le digital
+                    li Bases du marketing digital
+                    li Analyse de marché
+        .modal(x-show="open1Gest")
+            button(@click="open1Gest = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 1ère année
+                h2 Gestion de projet
+                ul
+                    li Gestion budgétaire et finance
+        .modal(x-show="open1Cult")
+            button(@click="open1Cult = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 1ère année
+                h2 Culture digitale &amp; Projet Intégration
+                ul
+                    li Media serious game
+                    li Alignement des connaissances
+                    li Outils et méthodes de travail
+                    li Évolution et métiers
+                    li Anglais
+        .modal(x-show="open2Info")
+            button(@click="open2Info = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 2ème année
+                h2 Informatique &amp; interfaces
+                ul
+                    li Architecture et programmation web
+                    li Développement front-end
+                    li Visualisation de données
+                    li Infrastructure de données
+                    li Web des données
+                    li Développement de produit média
+        .modal(x-show="open2Mark")
+            button(@click="open2Mark = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 2ème année
+                h2 Marketing &amp; Communication
+                ul
+                    li Techniques audio-visuelles et d’impression
+                    li Production de contenu média
+                    li Conception UX - Bases
+                    li E-commerce
+                    li Vendre un projet média
+        .modal(x-show="open2Gest")
+            button(@click="open2Gest = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 2ème année
+                h2 Gestion de projet
+                ul
+                    li Gestion de projet
+                    li Business models
+        .modal(x-show="open2Cult")
+            button(@click="open2Cult = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 2ème année
+                h2 Culture digitale &amp; Projet Intégration
+                ul
+                    li Sociologie
+                    li Droit et Éthique
+                    li Méthodologie de recherche
+                    li Veille sociétale
+                    li Projet d’intégration
+        .modal(x-show="open3Info")
+            button(@click="open3Info = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 3ème année
+                h2 Informatique &amp; interfaces
+                ul
+                    li Architecture orientée web
+                    li Développement mobile
+                    li Programmation VR
+                    li Marketing Tech
+        .modal(x-show="open3Mark")
+            button(@click="open3Mark = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 3ème année
+                h2 Marketing &amp; Communication
+                ul
+                    li Laboratoire tests UX
+                    li Conception UX - Avancé
+                    li Evaluation de produits média
+        .modal(x-show="open3Gest")
+            button(@click="open3Gest = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 3ème année
+                h2 Gestion de projet
+                ul
+                    li Business plan &amp; startup
+                    li Introduction à la systémique
+        .modal(x-show="open3Cult")
+            button(@click="open3Cult = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 3ème année
+                h2 Culture digitale &amp; Projet Intégration
+                ul
+                    li Veille technologique
+                    li Atelier convergence des médias
+                    li Projet d’intégration
+                    li Stage et Travail de Bachelor
     article(class="atoutsFormation")
         h2 Une formation
             strong  unique en Suisse
