@@ -295,7 +295,9 @@ article.boussole_glide {
     .axes p,
     .axes h4 {
         grid-row: 1/-1;
-        writing-mode: sideways-lr;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        /* Ssideways-rl is not supported everywhere */
         text-orientation: initial;
         text-align: center;
         justify-self: center;
@@ -323,7 +325,7 @@ article.boussole_glide {
     }
 
     .premiereannee .axes>p {
-        border-left: 2px solid var(--heig-red);
+        border-right: 2px solid var(--heig-red);
     }
 
     /* Deuxième année */
@@ -352,6 +354,72 @@ article.boussole_glide {
 
     .troisiemeannee .arrow {
         height: 100%;
+    }
+
+    .boussole_title--desktop-only {
+        display: none;
+
+    }
+
+    @media only screen and (min-width: 768px) {
+        .glide__slides {
+            display: flex;
+            justify-content: center;
+        }
+
+        .glide__slide {
+            max-width: 350px;
+            margin-top: 10rem;
+        }
+
+        .next_slide {
+            display: none;
+        }
+
+        h2,
+        h3,
+        article p,
+        .premiereannee .axes,
+        .deuxiemeannee .axe button,
+        .troisiemeannee .axe button {
+            padding: 0;
+        }
+
+        article>h2 {
+            display: none;
+        }
+
+        .boussole_title--desktop-only {
+            display: block;
+            top: 3rem;
+            position: absolute;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+        }
+
+        .axe {
+            font-size: .9rem;
+        }
+
+        .axes p {
+            font-size: 1rem;
+        }
+
+        .axes h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media only screen and (min-width: 1400px) {
+        .glide__slide {
+            max-width: 450px;
+        }
+
+        .axe {
+            font-size: 1.1rem;
+        }
     }
 
 }
