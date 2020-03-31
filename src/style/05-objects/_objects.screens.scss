@@ -257,7 +257,7 @@ article.boussole_glide {
     }
 
     .next_slide {
-        margin-bottom: -8px;
+        margin-top: 4px;
     }
 
     .axes {
@@ -308,8 +308,8 @@ article.boussole_glide {
         padding: 5px;
     }
 
-    .axes button:focus{
-        outline:5px solid  rgba(var(--heig-red-rgb), 0.2);
+    .axes button:focus {
+        outline: 5px solid rgba(var(--heig-red-rgb), 0.2);
     }
 
     .axes h4 {
