@@ -563,34 +563,29 @@ article.faq {
         margin-top: .5rem;
     }
 
-    .newquestion {
-        margin-top: auto;
-        font-size: 1.8rem;
+}
+
+article.newquestion {
+
+    h3 {
+        text-align:center;
+        margin-top: 3rem;
+        font-size: 2.7rem;
         color: var(--main-burgundy);
         font-weight: 700;
         margin-bottom: 2rem;
 
         span {
+            display:block;
             color: var(--heig-red);
         }
     }
 
-    .modal h3 {
-        font-size: 2rem;
-    }
-
-    .modal__newquestion h3 {
-        color: var(--main-burgundy);
-
-        span {
-            color: var(--heig-red);
-        }
-    }
 
     form {
         display: flex;
         flex-direction: column;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     label {
@@ -624,7 +619,7 @@ article.faq {
         display: inline;
         width: min-content;
         padding: .8rem 1.8rem;
-        margin: 0;
+        margin: auto;
         margin-top: 2rem;
         font-size: 1.4rem;
         text-transform: initial;
