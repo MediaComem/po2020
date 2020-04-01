@@ -250,14 +250,21 @@ article.boussole_glide {
 
     h3 {
         text-align: left;
+        position: relative;
     }
 
     p {
         font-weight: 700;
     }
 
+    .annee {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .next_slide {
-        height: 100%;
+        align-self: end;
+        margin-bottom: -8px;
     }
 
     .axes {

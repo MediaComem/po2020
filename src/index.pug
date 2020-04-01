@@ -133,7 +133,8 @@ html(lang="fr")
                         h2#uneformation(aria-labelledby="uneformation en troisans") Une
                             br
                             |  formation…
-                        h3(data-glide-el="controls") 1ère année
+                        .annee(data-glide-el="controls")
+                            h3 1ère année
                             button(data-glide-dir=">").next_slide
                                 img(src="assets/images/Icon_ArrowNext.svg")
                         p Apprends les bases
@@ -170,7 +171,8 @@ html(lang="fr")
                         h2#en(aria-labelledby="uneformation en troisans")
                             br
                             |  …en…
-                        h3(data-glide-el="controls") 2ème année
+                        .annee(data-glide-el="controls")
+                            h3 2ème année
                             button(data-glide-dir=">").next_slide
                                 img(src="assets/images/Icon_ArrowNext.svg")
                         p Approfondir et mettre
@@ -210,8 +212,9 @@ html(lang="fr")
                     article.troisiemeannee.no-padding
                         h2#troisans(aria-labelledby="uneformation en troisans")
                             br
-                            strong 3 an&nbsp!
-                        h3 3ème année
+                            strong 3 ans&nbsp!
+                        .annee
+                            h3 3ème année
                         p Mettre en pratique
                             br
                             |  les compétences
