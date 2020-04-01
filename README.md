@@ -2,10 +2,22 @@
 
 ## Installation
 
+Requirements: [Node.js](https://nodejs.org) 12+
+
 ```bash
-    npm install -g parcel-bundler
-    npm i
+npm install -g parcel-bundler
+npm i
 ```
+
+## Deployment
+
+Build the application:
+
+```bash
+npm run build
+```
+
+A static build of the application will be available in the `dist` directory.
 
 ## Limitation
 
