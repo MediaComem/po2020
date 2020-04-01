@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
-    "alpinejs": "^2.2.1",
+    "alpinejs": "^2.2.4",
     "autoprefixer": "^9.7.5",
     "normalize.css": "^8.0.1"
   },
