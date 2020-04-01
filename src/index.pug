@@ -452,6 +452,8 @@ html(lang="fr")
             button.question(@click="openQ1 = true") De quelle(s) école(s) viennent les étudiant·e·s ?
             button.question(@click="openQ2 = true") Je suis au gymnase…
             button.question(@click="openQ3 = true") Est-ce que nous allons réaliser des mandats avec de vrais clients?
+        button.newquestion(@click="openNewQuestion = true") Pose-nous
+            span  ta question
         .modal(x-show="openQ1")
             button(@click="openQ1 = false")
                 img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
@@ -501,17 +503,20 @@ html(lang="fr")
                     strong  employable directement
                     |  après les trois années de
                     strong  Bachelor.
-
-    article.newquestion
-        h3 Pose-nous
-            span  ta question
-        form#newquestion(action='https://formspree.io/xyydgeyo' method='POST')
-            label Email:
-            input(type='email' name='email')
-            label Ta question:
-            input(type='text' name='message')
-            button#newquestion-button Go&nbsp;!
-            p#newquestion-status
+        .modal.modal__newquestion(x-show="openNewQuestion")
+            button(@click="openNewQuestion = false")
+                img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
+                |  Retour
+            .main
+                h3 Pose-nous
+                    span  ta question
+                form#newquestion(action='https://formspree.io/xyydgeyo' method='POST')
+                    label Email:
+                    input(type='email' name='email')
+                    label Ta question:
+                    input(type='text' name='message')
+                    button#newquestion-button Go&nbsp;!
+                    p#newquestion-status
 
     article.futurReady.u-text-center.u-vertical-center
         h2
