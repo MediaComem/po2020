@@ -1,7 +1,7 @@
 import 'alpinejs';
 import Glide, { Breakpoints, Controls, Autoplay , Swipe } from '@glidejs/glide/dist/glide.modular.esm';
 
-var deviensim = new Glide('.deviensim_glide',{
+var deviensIm = new Glide('.deviensIm_glide',{
     autoplay: 9000,
     hoverpause:true
 });
@@ -19,7 +19,7 @@ var boussole = new Glide('.boussole_glide',{
 });
 
 boussole.mount({ Breakpoints, Controls, Swipe });
-deviensim.mount({ Controls, Autoplay, Swipe });
+deviensIm.mount({ Controls, Autoplay, Swipe });
 
 
 

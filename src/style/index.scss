@@ -6,8 +6,8 @@
 @import '01-settings/settings.typography';
 
 // 02. Tools
-@import '02-tools/tools.hidden';
-@import '02-tools/tools.on-event';
+//@import '02-tools/tools.hidden';
+//@import '02-tools/tools.on-event';
 
 // 03. Generic
 @import 'normalize.css';
@@ -21,7 +21,16 @@
 
 // 05. Objects
 @import '05-objects/objects.banner';
-@import '05-objects/objects.screens';
+@import '05-objects/_objects.screen.1_cover';
+@import '05-objects/_objects.screen.2_coronavirus';
+@import '05-objects/_objects.screen.3_ultra_connect';
+@import '05-objects/_objects.screen.4_deviens_im';
+@import '05-objects/_objects.screen.5_schema_competences';
+@import '05-objects/_objects.screen.6_boussole';
+@import '05-objects/_objects.screen.7_atouts_formation';
+@import '05-objects/_objects.screen.8_ecole';
+@import '05-objects/_objects.screen.9_faq';
+@import '05-objects/_objects.screen.10_futur_ready';
 
 // 06. Components
 @import '06-components/components.modal';
@@ -30,4 +39,4 @@
 // 99. Utilities
 @import '99-utilities/utilities.base';
 @import '99-utilities/utilities.text';
-@import '99-utilities/utilities.visibility';
+//@import '99-utilities/utilities.visibility';

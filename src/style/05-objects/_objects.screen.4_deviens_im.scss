@@ -1,0 +1,52 @@
+article.deviensIm {
+    >*:not(.deviensIm_glide) {
+        padding: 0 8vw;
+    }
+
+    >p:nth-of-type(1) {
+        margin-top: 3rem;
+    }
+
+    >p strong {
+        font-weight: 700;
+    }
+
+    #apprends {
+        margin-top: auto;
+    }
+
+    .deviensIm_glide {
+        margin-bottom: auto;
+    }
+
+
+    .glide__slide article {
+        h2 {
+            margin-top: 0;
+        }
+
+        h2,
+        p {
+            text-align: center;
+        }
+
+        p {
+            margin-top: 2rem;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        h2 {
+            margin-top: 0;
+        }
+
+        .glide__slide article {
+            max-width: 80%;
+            margin: auto;
+
+            p {
+                margin-top: 1rem;
+            }
+        }
+    }
+}

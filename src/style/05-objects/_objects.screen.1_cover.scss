@@ -1,0 +1,35 @@
+article.cover {
+    color: #FFF;
+
+    .logoHeigvd {
+        margin-left: -8vw;
+        align-self: flex-start;
+        padding-top: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    p {
+        margin-top: auto;
+        margin-bottom: 4rem;
+        font-weight: 400;
+    }
+
+    @media only screen and (min-width: 768px) {
+        h1 {
+            max-width: 60%;
+        }
+    }
+}
+
+@media screen and (orientation: landscape) {
+    article.cover {
+        p {
+            margin-top: 2rem;
+            margin-bottom: auto;
+        }
+    }
+}

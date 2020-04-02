@@ -1,0 +1,57 @@
+article.ecole {
+    position: relative;
+    overflow: hidden;
+
+    *:not(.carte) {
+        z-index: 1;
+    }
+
+    h2 {
+        color: var(--main-burgundy);
+        margin-top: 3rem;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    p.yverdon {
+        margin-top: 1rem;
+        display: flex;
+        color: var(--heig-red);
+
+        img {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .carte {
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 35vw;
+        height: 90vw;
+        max-height: 100vh;
+    }
+
+    @media only screen and (min-width: 768px) {
+        h2 {
+            margin-top: 3rem;
+            max-width: 40%;
+        }
+
+        p {
+            max-width: 30%;
+        }
+
+        .carte {
+            top: 0;
+        }
+    }
+
+    @media screen and (orientation: landscape) {
+        .carte {
+            left: 60vw;
+        }
+    }
+}

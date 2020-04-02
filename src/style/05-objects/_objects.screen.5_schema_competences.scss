@@ -1,0 +1,41 @@
+article.schemaCompetences {
+    .twocolumns {
+        margin-top: 3rem;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    p {
+        margin-top: 1rem;
+    }
+
+    svg {
+        width: 100%;
+        /* Fix for Apple */
+        margin: 3rem -2vw auto -2vw;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        flex-direction: row;
+
+        br {
+            display: none;
+        }
+
+        .twocolumns {
+            margin-right: 3rem;
+            max-width: 50%;
+        }
+
+        h2,
+        p {
+            text-align: left !important;
+        }
+
+        svg {
+            max-width: 65vh;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+article.futurReady {
+
+    align-content: space-around;
+
+    .main {
+        margin-bottom: auto;
+    }
+
+    p {
+        margin: 3rem 0;
+        font-weight: 700;
+    }
+
+    p a {
+        display: inline-block;
+        margin: 0.5rem 0;
+    }
+
+    .iconDownload {
+        width: 24px;
+    }
+
+    .reseauxSociaux {
+        list-style: none;
+        margin-top: auto;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .copyright {
+        font-size: .7rem;
+        margin-bottom: 1rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .main {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .icondownload {
+            width: 40px;
+        }
+
+        .reseauxsociaux {
+            max-width: 20%;
+            margin: auto;
+        }
+    }
+}

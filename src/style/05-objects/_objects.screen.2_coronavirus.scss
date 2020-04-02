@@ -1,0 +1,64 @@
+article.coronavirus {
+
+    h2 {
+        margin-top: 3rem;
+    }
+
+    h3 {
+        margin-top: auto;
+    }
+
+    img {
+        margin: auto 0;
+        align-self: center;
+    }
+
+    a {
+        margin-top: 2rem;
+        align-self: center;
+        -webkit-tap-highlight-color: transparent;
+
+        svg,
+        path {
+            transition: all .3s ease-in-out;
+        }
+
+        svg:active,
+        svg:focus,
+        svg:hover {
+            transform: scale(1.1);
+
+            path {
+                stroke: #FB1F36;
+            }
+        }
+    }
+
+    *:last-child {
+        margin-bottom: auto;
+    }
+
+    @media only screen and (min-width: 768px) {
+        h2 {
+            max-width: 45%;
+        }
+
+        br {
+            display: none;
+        }
+
+        p {
+            &:not(.u-text-center) {
+                max-width: 40%;
+            }
+
+            strong {
+                display: block;
+            }
+        }
+
+        h3 {
+            margin-top: 6rem;
+        }
+    }
+}

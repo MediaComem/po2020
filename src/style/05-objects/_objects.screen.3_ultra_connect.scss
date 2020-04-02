@@ -1,0 +1,31 @@
+article.ultraConnect {
+    justify-content: space-around;
+
+    h2 {
+        margin-top: 3rem;
+    }
+
+    h3 {
+        margin: auto 0;
+    }
+
+    @media only screen and (min-width: 768px) {
+        p {
+            margin: .3rem 0;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            max-width: 40%;
+        }
+
+        br {
+            display: none;
+        }
+
+        h3 {
+            max-width: 60%;
+            margin: auto;
+        }
+    }
+}

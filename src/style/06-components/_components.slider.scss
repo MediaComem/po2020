@@ -1,15 +1,15 @@
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
-.deviensim .glide {
+.deviensIm .glide {
     margin: 0;
     margin-bottom: auto;
 }
 
-.deviensim .glide__slides {
+.deviensIm .glide__slides {
     margin-top: 0;
 }
 
-.deviensim .glide__bullets {
+.deviensIm .glide__bullets {
     text-align: center;
     margin-top: 0;
 
@@ -18,7 +18,7 @@
     }
 }
 
-.deviensim {
+.deviensIm {
     .glide__bullet {
         background-color: rgba(var(--heig-red-rgb), 0.3);
         width: 13px;
