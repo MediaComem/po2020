@@ -1,22 +1,18 @@
 article.ecole {
-    position: relative;
-    overflow: hidden;
 
-    *:not(.carte) {
+    .mainWrapper {
+        position: absolute;
+        top: 40vh;
         z-index: 1;
     }
 
     h2 {
-        color: var(--main-burgundy);
-        margin-top: 3rem;
-
-        a {
-            text-decoration: none;
-        }
+        font-size: 2.7rem;
     }
 
     p.yverdon {
-        margin-top: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
         display: flex;
         color: var(--heig-red);
 
@@ -26,32 +22,29 @@ article.ecole {
     }
 
     .carte {
-        display: inline-block;
         position: absolute;
-        bottom: 0;
+        top: -32vh;
+        transform: translateY(50%);
         left: 35vw;
-        height: 90vw;
-        max-height: 100vh;
+        width: 75vh;
     }
 
     @media only screen and (min-width: 768px) {
         h2 {
-            margin-top: 3rem;
-            max-width: 40%;
+            margin-top: 0;
         }
 
-        p {
-            max-width: 30%;
+        .mainWrapper {
+            position:relative;
+            top:initial;
+            margin: auto 0;
+            max-width:20rem; // Necessary to let place for the map interactivity
         }
 
         .carte {
-            top: 0;
-        }
-    }
-
-    @media screen and (orientation: landscape) {
-        .carte {
-            left: 60vw;
+            top: -75vh;
+            width:150vh;
+            left:50vw;
         }
     }
 }

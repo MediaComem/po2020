@@ -2,31 +2,37 @@ article.cover {
     color: #FFF;
 
     .logoHeigvd {
-        margin-left: -8vw;
-        align-self: flex-start;
-        padding-top: 3rem;
+        margin-top: 3rem;
+        width: 44px;
+    }
+
+    .mainWrapper {
+        margin-top: 3rem;
+        padding-left: $main-padding-left - 2vw;
     }
 
     h1 {
-        font-size: 2.5rem;
-        margin-top: 3rem;
+        font-size: 2.8rem;
+        line-height: 96%;
     }
 
     p {
-        margin-top: auto;
-        margin-bottom: 4rem;
+        margin-top: 3rem;
         font-weight: 400;
+        line-height: 125%;
     }
 
     @media only screen and (min-width: 768px) {
+        .logoHeigvd {
+            width: 64px;
+        }
+
         h1 {
-            max-width: 60%;
+            max-width: 30rem;
         }
     }
-}
 
-@media screen and (orientation: landscape) {
-    article.cover {
+    @media screen and (orientation: landscape) {
         p {
             margin-top: 2rem;
             margin-bottom: auto;

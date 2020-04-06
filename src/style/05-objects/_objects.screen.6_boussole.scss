@@ -8,51 +8,42 @@ article.boussole {
         margin: 0;
     }
 
-    h2,
-    p {
-        padding: 0 12vw 0 8vw;
+
+
+    .axes {
+        min-height: 0;
+        height: auto;
     }
 
-    h3 {
-        padding: 0 1vw 0 8vw;
-        display: flex;
-        align-content: center;
-        justify-content: space-between;
+    .glide__bullets {
+        margin: 2rem 0;
     }
 
-    h3 {
-        text-align: left;
-        position: relative;
-    }
-
-    p {
-        font-weight: 700;
-    }
-
-    .annee {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .next_slide {
-        align-self: end;
-        margin-bottom: -8px;
+    article>.mainWrapper {
+        margin-top: 3rem;
     }
 
     .axes {
         display: grid;
         grid-template-rows: repeat(4, minmax(50px, 90px));
-        grid-template-columns: 30px auto;
-        grid-gap: 10px;
+        grid-template-columns: 40px auto;
         margin-top: 0.5rem;
-        height: calc(100% - 18rem);
-        margin-bottom: 2rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .axe,
     .empty {
-        background: var(--heig-red);
+        border-top: 1px solid var(--heig-red);
+    }
+
+    .axe:nth-of-type(1),
+    .empty:nth-of-type(1) {
+        border-top-width: 2px;
+    }
+
+    .axe:nth-of-type(4),
+    .empty:nth-of-type(4) {
+        border-bottom: 2px solid var(--heig-red);
     }
 
     .axe button {
@@ -60,31 +51,45 @@ article.boussole {
         width: 100%;
         margin: 0;
         padding: 0 15px;
-        color: #fff;
-        font-weight: 600;
-        display: flex;
+        color: var(--heig-red);
         align-items: center;
         text-align: left;
+        display: flex;
+        box-sizing: border-box;
+
+        p {
+            flex-basis: 35vw;
+            padding-right: 5px;
+            margin: 0;
+            font-weight: 700;
+        }
 
         img {
-            padding-right: 15px;
+            flex-basis: 40px;
         }
     }
 
-    .axes p,
-    .axes h4 {
+    .axes>p,
+    .axes>h4 {
         grid-row: 1/-1;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
         /* Ssideways-rl is not supported everywhere */
         text-orientation: initial;
-        text-align: center;
-        justify-self: center;
         color: var(--main-burgundy);
         font-weight: 700;
         font-size: 1.4rem;
         margin: 0;
         padding: 5px;
+        width: 100%;
+        box-sizing: border-box;
+        display: grid;
+        place-items: center;
+    }
+
+    .axes>p {
+        background: var(--heig-red);
+        color: #fff;
     }
 
     .axes button:focus {
@@ -97,24 +102,28 @@ article.boussole {
         background: var(--main-burgundy);
     }
 
+    .boussole_title--desktop-only {
+        display: none;
+    }
+
     /* Première année */
 
     .premiereannee .axes {
-        padding-left: 8vw;
+        padding-left: $main-padding-left;
     }
 
     .premiereannee .axe {
         grid-column-start: 2;
     }
 
-    .premiereannee .axes>p {
-        border-right: 2px solid var(--heig-red);
-    }
-
     /* Deuxième année */
 
     .deuxiemeannee .axes {
-        grid-template-columns: auto 15px auto;
+        grid-template-columns: auto 40px 30px;
+    }
+
+    .deuxiemeannee .axe button {
+        padding-left: $main-padding-left;
     }
 
     .deuxiemeannee .axes>p {
@@ -124,7 +133,11 @@ article.boussole {
     /* Troisième année */
 
     .troisiemeannee .axes {
-        grid-template-columns: auto 15px 30px 50px;
+        grid-template-columns: auto 40px 30px 50px;
+    }
+
+    .troisiemeannee .axe button {
+        padding-left: $main-padding-left;
     }
 
     .troisiemeannee .axes>p {
@@ -139,24 +152,68 @@ article.boussole {
         height: 100%;
     }
 
-    .boussole_title--desktop-only {
-        display: none;
-
+    .troisiemeannee .empty {
+        border-image: linear-gradient(90deg, var(--heig-red) 0%, #fff 70%) 1 / 1 / 0 stretch;
     }
 
-    @media only screen and (min-width: 768px) {
+
+    .telechargeplan {
+        margin-top: auto;
+        margin-bottom: 2rem;
+        align-self: flex-end;
+
+        a {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #000;
+            text-decoration: none;
+
+            span {
+                color: var(--heig-red);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 600px) {
+
+
+        h3 {
+            font-size: 1.4rem;
+        }
+
+        .axes p {
+            font-size: 1rem;
+        }
+
+        .axes h4 {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        .glide__track {
+            margin-top: auto;
+        }
+
         .glide__slides {
             display: flex;
             justify-content: center;
+
         }
 
         .glide__slide {
             max-width: 350px;
-            margin-top: 10rem;
         }
 
-        .next_slide {
+        .glide__bullets {
             display: none;
+        }
+
+        article .mainWrapper {
+            padding: 0;
+            margin-top: 5rem;
         }
 
         h2,
@@ -168,30 +225,38 @@ article.boussole {
             padding: 0;
         }
 
-        article>h2 {
+        .premiereannee .axe button,
+        .deuxiemeannee .axe button,
+        .troisiemeannee .axe button {
+            padding-right: 15px;
+        }
+
+        .axe button img {
+            flex-basis: 80px;
+        }
+
+        article>.mainWrapper>h2 {
             display: none;
         }
 
-        .boussole_title--desktop-only {
+        article h2.boussole_title--desktop-only {
             display: block;
-            top: 3rem;
+            top: 0rem;
             position: absolute;
-        }
-
-        h3 {
-            font-size: 1.4rem;
-        }
-
-        .axe {
-            font-size: .9rem;
+            width: 100vw;
         }
 
         .axes p {
-            font-size: 1rem;
+            font-size: .9rem;
         }
 
-        .axes h4 {
-            font-size: 1.2rem;
+
+        >.mainWrapper {
+            padding: 0;
+        }
+
+        .telechargeplan {
+            align-self: center;
         }
     }
 
@@ -204,5 +269,4 @@ article.boussole {
             font-size: 1.1rem;
         }
     }
-
 }

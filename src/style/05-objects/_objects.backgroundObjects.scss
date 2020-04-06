@@ -1,0 +1,37 @@
+.laptopVolant,
+.objetsBackground,
+.objets2Background {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    width: 80vh;
+    min-width: 100vw;
+    align-self: center;
+    z-index: -1;
+    opacity:.5;
+}
+
+.objetsBackground,
+.objets2Background {
+    transform: translateY(-45%);
+    width: 65vh;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .laptopVolant,
+    .objetsBackground,
+    .objets2Background {
+        transform: translateY(-35%);
+        width: 120vh;
+        min-width: initial;
+        max-width: 1400px;
+        left: 30vh;
+    }
+
+    .objetsBackground {
+        left: -30vh;
+        transform: translateY(-60%);
+        padding-left: 0;
+    }
+}

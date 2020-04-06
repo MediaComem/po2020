@@ -2,7 +2,7 @@
 // Original post by Harry Roberts https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
 
 // 01. Settings
-@import '01-settings/settings.colors';
+@import '01-settings/settings.spacing';
 @import '01-settings/settings.typography';
 
 // 02. Tools
@@ -14,14 +14,10 @@
 @import '03-generic/generic.selection';
 
 // 04. Elements
-@import '04-elements/elements.all';
-@import '04-elements/elements.body';
-@import '04-elements/elements.html';
 @import '04-elements/elements.links';
 
 // 05. Objects
-@import '05-objects/objects.banner';
-@import '05-objects/_objects.screen.1_cover';
+@import '05-objects/_objects.backgroundObjects';
 @import '05-objects/_objects.screen.2_coronavirus';
 @import '05-objects/_objects.screen.3_ultra_connect';
 @import '05-objects/_objects.screen.4_deviens_im';
@@ -33,10 +29,12 @@
 @import '05-objects/_objects.screen.10_futur_ready';
 
 // 06. Components
+@import '06-components/components.encart';
 @import '06-components/components.modal';
 @import '06-components/components.slider';
 
 // 99. Utilities
 @import '99-utilities/utilities.base';
+@import '99-utilities/utilities.columns';
 @import '99-utilities/utilities.text';
 //@import '99-utilities/utilities.visibility';

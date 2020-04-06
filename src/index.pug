@@ -6,8 +6,9 @@ html(lang="fr")
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title Deviens acteur-trice de la transition numérique
+    meta(name="description" content="Ingénierie des médias, la formation HES que tu n’es pas prêt·e d’oublier")
     link(rel="manifest" href="manifest.webmanifest")
-    link(rel="stylesheet" href="style/index.scss")
+    link(rel="stylesheet" href="style/critical.scss" class="body-style")
     link(rel="icon" href="assets/images/favicon.svg")
   body
     include includes/GTManager_NoScript.html
@@ -22,5 +23,6 @@ html(lang="fr")
     include includes/screens/9_faq
     include includes/screens/10_futur_ready
 
-    script(src="js/main.js")
+    link(rel="stylesheet" href="style/index.scss")
+    script(src="js/main.js" async)
     include includes/GA.html

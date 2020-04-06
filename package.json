@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "rm -rf dist && parcel src/index.pug",
-    "build": "rm -rf dist && parcel build src/index.pug --public-url ."
+    "build": "rm -rf dist && parcel build src/index.pug --public-url . ‑‑no‑source-maps"
   },
   "repository": {
     "type": "git",
@@ -14,14 +14,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.7.5",
     "parcel-plugin-imagemin": "^4.0.1",
+    "postcss-modules": "^1.5.0",
     "pug": "^2.0.4",
     "sass": "^1.26.3"
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
-    "alpinejs": "^2.2.4",
-    "autoprefixer": "^9.7.5",
+    "alpinejs": "^2.2.5",
     "normalize.css": "^8.0.1"
   },
   "engines": {

@@ -1,10 +1,22 @@
 article.schemaCompetences {
-    .twocolumns {
-        margin-top: 3rem;
+
+    .mainWrapper:nth-of-type(1) {
+        margin-top: auto;
     }
 
-    h2 {
-        margin-top: 0;
+    .decouvreprofil {
+        margin: 2rem 0 1.5rem 0;
+        align-self: flex-end;
+        font-weight: 700;
+        font-size: 1.1rem;
+
+        a{
+            display:flex;
+            align-content: center;
+            img{
+                padding-left:15px;
+            }
+        }
     }
 
     p {
@@ -14,28 +26,25 @@ article.schemaCompetences {
     svg {
         width: 100%;
         /* Fix for Apple */
-        margin: 3rem -2vw auto -2vw;
+        margin: auto 0;
     }
 
-    @media only screen and (min-width: 1024px) {
-        flex-direction: row;
+    @media only screen and (min-width: 768px) {
+        padding-left: 30vw;
+
+
+        .mainWrapper {
+            margin: auto 0;
+            max-width: 25rem;
+        }
 
         br {
             display: none;
         }
 
-        .twocolumns {
-            margin-right: 3rem;
-            max-width: 50%;
-        }
-
-        h2,
-        p {
-            text-align: left !important;
-        }
-
         svg {
-            max-width: 65vh;
+            margin-top: 2rem;
+            max-width: 25rem;
         }
     }
 }

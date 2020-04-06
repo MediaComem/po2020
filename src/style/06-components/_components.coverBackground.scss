@@ -2,11 +2,25 @@
     --banner-url: url("../assets/images/banner/IM_Banner.jpg");
 }
 
-article.cover {
+.coverBackground {
     background-image: linear-gradient(to right, rgba(237, 29, 42, .95), rgba(237, 29, 42, .95)), var(--banner-url);
     background-size: cover, cover;
     background-position: 100% 100%, 50% 50%;
     background-blend-mode: multiply;
+    height: 100%;
+    position: absolute;
+    width: 100vw;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 105%;
+}
+
+// IE 11, EDGE <= 18
+@supports not (background-blend-mode: multiply) {
+    .coverBackground {
+        background-image: linear-gradient(to right, rgba(255, 0, 16, 0.64), rgb(223, 8, 21)), var(--banner-url);
+    }
 }
 
 /* Clearly not perfect optimisation

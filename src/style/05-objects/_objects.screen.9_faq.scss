@@ -1,7 +1,10 @@
 article.faq {
-    >h2 {
-        text-align: center;
-        color: var(--heig-red);
+
+    .mainWrapper {
+        h2 {
+            font-size: 2.7rem;
+            margin-top: 3rem;
+        }
     }
 
     .questions {
@@ -11,13 +14,13 @@ article.faq {
     }
 
     .question {
-        background: var(--heig-red);
+        border-top: 2px solid var(--heig-red);
+        color: var(--heig-red);
         width: 100%;
-        color: #fff;
         text-align: left;
-        font-size: 2rem;
         font-weight: 700;
-        padding: 15px;
+        font-size: 1.2rem;
+        padding: 1rem $main-padding-left;
         box-sizing: border-box;
     }
 
@@ -26,14 +29,30 @@ article.faq {
     }
 
     .newquestion {
-        margin-top: auto;
-        font-size: 1.8rem;
         color: var(--main-burgundy);
-        font-weight: 700;
-        margin-bottom: 2rem;
+    }
 
-        span {
+    .modal__newquestion {
+        background: #fff;
+
+        h3,
+        label {
             color: var(--heig-red);
+        }
+
+        .close {
+            background: var(--heig-red);
+            width: 39px;
+            height: 37px;
+            mask-size: cover;
+            mask: url("../assets/images/Icon_GoBack.svg");
+            display: inline-block;
+            box-sizing: border-box;
+            margin-right: 2rem;
+
+            img {
+                display: none;
+            }
         }
     }
 
@@ -41,22 +60,12 @@ article.faq {
         font-size: 2rem;
     }
 
-    .modal__newquestion h3 {
-        color: var(--main-burgundy);
-
-        span {
-            color: var(--heig-red);
-        }
-    }
-
     form {
         display: flex;
         flex-direction: column;
-        margin-top: 2rem;
     }
 
     label {
-        font-weight: 700;
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }
@@ -67,17 +76,15 @@ article.faq {
         -moz-appearance: none;
         appearance: none;
         background: transparent;
+        border-radius: 0;
     }
 
     input {
-        border: 1px solid #DADADA;
+        border: 2px solid var(--heig-red);
         height: 30px;
         font-size: 1.1rem;
         padding: .5rem 1rem;
-    }
-
-    input+label {
-        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 
     #newquestion-button {
@@ -87,8 +94,37 @@ article.faq {
         width: min-content;
         padding: .8rem 1.8rem;
         margin: 0;
-        margin-top: 2rem;
         font-size: 1.4rem;
-        text-transform: initial;
+        font-weight: 700;
+    }
+
+    @media only screen and (min-width: 768px) {
+
+        .mainWrapper {
+            margin-top: auto;
+
+            h2 {
+                margin-top: 0;
+            }
+        }
+
+        .questions {
+            margin-left: $main-padding-left;
+        }
+
+        .question {
+            padding-left: 1rem;
+            margin-left: 1rem;
+            width: 80%;
+        }
+
+        .question:not(.newquestion) {
+            border-left: 2px solid var(--heig-red);
+            border-right: 2px solid var(--heig-red);
+        }
+
+        .question+.question {
+            margin-top: 0;
+        }
     }
 }

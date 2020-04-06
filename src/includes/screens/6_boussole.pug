@@ -1,135 +1,106 @@
-article.boussole.boussole_glide.no-padding(x-data="{ open1Info: false, open1Mark: false, open1Gest: false, open1Cult: false, open2Info: false, open2Mark: false, open2Gest: false, open2Cult: false, open3Info: false, open3Mark: false, open3Gest: false, open3Cult: false }")
+article.boussole.boussole_glide(x-data="{ open1Info: false, open1Mark: false, open1Gest: false, open1Cult: false, open2Info: false, open2Mark: false, open2Gest: false, open2Cult: false, open3Info: false, open3Mark: false, open3Gest: false, open3Cult: false }")
 
     .glide__track(data-glide-el='track')
         ul.glide__slides
             li.glide__slide
-                article.premiereannee.no-padding
-                    h2.boussole_title--desktop-only Une formation…en…
-                        strong 3 ans &nbsp;!
-                    h2#uneformation(aria-labelledby="uneformation en troisans") Une
-                        br
-                        |  formation…
-                    .annee(data-glide-el="controls")
+                article.premiereannee
+                    .mainWrapper
+                        h2.boussole_title--desktop-only Une formation en…3 ans &nbsp;!
+                        h2#uneformation(aria-labelledby="uneformation en troisans") Une formation…
                         h3 1ère année
-                        button(data-glide-dir=">").next_slide
-                            img(src="assets/images/Icon_ArrowNext.svg")
-                    p Apprends les bases
-                        br
-                        |  de chaque discipline
+                        p Apprends les bases
+                            br
+                            |  de chaque discipline
                     .axes
                         p Alignement des connaissances
                         .axe
                             button(@click="open1Info = true")
+                                p Informatique &amp; Interfaces
                                 img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
-                                | Informatique &amp;
-                                br
-                                |  Interfaces
                         .axe
                             button(@click="open1Mark = true")
+                                p Marketing &amp; Communication
                                 img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
-                                | Marketing &amp;
-                                br
-                                |  Communication
                         .axe
                             button(@click="open1Gest = true")
+                                p Gestion de projet &amp; Management
                                 img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
-                                | Gestion de projet &amp;
-                                br
-                                |  Management
                         .axe
                             button(@click="open1Cult = true")
+                                p Culture digitale &amp; Projet Intégration
                                 img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
-                                | Culture digitale &amp;
-                                br
-                                |  Projet Intégration
             li.glide__slide
-                article.deuxiemeannee.no-padding
-                    h2#en(aria-labelledby="uneformation en troisans")
-                        br
-                        |  …en…
-                    .annee(data-glide-el="controls")
+                article.deuxiemeannee
+                    .mainWrapper
+                        h2#en(aria-labelledby="uneformation en troisans") en…
                         h3 2ème année
-                        button(data-glide-dir=">").next_slide
-                            img(src="assets/images/Icon_ArrowNext.svg")
-                    p Approfondir et mettre
-                        br
-                        |  en lien les connaissances
+                        p Approfondir et mettre
+                            br
+                            |  en lien les connaissances
                     .axes
                         .axe
                             button(@click="open2Info = true")
+                                p Informatique &amp; Interfaces
                                 img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
-                                | Informatique &amp;
-                                br
-                                |  Interfaces
-                        .empty(aria-hidden="true")
+                        span.empty(aria-hidden="true")
                         .axe
                             button(@click="open2Mark = true")
+                                p Marketing &amp; Communication
                                 img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
-                                | Marketing &amp;
-                                br
-                                |  Communication
-                        .empty(aria-hidden="true")
+                        span.empty(aria-hidden="true")
                         .axe
                             button(@click="open2Gest = true")
+                                p Gestion de projet &amp; Management
                                 img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
-                                | Gestion de projet &amp;
-                                br
-                                |  Management
-                        .empty(aria-hidden="true")
+                        span.empty(aria-hidden="true")
                         .axe
                             button(@click="open2Cult = true")
+                                p Culture digitale &amp; Projet Intégration
                                 img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
-                                | Culture digitale &amp;
-                                br
-                                |  Projet Intégration
-                        .empty(aria-hidden="true")
+                        span.empty(aria-hidden="true")
                         p Projet pratique d'intégration 1
             li.glide__slide
-                article.troisiemeannee.no-padding
-                    h2#troisans(aria-labelledby="uneformation en troisans")
-                        br
-                        strong 3 ans&nbsp!
-                    .annee
+                article.troisiemeannee
+                    .mainWrapper
+                        h2#troisans(aria-labelledby="uneformation en troisans") 3 ans&nbsp!
                         h3 3ème année
-                    p Mettre en pratique
-                        br
-                        |  les compétences
+                        p Mettre en pratique
+                            br
+                            |  les compétences
                     .axes
                         .axe
                             button(@click="open3Info = true")
+                                p Informatique &amp; Interfaces
                                 img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
-                                | Informatique &amp;
-                                br
-                                |  Interfaces
-                        img.arrow(src="assets/images/Icon_BoussoleTriangle.svg" alt="" role="presentation")
+                        span.empty(aria-hidden="true")
                         .axe
                             button(@click="open3Mark = true")
+                                p Marketing &amp; Communication
                                 img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
-                                | Marketing &amp;
-                                br
-                                |  Communication
-                        img.arrow(src="assets/images/Icon_BoussoleTriangle.svg" alt="" role="presentation")
+                        span.empty(aria-hidden="true")
                         .axe
                             button(@click="open3Gest = true")
+                                p Gestion de projet &amp; Management
                                 img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
-                                | Gestion de projet &amp;
-                                br
-                                |  Management
-                        img.arrow(src="assets/images/Icon_BoussoleTriangle.svg" alt="" role="presentation")
+                        span.empty(aria-hidden="true")
                         .axe
                             button(@click="open3Cult = true")
+                                p Culture digitale &amp; Projet Intégration
                                 img(src="assets/images/Icon_Plus.svg" alt="En savoir plus")
-                                | Culture digitale &amp;
-                                br
-                                |  Projet Intégration
-                        img.arrow(src="assets/images/Icon_BoussoleTriangle.svg" alt="" role="presentation")
+                        span.empty(aria-hidden="true")
                         p Projet pratique d'intégration 2
                         h4 Travail de Bachelor
-    .modal(x-show="open1Info")
-        button(@click="open1Info = false")
-            img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
-            |  Retour
-        .main
+    .glide__bullets(data-glide-el='controls[nav]')
+        button.glide__bullet(data-glide-dir='=0')
+        button.glide__bullet(data-glide-dir='=1')
+        button.glide__bullet(data-glide-dir='=2')
+    .mainWrapper.telechargeplan
+        a#plandownload(href="assets/pdf/ingenieriemedias_apercu_cours2020.pdf") Télécharge&nbsp;
+            span le plan de cours
+    .modal(role="dialog" aria-modal="true" x-show="open1Info" :class="{ 'visible': open1Info }")
+        button.close(@click="open1Info = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
             h3 1ère année
             h2 Informatique &amp; interfaces
             ul
@@ -140,11 +111,10 @@ article.boussole.boussole_glide.no-padding(x-data="{ open1Info: false, open1Mark
                 li Protocoles et environnement Internet
                 li Infrastructure de données
                 li Programmation serveur
-    .modal(x-show="open1Mark")
-        button(@click="open1Mark = false")
-            img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
-            |  Retour
-        .main
+    .modal(role="dialog" aria-modal="true" x-show="open1Mark" :class="{ 'visible': open1Mark }")
+        button.close(@click="open1Mark = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
             h3 1ère année
             h2 Marketing &amp; Communication
             ul
@@ -154,20 +124,18 @@ article.boussole.boussole_glide.no-padding(x-data="{ open1Info: false, open1Mark
                 li Écriture pour le digital
                 li Bases du marketing digital
                 li Analyse de marché
-    .modal(x-show="open1Gest")
-        button(@click="open1Gest = false")
-            img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
-            |  Retour
-        .main
+    .modal(role="dialog" aria-modal="true" x-show="open1Gest" :class="{ 'visible': open1Gest }")
+        button.close(@click="open1Gest = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
             h3 1ère année
             h2 Gestion de projet
             ul
                 li Gestion budgétaire et finance
-    .modal(x-show="open1Cult")
-        button(@click="open1Cult = false")
-            img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
-            |  Retour
-        .main
+    .modal(role="dialog" aria-modal="true" x-show="open1Cult" :class="{ 'visible': open1Cult }")
+        button.close(@click="open1Cult = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
             h3 1ère année
             h2 Culture digitale &amp; Projet Intégration
             ul
@@ -176,11 +144,10 @@ article.boussole.boussole_glide.no-padding(x-data="{ open1Info: false, open1Mark
                 li Outils et méthodes de travail
                 li Évolution et métiers
                 li Anglais
-    .modal(x-show="open2Info")
-        button(@click="open2Info = false")
-            img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
-            |  Retour
-        .main
+    .modal(role="dialog" aria-modal="true" x-show="open2Info" :class="{ 'visible': open2Info }")
+        button.close(@click="open2Info = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
             h3 2ème année
             h2 Informatique &amp; interfaces
             ul
@@ -190,11 +157,10 @@ article.boussole.boussole_glide.no-padding(x-data="{ open1Info: false, open1Mark
                 li Infrastructure de données
                 li Web des données
                 li Développement de produit média
-    .modal(x-show="open2Mark")
-        button(@click="open2Mark = false")
-            img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
-            |  Retour
-        .main
+    .modal(role="dialog" aria-modal="true" x-show="open2Mark" :class="{ 'visible': open2Mark }")
+        button.close(@click="open2Mark = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
             h3 2ème année
             h2 Marketing &amp; Communication
             ul
@@ -203,21 +169,19 @@ article.boussole.boussole_glide.no-padding(x-data="{ open1Info: false, open1Mark
                 li Conception UX - Bases
                 li E-commerce
                 li Vendre un projet média
-    .modal(x-show="open2Gest")
-        button(@click="open2Gest = false")
-            img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
-            |  Retour
-        .main
+    .modal(role="dialog" aria-modal="true" x-show="open2Gest" :class="{ 'visible': open2Gest }")
+        button.close(@click="open2Gest = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
             h3 2ème année
             h2 Gestion de projet
             ul
                 li Gestion de projet
                 li Business models
-    .modal(x-show="open2Cult")
-        button(@click="open2Cult = false")
-            img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
-            |  Retour
-        .main
+    .modal(role="dialog" aria-modal="true" x-show="open2Cult" :class="{ 'visible': open2Cult }")
+        button.close(@click="open2Cult = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
             h3 2ème année
             h2 Culture digitale &amp; Projet Intégration
             ul
@@ -226,11 +190,10 @@ article.boussole.boussole_glide.no-padding(x-data="{ open1Info: false, open1Mark
                 li Méthodologie de recherche
                 li Veille sociétale
                 li Projet d’intégration
-    .modal(x-show="open3Info")
-        button(@click="open3Info = false")
-            img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
-            |  Retour
-        .main
+    .modal(role="dialog" aria-modal="true" x-show="open3Info" :class="{ 'visible': open3Info }")
+        button.close(@click="open3Info = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
             h3 3ème année
             h2 Informatique &amp; interfaces
             ul
@@ -238,32 +201,29 @@ article.boussole.boussole_glide.no-padding(x-data="{ open1Info: false, open1Mark
                 li Développement mobile
                 li Programmation VR
                 li Marketing Tech
-    .modal(x-show="open3Mark")
-        button(@click="open3Mark = false")
-            img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
-            |  Retour
-        .main
+    .modal(role="dialog" aria-modal="true" x-show="open3Mark" :class="{ 'visible': open3Mark }")
+        button.close(@click="open3Mark = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
             h3 3ème année
             h2 Marketing &amp; Communication
             ul
                 li Laboratoire tests UX
                 li Conception UX - Avancé
                 li Evaluation de produits média
-    .modal(x-show="open3Gest")
-        button(@click="open3Gest = false")
-            img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
-            |  Retour
-        .main
+    .modal(role="dialog" aria-modal="true" x-show="open3Gest" :class="{ 'visible': open3Gest }")
+        button.close(@click="open3Gest = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
             h3 3ème année
             h2 Gestion de projet
             ul
                 li Business plan &amp; startup
                 li Introduction à la systémique
-    .modal(x-show="open3Cult")
-        button(@click="open3Cult = false")
-            img(src="assets/images/Icon_GoBack.svg" alt="" role="presentation")
-            |  Retour
-        .main
+    .modal(role="dialog" aria-modal="true" x-show="open3Cult" :class="{ 'visible': open3Cult }")
+        button.close(@click="open3Cult = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
             h3 3ème année
             h2 Culture digitale &amp; Projet Intégration
             ul

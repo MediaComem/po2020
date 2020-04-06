@@ -1,0 +1,20 @@
+// To prevent glitch
+
+.modal {
+    visibility:hidden;
+}
+
+// 01. Settings
+@import '01-settings/settings.spacing';
+@import '01-settings/settings.colors';
+
+// 04. Elements
+@import '04-elements/elements.all';
+@import '04-elements/elements.body';
+@import '04-elements/elements.html';
+
+// 05. Objects
+@import '05-objects/_objects.screen.1_cover';
+
+// 06. Components
+@import '06-components/components.coverBackground';

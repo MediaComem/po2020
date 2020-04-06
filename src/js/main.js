@@ -9,7 +9,7 @@ var deviensIm = new Glide('.deviensIm_glide',{
 var boussole = new Glide('.boussole_glide',{
     gap: 0,
     breakpoints:{
-        767: {
+        1023: {
             perView: 1
         },
         5000: {
