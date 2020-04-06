@@ -22,16 +22,6 @@ boussole.mount({ Breakpoints, Controls, Swipe });
 deviensIm.mount({ Controls, Autoplay, Swipe });
 
 
-
-screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
-
-if (screen.lockOrientationUniversal("portrait")) {
-    console.log("Orientation was locked");
-} else {
-    console.log("Orientation lock failed");
-}
-
-
 /* Form from Formspree */
 
 window.addEventListener("DOMContentLoaded", function () {
