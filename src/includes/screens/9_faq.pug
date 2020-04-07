@@ -12,7 +12,7 @@ article.faq(x-data=`{ ${listQuestionNameJoined},openNewQuestion:false }`)
         each question, i in questions
             button.question(@click=`openQ${i} = true`) !{question.title_short}
         button.question.newquestion(@click="openNewQuestion = true") Pose-nous tes questions
-    |    <img class="objets2Background" loading="lazy"  sizes="(max-width: 768) 65vh, (min-width: 769) 120vh, 100vw"
+    |    <img class="objets2Background" sizes="(max-width: 768) 65vh, (min-width: 769) 120vh, 100vw"
     |    srcset="assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_200.jpg 200w,
     |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_418.jpg 418w,
     |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_588.jpg 588w,
