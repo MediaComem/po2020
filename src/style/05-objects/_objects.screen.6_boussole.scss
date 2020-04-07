@@ -4,11 +4,17 @@ article.boussole {
     .glide__slides,
     .glide__slide,
     article {
-        height: 100% !important;
+        height: 70vh !important;
         margin: 0;
     }
 
-
+    p strong {
+        margin-top: 3rem;
+        color: var(--heig-red); ;
+    }
+    h2 {
+        margin-bottom: 2rem;
+    }
 
     .axes {
         min-height: 0;
@@ -28,22 +34,17 @@ article.boussole {
         grid-template-rows: repeat(4, minmax(50px, 90px));
         grid-template-columns: 40px auto;
         margin-top: 0.5rem;
-        font-size: 1.1rem;
     }
 
     .axe,
     .empty {
-        border-top: 1px solid var(--heig-red);
+        border-top: 4px solid #fff;
+        background: var(--heig-red);
     }
 
     .axe:nth-of-type(1),
     .empty:nth-of-type(1) {
-        border-top-width: 2px;
-    }
-
-    .axe:nth-of-type(4),
-    .empty:nth-of-type(4) {
-        border-bottom: 2px solid var(--heig-red);
+        border-top-width: 0px;
     }
 
     .axe button {
@@ -51,7 +52,7 @@ article.boussole {
         width: 100%;
         margin: 0;
         padding: 0 15px;
-        color: var(--heig-red);
+        color: #fff;
         align-items: center;
         text-align: left;
         display: flex;
@@ -66,6 +67,7 @@ article.boussole {
 
         img {
             flex-basis: 40px;
+            margin-right: 20px;
         }
     }
 
@@ -78,7 +80,6 @@ article.boussole {
         text-orientation: initial;
         color: var(--main-burgundy);
         font-weight: 700;
-        font-size: 1.4rem;
         margin: 0;
         padding: 5px;
         width: 100%;
@@ -87,9 +88,8 @@ article.boussole {
         place-items: center;
     }
 
-    .axes>p {
-        background: var(--heig-red);
-        color: #fff;
+    .axes>p:nth-of-type(1) {
+        border-right: 2px solid var(--heig-red);
     }
 
     .axes button:focus {
@@ -98,7 +98,6 @@ article.boussole {
 
     .axes h4 {
         color: #fff;
-        font-size: 2rem;
         background: var(--main-burgundy);
     }
 
@@ -151,11 +150,6 @@ article.boussole {
     .troisiemeannee .arrow {
         height: 100%;
     }
-
-    .troisiemeannee .empty {
-        border-image: linear-gradient(90deg, var(--heig-red) 0%, #fff 70%) 1 / 1 / 0 stretch;
-    }
-
 
     .telechargeplan {
         margin-top: auto;

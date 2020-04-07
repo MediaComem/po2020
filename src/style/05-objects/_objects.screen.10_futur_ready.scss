@@ -1,12 +1,7 @@
 article.futurReady {
-
-    .mainWrapper {
-        margin-top: auto;
-
-    }
-
+    text-align: center;
     h2 {
-        font-size: 3.5rem;
+        margin-top: 7rem;
     }
 
     p {
@@ -19,6 +14,9 @@ article.futurReady {
         margin: 0.5rem 0;
     }
 
+    .twoCol {
+        justify-content: center;
+    }
     .twoCol p:first-child{
         margin-right:4rem;
     }
@@ -29,6 +27,7 @@ article.futurReady {
         display: flex;
         width: 100%;
         align-items: center;
+        justify-content: center;
 
         li:not(:last-child) {
             margin-right: 4rem;

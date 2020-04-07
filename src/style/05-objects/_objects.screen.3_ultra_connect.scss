@@ -1,25 +1,15 @@
 article.ultraConnect {
     h2 {
-        margin-top: 44vh;
-
-        span {
-            display: block;
-            font-size: 2.7rem;
-            margin-bottom: 0.8rem;
-        }
-
-        margin-bottom: 2rem;
+        margin-top: 7rem;
+        margin-bottom: 3rem;
     }
 
     p {
-        font-size: 1.05rem;
-
-        // line-height: 98.3%; -- This is weird
-        strong {
-            color: var(--heig-red);
-        }
+        line-height: 150%;
     }
-
+    h3.encart {
+        margin-top: auto;
+    }
 
     @media only screen and (min-width: 768px) {
         p {
