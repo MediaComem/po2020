@@ -1,0 +1,51 @@
+- const questions = JSON.parse(readFileSync("./src/includes/screens/faq.json", "utf-8"));
+
+- let listQuestionName = []
+- for(let i = 0; i < questions.length; i++)
+    - listQuestionName.push(`openQ${i}:false`)
+- let listQuestionNameJoined = listQuestionName.join(",")
+
+article.faq#faq(x-data=`{ ${listQuestionNameJoined},openNewQuestion:false }`)
+    .mainWrapper
+        h2 FAQ
+    .questions
+        each question, i in questions
+            button.question(@click=`openQ${i} = true`) !{question.title_short}
+        button.question.newquestion(@click="openNewQuestion = true") Pose-nous 
+            strong tes questions
+    |    <img class="objets2Background" sizes="(max-width: 768) 65vh, (min-width: 769) 120vh, 100vw"
+    |    srcset="assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_200.jpg 200w,
+    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_418.jpg 418w,
+    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_588.jpg 588w,
+    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_727.jpg 727w,
+    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_863.jpg 863w,
+    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_979.jpg 979w,
+    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_1090.jpg 1090w,
+    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_1209.jpg 1209w,
+    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_1313.jpg 1313w,
+    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_1398.jpg 1398w,
+    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_1400.jpg 1400w"
+    |    src="assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_1400.jpg"
+    |    alt="" role="presentation">
+
+    each question, i in questions
+        .modal(role="dialog" aria-modal="true" x-show=`openQ${i}` :class=`{ 'visible': openQ${i} }`)
+            button.close(aria-label="Fermer" @click=`openQ${i} = false`)
+                img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            .mainWrapper
+                h3 !{question.title_long}
+                | !{question.content}
+    .modal.modal__newquestion(role="dialog" aria-modal="true" x-show="openNewQuestion" :class="{ 'visible': openNewQuestion }")
+        button.close(aria-label="Fermer" @click="openNewQuestion = false")
+            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+        .mainWrapper
+            h3 Pose-nous
+                br
+                | tes questions&nbsp;:
+            form#newquestion(action='https://formspree.io/xyydgeyo' method='POST')
+                label(for="form_email") Email
+                input#form_email(type='email' name='email')
+                label(for="form_message") Tes questions
+                input#form_message(type='text' name='message')
+                button#newquestion-button Go&nbsp;!
+                p#newquestion-status

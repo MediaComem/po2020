@@ -1,7 +1,7 @@
 import 'alpinejs';
 import Glide, { Breakpoints, Controls, Autoplay , Swipe } from '@glidejs/glide/dist/glide.modular.esm';
 
-var deviensim = new Glide('.deviensim_glide',{
+var deviensIm = new Glide('.deviensIm_glide',{
     autoplay: 9000,
     hoverpause:true
 });
@@ -9,7 +9,7 @@ var deviensim = new Glide('.deviensim_glide',{
 var boussole = new Glide('.boussole_glide',{
     gap: 0,
     breakpoints:{
-        767: {
+        1023: {
             perView: 1
         },
         5000: {
@@ -19,17 +19,7 @@ var boussole = new Glide('.boussole_glide',{
 });
 
 boussole.mount({ Breakpoints, Controls, Swipe });
-deviensim.mount({ Controls, Autoplay, Swipe });
-
-
-
-screen.lockOrientationUniversal = screen.lockOrientation || screen.mozLockOrientation || screen.msLockOrientation;
-
-if (screen.lockOrientationUniversal("portrait")) {
-    console.log("Orientation was locked");
-} else {
-    console.log("Orientation lock failed");
-}
+deviensIm.mount({ Controls, Autoplay, Swipe });
 
 
 /* Form from Formspree */

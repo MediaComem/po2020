@@ -1,0 +1,63 @@
+article.deviensIm{
+
+    >.mainWrapper {
+        &.encart {
+            margin-bottom: auto;
+        }
+        p strong {
+            font-weight: 700;
+        }
+
+        p:nth-of-type(1) strong {
+            color: var(--heig-red);
+        }
+
+        p:nth-of-type(2) strong {
+            color: var(--main-burgundy);
+        }
+    }
+
+    .telechargebrochure {
+        margin-top: auto;
+        margin-bottom: 2rem;
+        align-self: flex-end;
+
+        a {
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: #000;
+            text-decoration: none;
+
+            span {
+                color: var(--heig-red);
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .mainWrapper{
+            &.encart {
+                text-align: center;
+            }
+        }
+
+        >.mainWrapper{
+            p:nth-of-type(1) br{
+                display:none;
+            }
+        }
+        h3 {
+            
+        }
+    }
+
+    .deviensIm_glide {
+        margin-top:1vh;
+        #apprends {
+            color: var(--main-burgundy);;
+            margin-top: 1rem;
+            margin-bottom: 0.4rem;
+        }
+    }
+}

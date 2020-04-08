@@ -1,0 +1,20 @@
+.encart {
+    background: var(--heig-red);
+    margin-bottom: 0;
+    padding: 3rem ($main-padding-left) 3rem ($main-padding-left);
+    box-sizing: border-box;
+    color: #fff !important;
+
+    strong {
+        color: #fff !important;
+    }
+}
+
+p.encart {
+    font-size: 1.3rem;
+    width: 100vw - $main-padding-left;
+}
+
+@media only screen and (min-width: 768px) {
+
+}

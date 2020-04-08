@@ -1,0 +1,56 @@
+article.schemaCompetences {
+
+    .mainWrapper:nth-of-type(1) {
+        margin-top: 7rem
+    }
+
+    .decouvreprofil {
+        margin: 2rem 0 1.5rem 0;
+        align-self: flex-end;
+        font-weight: 700;
+        font-size: 1.1rem;
+
+        a{
+            display:flex;
+            align-content: center;
+            img{
+                padding-left:15px;
+            }
+        }
+    }
+
+    p {
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    svg {
+        width: 100%;
+        /* Fix for Apple */
+        margin: auto 0;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .mainWrapper {
+            text-align: center;
+            padding: 0 12vh
+        }
+        h2, p {
+            max-width: 25rem;
+            margin: auto;
+        }
+
+        p {
+            margin-top: 1rem;
+        }
+
+        br {
+            display: none;
+        }
+
+        svg {
+            margin-top: 2rem;
+            max-width: 18rem;
+        }
+    }
+}

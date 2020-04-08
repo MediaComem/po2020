@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="13" height="27" viewBox="0 0 13 27" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g id="Canvas" transform="translate(-5852 -6891)">
-    <use xlink:href="#path0_fill" transform="translate(5852 6891)" fill="#630b00" id="Facebook"/>
+    <use xlink:href="#path0_fill" transform="translate(5852 6891)" fill="#E2051C" id="Facebook"/>
   </g>
   <defs>
     <path id="path0_fill" d="M12.514 8.635H8.253V5.857c0-1.03.691-1.283 1.187-1.283h3.007V0h-4.15c-4.6 0-5.645 3.432-5.645 5.603v3.055H0v4.722h2.66v13.358h5.594V13.38h3.776l.485-4.745z"/>

@@ -1,0 +1,50 @@
+article.ecole {
+
+    .mainWrapper {
+        position: absolute;
+        top: 40vh;
+        z-index: 1;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    p.yverdon {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        display: flex;
+        color: var(--heig-red);
+
+        img {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .carte {
+        position: absolute;
+        top: -40vh;
+        transform: translateY(50%);
+        left: 35vw;
+        width: 80vh;
+    }
+
+    @media only screen and (min-width: 768px) {
+        h2 {
+            margin-top: 0;
+        }
+
+        .mainWrapper {
+            position:relative;
+            top:initial;
+            margin: auto 0;
+            max-width:20rem; // Necessary to let place for the map interactivity
+        }
+
+        .carte {
+            top: -75vh;
+            width:150vh;
+            left:50vw;
+        }
+    }
+}

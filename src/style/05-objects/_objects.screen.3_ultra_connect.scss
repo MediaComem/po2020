@@ -1,0 +1,26 @@
+article.ultraConnect {
+    h2 {
+        margin-top: 7rem;
+        margin-bottom: 3rem;
+    }
+
+    p {
+        line-height: 150%;
+    }
+    h3.encart {
+        margin-top: auto;
+    }
+
+    @media only screen and (min-width: 768px) {
+        p {
+            margin: 2rem 0 3rem 0;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+        h3 {
+            text-align: center;
+        }
+    }
+}

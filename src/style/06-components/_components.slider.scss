@@ -1,51 +1,48 @@
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
-.deviensim .glide {
+.glide,
+.glide__slides,
+.glide__bullets {
     margin: 0;
-    margin-bottom: auto;
 }
 
-.deviensim .glide__slides {
-    margin-top: 0;
+.glide__bullets {
+    padding-left: $main-padding-left;
 }
 
-.deviensim .glide__bullets {
-    text-align: center;
-    margin-top: 0;
+.glide__bullet {
+    background-color: rgba(var(--heig-red-rgb), 0.3);
+    width: 2px;
+    height: 2px;
+    padding: 0;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    line-height: 0;
+    margin: 0 .75rem;
 
-    @media only screen and (min-width: 768px) {
-        margin-top: 0;
+    &:focus {
+        outline: none;
     }
 }
 
-.deviensim {
-    .glide__bullet {
-        background-color: rgba(var(--heig-red-rgb), 0.3);
-        width: 13px;
-        height: 13px;
-        padding: 0;
-        border-radius: 50%;
-        border: 2px solid transparent;
-        transition: all .3s ease-in-out;
-        cursor: pointer;
-        line-height: 0;
-        margin: 0 .25em;
+.glide__bullet:first-child {
+    margin-left: 0;
+}
 
-        &:focus {
-            outline: none;
-        }
-    }
+.glide__bullet+.glide__bullet {
+    margin-left: 1rem;
+}
 
-    .glide__bullet+.glide__bullet {
-        margin-left: 1rem;
-    }
+.glide__bullet[class*="active"] {
+    position: relative;
+    background-color: var(--heig-red);
+    box-shadow: 0 0 0 8px #fff, 0 0 0 10px var(--heig-red);
 
-    .glide__bullet[class*="active"] {
-        background-color: var(--heig-red);
-    }
+}
 
-    .glide__bullet:hover {
-        border: 2px solid var(--heig-red);
-        background-color: hsla(0, 0%, 100%, .5);
-    }
+.glide__bullet:hover {
+    border: 3px solid var(--heig-red);
+    background-color: var(--heig-red);
 }
