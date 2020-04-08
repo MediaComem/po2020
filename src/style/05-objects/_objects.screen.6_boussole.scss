@@ -71,11 +71,12 @@ article.boussole {
     .iconPlus {
         flex-basis: 40px;
         width: 40px;
+        height:40px;
         margin-right: 20px;
 
-        &:hover use{
-            --cross-color:var(--heig-red);
-            --circle-color:#fff;
+        &:hover use {
+            --cross-color: var(--heig-red);
+            --circle-color: #fff;
         }
     }
 
@@ -166,7 +167,7 @@ article.boussole {
 
         a {
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #000;
             text-decoration: none;
 
@@ -179,17 +180,12 @@ article.boussole {
 
     @media only screen and (min-width: 600px) {
 
-
         h3 {
             font-size: 1.4rem;
         }
 
-        .axes p {
-            font-size: 1rem;
-        }
-
         .axes h4 {
-            font-size: 1.2rem;
+            font-size: 0.9rem;
         }
     }
 
@@ -215,7 +211,7 @@ article.boussole {
 
         article .mainWrapper {
             padding: 0;
-            margin-top: 5rem;
+            margin-top: 3.5rem;
         }
 
         h2,
@@ -227,6 +223,10 @@ article.boussole {
             padding: 0;
         }
 
+        article p {
+            margin-bottom: 0.3rem;
+        }
+
         .premiereannee .axe button,
         .deuxiemeannee .axe button,
         .troisiemeannee .axe button {
@@ -235,6 +235,7 @@ article.boussole {
 
         .iconPlus {
             flex-basis: 80px;
+            width: 80px;
         }
 
         article>.mainWrapper>h2 {
@@ -248,18 +249,18 @@ article.boussole {
             width: 100vw;
         }
 
-        .axes p {
-            font-size: .9rem;
-        }
-
-
         >.mainWrapper {
             padding: 0;
         }
 
         .telechargeplan {
-            align-self: center;
+            padding: 0 5rem;
+
+            a {
+                font-size: 0.8rem;
+            }
         }
+
     }
 
     @media only screen and (min-width: 1400px) {

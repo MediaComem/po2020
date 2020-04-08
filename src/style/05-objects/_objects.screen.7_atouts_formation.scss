@@ -1,9 +1,14 @@
 article.atoutsFormation {
 
     .mainWrapper {
+        padding: 0;
         h2 {
             margin-top: 7rem;
             margin-bottom: 2rem;
+            padding: 0 12vw;
+        }
+        p {
+            padding: 0 12vw;
         }
     }
 
@@ -16,15 +21,16 @@ article.atoutsFormation {
 
     @media only screen and (min-width: 768px) {
 
-        .mainWrapper {
+        //Column system for it.4
+       /*  .mainWrapper {
             display: grid;
             grid-template-columns: 1fr 1fr auto;
             padding-right: 0;
             column-gap: 10vw;
             row-gap: 2rem;
-        }
+        } */
 
-        h2:nth-of-type(1) {
+        /* h2:nth-of-type(1) {
             grid-column: 1;
             grid-row: 1;
         }
@@ -46,10 +52,16 @@ article.atoutsFormation {
             padding: 1rem 6rem 1rem 2rem;
             width: 100%;
             max-width: initial;
-        }
+        } */
 
+        .encart
+        {
+            text-align: center;
+            padding: 3rem 10rem;
+        }
         br {
             display: none;
         }
+
     }
 }

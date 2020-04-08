@@ -24,7 +24,7 @@ article.deviensIm{
 
         a {
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 0.8rem;
             color: #000;
             text-decoration: none;
 
@@ -36,19 +36,19 @@ article.deviensIm{
     }
 
     @media only screen and (min-width: 768px) {
-        padding-left:40vw;
-        width:32.5rem;
-
         .mainWrapper{
-            padding-right:0;
+            &.encart {
+                text-align: center;
+            }
         }
 
-
         >.mainWrapper{
-            margin-top:auto;
             p:nth-of-type(1) br{
                 display:none;
             }
+        }
+        h3 {
+            
         }
     }
 
@@ -58,14 +58,6 @@ article.deviensIm{
             color: var(--main-burgundy);;
             margin-top: 1rem;
             margin-bottom: 0.4rem;
-        }
-
-        @media only screen and (min-width: 768px) {
-
-            p {
-                margin-top: 1rem;
-                font-size:1rem;
-            }
         }
     }
 }
