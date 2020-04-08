@@ -22,7 +22,17 @@ article.cover {
         line-height: 125%;
     }
 
+    .menuTrigger{
+        position: absolute;
+        top:4rem;
+        right:2rem;
+        img{
+            width:3rem;
+        }
+    }
+
     @media only screen and (min-width: 768px) {
+
         .logoHeigvd {
             width: 64px;
         }

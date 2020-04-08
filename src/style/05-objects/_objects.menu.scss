@@ -1,0 +1,53 @@
+.modal.modal_menu li+li {
+    margin: 0;
+}
+
+.modal_menu {
+
+    a {
+        display: inline-block;
+        height: 100%;
+        line-height: 2.8rem;
+        font-size: 1.5rem;
+    }
+
+    nav {
+        margin-top: 2rem;
+    }
+
+    a.active,
+    #inscristoi2 {
+        text-decoration: underline;
+        text-underline-offset: .3rem;
+    }
+
+    nav:hover {
+        a {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    a:hover {
+        color: #fff !important;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-top: 4rem;
+
+        span{
+            display: block;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        p span {
+            display: inline-block,
+        }
+
+        span:first-child{
+            margin-right:20rem;
+        }
+    }
+}

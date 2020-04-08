@@ -16,7 +16,7 @@ html(lang="fr")
     link(rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#e72128")
     link(rel="shortcut icon" href="assets/images/favicon/favicon.ico")
     link(rel="preconnect" href="https://www.google-analytics.com")
-  body
+  body(x-data="{ openMenu: false }")
     include includes/GTManager_NoScript.html
     include includes/screens/1_cover
     include includes/screens/2_coronavirus
@@ -28,6 +28,8 @@ html(lang="fr")
     include includes/screens/8_ecole
     include includes/screens/9_faq
     include includes/screens/10_futur_ready
+
+    include includes/screens/0_menu.pug
 
     link(rel="stylesheet" href="style/index.scss")
     script(src="js/main.js" async)
