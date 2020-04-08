@@ -6,6 +6,19 @@ article.coronavirus {
         margin-top:18rem;
     }
 
+    .later
+    {
+        opacity:0;
+        animation-name: laterdisplay;
+        animation-duration: 2s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes laterdisplay {
+        from {opacity: 0;}
+        to {opacity: 1;}
+      }
+
     @media only screen and (min-width: 768px) {
         h2 {
             // margin-top: 4rem; // Compensation to get visual vertical centering
