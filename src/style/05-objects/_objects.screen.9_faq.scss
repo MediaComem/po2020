@@ -105,29 +105,42 @@ article.faq {
 
         .mainWrapper {
             margin-top: auto;
+            padding: 0 12vw;
 
             h2 {
                 margin-top: 0;
+                text-align: center;
             }
         }
 
         .questions {
-            margin-left: $main-padding-left;
+            margin: auto;
+            margin-top: 1rem;
+            text-align: center;
         }
 
         .question {
             padding-left: 1rem;
             margin-left: 1rem;
             width: 80%;
+            font-size: 0.8rem;
+        }
+
+        .question+.question.newquestion {
+            padding: 0;
+            margin-top: 3rem;
         }
 
         .question:not(.newquestion) {
-            border-left: 2px solid var(--heig-red);
-            border-right: 2px solid var(--heig-red);
+            border: 2px solid var(--heig-red);
+        }
+        .question:not(.newquestion):hover {
+            background: none;
+            color: var(--heig-red);
         }
 
         .question+.question {
-            margin-top: 0;
+            margin-top: 0.3rem;
         }
     }
 }

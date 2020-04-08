@@ -31,12 +31,17 @@ article.schemaCompetences {
     }
 
     @media only screen and (min-width: 768px) {
-        padding-left: 30vw;
-
-
         .mainWrapper {
-            margin: auto 0;
+            text-align: center;
+            padding: 0 12vh
+        }
+        h2, p {
             max-width: 25rem;
+            margin: auto;
+        }
+
+        p {
+            margin-top: 1rem;
         }
 
         br {
@@ -45,7 +50,7 @@ article.schemaCompetences {
 
         svg {
             margin-top: 2rem;
-            max-width: 25rem;
+            max-width: 18rem;
         }
     }
 }
