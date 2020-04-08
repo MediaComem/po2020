@@ -10,8 +10,10 @@ article.boussole {
 
     p strong {
         margin-top: 3rem;
-        color: var(--heig-red); ;
+        color: var(--heig-red);
+        ;
     }
+
     h2 {
         margin-bottom: 2rem;
     }
@@ -64,10 +66,17 @@ article.boussole {
             margin: 0;
             font-weight: 700;
         }
+    }
 
-        img {
-            flex-basis: 40px;
-            margin-right: 20px;
+    .iconPlus {
+        flex-basis: 40px;
+        width: 40px;
+        height:40px;
+        margin-right: 20px;
+
+        &:hover use {
+            --cross-color: var(--heig-red);
+            --circle-color: #fff;
         }
     }
 
@@ -224,8 +233,9 @@ article.boussole {
             padding-right: 15px;
         }
 
-        .axe button img {
+        .iconPlus {
             flex-basis: 80px;
+            width: 80px;
         }
 
         article>.mainWrapper>h2 {
@@ -245,6 +255,7 @@ article.boussole {
 
         .telechargeplan {
             padding: 0 5rem;
+
             a {
                 font-size: 0.8rem;
             }
