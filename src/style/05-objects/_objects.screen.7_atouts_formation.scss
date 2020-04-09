@@ -57,11 +57,13 @@ article.atoutsFormation {
         .encart
         {
             text-align: center;
-            padding: 3rem 10rem;
+            padding: 3rem 5rem;
         }
-        br {
-            display: none;
+        .together p {
+            max-width: 30rem;
         }
-
+        .mainWrapper h2 {
+            margin-bottom: 1rem;
+        }
     }
 }

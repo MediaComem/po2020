@@ -5,7 +5,7 @@ article.futurReady {
     }
 
     p {
-        margin: 3rem 0;
+        margin: 2rem 0;
         font-weight: 700;
     }
 
@@ -14,11 +14,8 @@ article.futurReady {
         margin: 0.5rem 0;
     }
 
-    .twoCol {
-        justify-content: center;
-    }
-    .twoCol p:first-child{
-        margin-right:4rem;
+    p a#inscristoi {
+        margin-top: 0;
     }
 
     .reseauxSociaux {
@@ -35,18 +32,19 @@ article.futurReady {
     }
 
     .copyright {
-        font-size: 1.1rem;
         font-weight: 400;
-        margin-top: 8rem;
-        margin-bottom: 2rem;
+        margin-top: 7rem;
+        margin-bottom: 1rem;
+    }
+
+    .logoHeigvd {
+        width: 200px;
     }
 
     @media only screen and (min-width: 768px) {
         .reseauxSociaux img{
-            width:40px;
-            &[alt=Facebook]{
-                width:20px;
-            }
+            width:30px;
+            max-height: 25px;
         }
         .mainWrapper{
             margin-bottom:auto;
@@ -57,7 +55,7 @@ article.futurReady {
         }
         .copyright{
             font-size:0.7rem;
-            margin-top:4rem;
+            margin-top:2rem;
         }
 
         .main {
