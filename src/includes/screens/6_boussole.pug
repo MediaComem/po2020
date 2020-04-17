@@ -16,7 +16,7 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                         h2#uneformation(aria-labelledby="uneformation en troisans") Une formation…
                         p
                             strong 1ère année
-                        p Apprends les bases
+                        p Apprendre les bases
                             br
                             |  de chaque discipline
                     .axes
@@ -117,7 +117,7 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
         button.glide__bullet(data-glide-dir='=1' aria-label="Deuxième année")
         button.glide__bullet(data-glide-dir='=2' aria-label="Troisièmre année")
     .mainWrapper.telechargeplan
-        a#plandownload(href="assets/pdf/ingenieriemedias_apercu_cours2020.pdf") Télécharge&nbsp;
+        a#plandownload(href="assets/pdf/ingenieriemedias_apercu_cours2020.pdf") Téléchargez&nbsp;
             span le plan de cours
     .modal(role="dialog" aria-modal="true" x-show="open1Info" :class="{ 'visible': open1Info }")
         button.close(@click="open1Info = false")
