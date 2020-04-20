@@ -21,15 +21,13 @@ article.schemaCompetences {
 
     p {
         margin-top: 1rem;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
 
-    svg {
+    img {
         width: 100%;
-        /* Fix for Apple */
-        margin: auto 0;
+        filter: contrast(105%);
     }
-
     @media only screen and (min-width: 768px) {
         .mainWrapper {
             text-align: center;
@@ -48,9 +46,8 @@ article.schemaCompetences {
             display: none;
         }
 
-        svg {
-            margin-top: 2rem;
-            max-width: 18rem;
+        img {
+            width: 60vh;
         }
     }
 }

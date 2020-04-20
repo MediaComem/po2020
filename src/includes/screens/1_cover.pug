@@ -1,15 +1,16 @@
 
 article.cover#home
     .coverBackground(aria-hidden="true")
-    img.logoHeigvd(src="assets/images/Logo_HEIG-VD_Etiquette_RVB_Rouge.svg" alt="Logo HEIG-VD: Haute Ecole d'Ingénierie et de Gestion du Canton de Vaud")
+    a#heig(href='https://heig-vd.ch/' rel='noopener noreferrer' target='_blank')
+        img.logoHeigvd(src="assets/images/Logo_HEIG-VD_Etiquette_RVB_Rouge.svg" alt="Logo HEIG-VD: Haute Ecole d'Ingénierie et de Gestion du Canton de Vaud")
     button.menuTrigger(aria-label="Ouvrir le menu rapide" @click="openMenu = true")
         img(src="assets/images/Icon_Menu.svg" alt="" role="presentation")
     .mainWrapper
-        h1 Deviens acteur·trice
+        h1 Devenez acteur·trice
             br
             |  de la transition numérique
         p La formation HES
             br
-            |
-            strong  que tu n’es pas prêt·e d’oublier
-    .icon-scroll
+            | que vous n’êtes pas prêt·e·s d’oublier
+    #icon-scroll
+        span.arrow-down

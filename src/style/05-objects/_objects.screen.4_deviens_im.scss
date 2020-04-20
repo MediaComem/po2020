@@ -2,23 +2,15 @@ article.deviensIm{
 
     >.mainWrapper {
         &.encart {
-            margin-bottom: auto;
+            margin-bottom: 1rem;
         }
-        p strong {
-            font-weight: 700;
-        }
-
-        p:nth-of-type(1) strong {
-            color: var(--heig-red);
-        }
-
-        p:nth-of-type(2) strong {
-            color: var(--main-burgundy);
-        }
+      h3 {
+          color: #fff;
+      }
     }
 
     .telechargebrochure {
-        margin-top: auto;
+        margin-top: 2rem;
         margin-bottom: 2rem;
         align-self: flex-end;
 
