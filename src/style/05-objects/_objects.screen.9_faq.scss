@@ -109,11 +109,11 @@ article.faq {
     @media only screen and (min-width: 768px) {
 
         .mainWrapper {
-            margin-top: auto;
+            margin-top: 0;
             padding: 0 12vw;
 
             h2 {
-                margin-top: 0;
+                margin-top: 2rem;
                 text-align: center;
             }
         }
