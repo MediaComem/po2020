@@ -5,16 +5,19 @@ article.schemaCompetences {
     }
 
     .decouvreprofil {
-        margin: 2rem 0 1.5rem 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         align-self: flex-end;
-        font-weight: 700;
-        font-size: 1.1rem;
+        max-width: 60%;
 
         a{
-            display:flex;
-            align-content: center;
-            img{
-                padding-left:15px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #000;
+            text-decoration: none;
+            span {
+                color: var(--heig-red);
+                text-decoration: underline;
             }
         }
     }
@@ -48,6 +51,13 @@ article.schemaCompetences {
 
         img {
             width: 60vh;
+        }
+        .decouvreprofil {
+            padding: 0 5rem;
+
+            a {
+                font-size: 0.8rem;
+            }
         }
     }
 }
