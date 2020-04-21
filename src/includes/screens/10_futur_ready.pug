@@ -13,13 +13,13 @@ article.futurReady#futurReady
         ul.reseauxsociaux
             li
                 a#facebook(href='https://www.facebook.com/ingenierie.media/' rel='noopener noreferrer' target='_blank')
-                    img(alt='Facebook' src="assets/images/Icon_Facebook.svg")
+                    include ../../assets/images/Icon_Facebook.svg
             li
                 a#instagram(href='https://www.instagram.com/ingenierie.media/' rel='noopener noreferrer' target='_blank')
-                    img(alt='Instagram' src="assets/images/Icon_Instagram.svg" width='25')
+                    include ../../assets/images/Icon_Instagram.svg
             li
                 a#youtube(href='https://www.youtube.com/channel/UCqs-odXr4ZkntlXSHJiDfUA/' rel='noopener noreferrer' target='_blank')
-                    img(alt='Youtube' src="assets/images/Icon_Youtube.svg")
+                    include ../../assets/images/Icon_Youtube.svg
         a#admissions(href='https://heig-vd.ch/formations/bachelor/filieres' rel='noopener noreferrer' target='_blank')
             img.logoHeigvd(src="assets/images/HEIG-VD_logo_complet.svg" alt="Logo HEIG-VD: Haute Ecole d'Ingénierie et de Gestion du Canton de Vaud")
     .footer
@@ -27,27 +27,34 @@ article.futurReady#futurReady
             ul.ressources
                 h3 Ressources
                 li
-                    span
-                        img.submit(src="assets/images/Icon_compose.svg" alt="icon submit")
-                    a#inscription(href='https://heig-vd.ch/formations/bachelor/admission' rel='noopener noreferrer' target='_blank') Insription
+                    a#inscription(href='https://heig-vd.ch/formations/bachelor/admission' rel='noopener noreferrer' target='_blank')
+                        span
+                        include ../../assets/images/Icon_compose.svg
+                        | Inscription
                 li
-                    a#filieres(href='https://heig-vd.ch/formations/bachelor/filieres' rel='noopener noreferrer' target='_blank') Filières HES
+                    a#filieres(href='https://heig-vd.ch/formations/bachelor/filieres' rel='noopener noreferrer' target='_blank')
+                        span
+                            include ../../assets/images/Icon_shuffle.svg
+                        | Filières HES
                 li
-                    a#vivreyverdon(href='https://heig-vd.ch/campus/vivre-et-etudier-yverdon' rel='noopener noreferrer' target='_blank') Vivre et étudier à Yverdon
+                    a#vivreyverdon(href='https://heig-vd.ch/campus/vivre-et-etudier-yverdon' rel='noopener noreferrer' target='_blank')
+                        span
+                            include ../../assets/images/Icon_information.svg
+                        | Vivre et étudier à Yverdon
             ul.social
                 h3 Social
                 li
-                    a#facebook(href='https://www.facebook.com/HEIGVD' rel='noopener noreferrer' target='_blank')
-                        img(alt='Facebook' src="assets/images/Icon_Facebook.svg")
+                    a#fbheig(href='https://www.facebook.com/HEIGVD' rel='noopener noreferrer' target='_blank')
+                        include ../../assets/images/Icon_Facebook.svg
                 li
                     a#linkedin(href='https://www.linkedin.com/edu/school?id=154032' rel='noopener noreferrer' target='_blank')
-                        img(alt='Instagram' src="assets/images/Icon_Linkedin.svg" width='25')
+                        include ../../assets/images/Icon_Linkedin.svg
                 li
                     a#twitter(href='https://twitter.com/heigvd' rel='noopener noreferrer' target='_blank')
-                        img(alt='Instagram' src="assets/images/Icon_Twitter.svg" width='25')
+                        include ../../assets/images/Icon_Twitter.svg
                 li
-                    a#youtube(href='https://www.youtube.com/user/HEIGVD' rel='noopener noreferrer' target='_blank')
-                        img(alt='Youtube' src="assets/images/Icon_Youtube.svg")
+                    a#ytheig(href='https://www.youtube.com/user/HEIGVD' rel='noopener noreferrer' target='_blank')
+                        include ../../assets/images/Icon_Youtube.svg
             ul.hes
                 li
                     a#hes(href='https://www.hes-so.ch/' rel='noopener noreferrer' target='_blank')

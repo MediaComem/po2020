@@ -27,6 +27,13 @@ article.futurReady {
         width: 100%;
         align-items: center;
         justify-content: center;
+        svg {
+            width: 25px;
+            fill: var(--heig-red);
+            &:hover {
+                fill: var(--main-burgundy);
+            }
+        }
 
         li:not(:last-child) {
             margin-right: 4rem;
@@ -62,6 +69,9 @@ article.futurReady {
                 line-height: 1rem;
                 &:hover {
                     color: var(--heig-red);
+                    svg {
+                        fill: var(--heig-red);
+                    }
                 }
             }
         }
@@ -72,6 +82,12 @@ article.futurReady {
             margin:0 0 0.5rem 0;
             color: #fff;
         }
+        .ressources li svg {
+            height: 20px;
+            max-width:20px;
+            margin-right: 0.3rem;
+            fill: #fff;
+        }
         .social li, .hes li{
             display: inline-block;
             margin: 0 15px 0 0;
@@ -79,7 +95,8 @@ article.futurReady {
         .hes {
             display: none;
         }
-        .social li img {
+        .social li svg {
+            fill: #fff;
             height: 15px;
             max-width: 15px;
         }
