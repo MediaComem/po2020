@@ -11,9 +11,9 @@ article.faq#faq(x-data=`{ ${listQuestionNameJoined},openNewQuestion:false }`)
     .questions
         each question, i in questions
             button.question(@click=`openQ${i} = true`) !{question.title_short}
-        button.question.newquestion(@click="openNewQuestion = true") Posez-nous 
+        button.question.newquestion(@click="openNewQuestion = true") Posez-nous
             strong vos questions
-    |    <img class="objets2Background" sizes="(max-width: 768) 65vh, (min-width: 769) 120vh, 100vw"
+    |    <img class="objects2Background" sizes="(max-width: 768) 65vh, (min-width: 769) 120vh, 100vw"
     |    srcset="assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_200.jpg 200w,
     |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_418.jpg 418w,
     |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_588.jpg 588w,
@@ -31,13 +31,13 @@ article.faq#faq(x-data=`{ ${listQuestionNameJoined},openNewQuestion:false }`)
     each question, i in questions
         .modal(@click=`openQ${i} = false` role="dialog" aria-modal="true" x-show=`openQ${i}` :class=`{ 'visible': openQ${i} }`)
             button.close(aria-label="Fermer" @click=`openQ${i} = false`)
-                img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+                img(src="assets/images/Icon_Close.svg" loading="lazy" alt="" role="presentation")
             .mainWrapper
                 h3 !{question.title_long}
                 | !{question.content}
     .modal.modal__newquestion(role="dialog" aria-modal="true" x-show="openNewQuestion" :class="{ 'visible': openNewQuestion }")
         button.close(aria-label="Fermer" @click="openNewQuestion = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            img(src="assets/images/Icon_Close.svg" loading="lazy" alt="" role="presentation")
         .mainWrapper
             h3 Posez-nous
                 br
