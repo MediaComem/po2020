@@ -1,6 +1,6 @@
-.laptopVolant,
-.objectsBackground,
-.objects2Background {
+.backgroundLaptopFlying,
+.backgroundObjects,
+.backgroundObjects2 {
     position: absolute;
     top: 100%;
     transform: translateY(-50%);
@@ -11,17 +11,17 @@
     opacity:.5;
 }
 
-.objectsBackground,
-.objects2Background {
+.backgroundObjects,
+.backgroundObjects2 {
     transform: translateY(-45%);
     width: 65vh;
 }
 
 @media only screen and (min-width: 768px) {
 
-    .laptopVolant,
-    .objectsBackground,
-    .objects2Background {
+    .backgroundLaptopFlying,
+    .backgroundObjects,
+    .backgroundObjects2 {
         transform: translateY(-35%);
         width: 120vh;
         min-width: initial;
@@ -29,7 +29,7 @@
         left: 30vh;
     }
 
-    .objectsBackground {
+    .backgroundObjects {
         left: -30vh;
         transform: translateY(-60%);
         padding-left: 0;
