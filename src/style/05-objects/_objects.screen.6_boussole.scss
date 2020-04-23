@@ -11,7 +11,6 @@ article.boussole {
     p strong {
         margin-top: 3rem;
         color: var(--heig-red);
-        ;
     }
 
     h2 {
@@ -97,6 +96,11 @@ article.boussole {
         place-items: center;
     }
 
+    .axes>p button{
+        font-weight: 700;
+        height:100%;
+    }
+
     .axes>p:nth-of-type(1) {
         border-right: 2px solid var(--heig-red);
     }
@@ -106,8 +110,15 @@ article.boussole {
     }
 
     .axes h4 {
-        color: #fff;
         background: var(--main-burgundy);
+        padding:0;
+
+        button{
+            color: #fff;
+            font-weight:inherit;
+            height:100%;
+            width:100%;
+        }
     }
 
     .boussole_title--desktop-only {

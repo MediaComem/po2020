@@ -11,7 +11,7 @@ article.faq#faq(x-data=`{ ${listQuestionNameJoined},openNewQuestion:false }`)
     .questions
         each question, i in questions
             button.question(@click=`openQ${i} = true`) !{question.title_short}
-        button.question.newquestion(@click="openNewQuestion = true") Posez-nous
+        button.question.newquestion(@click="openNewQuestion = true") Posez-nous&nbsp;
             strong vos questions
     |    <img class="backgroundObjects2" sizes="(max-width: 768) 65vh, (min-width: 769) 120vh, 100vw"
     |    srcset="assets/images/ObjectsFlying2/Objects_flying2_fz5v83_c_scalew_200.jpg 200w,
@@ -41,7 +41,7 @@ article.faq#faq(x-data=`{ ${listQuestionNameJoined},openNewQuestion:false }`)
         .mainWrapper
             h3 Posez-nous
                 br
-                | vos questions&nbsp;:
+                |  vos questions&nbsp;:
             form#newquestion(action='https://formspree.io/xyydgeyo' method='POST')
                 label(for="form_email") Email
                 input#form_email(type='email' name='email')
