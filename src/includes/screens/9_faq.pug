@@ -29,7 +29,7 @@ article.faq#faq(x-data=`{ ${listQuestionNameJoined},openNewQuestion:false }`)
     |    alt="" role="presentation">
 
     each question, i in questions
-        .modal(role="dialog" aria-modal="true" x-show=`openQ${i}` :class=`{ 'visible': openQ${i} }`)
+        .modal(@click=`openQ${i} = false` role="dialog" aria-modal="true" x-show=`openQ${i}` :class=`{ 'visible': openQ${i} }`)
             button.close(aria-label="Fermer" @click=`openQ${i} = false`)
                 img(src="assets/images/Icon_Close.svg" loading="lazy" alt="" role="presentation")
             .mainWrapper
