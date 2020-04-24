@@ -10,15 +10,3 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
-
-@media (prefers-color-scheme: dark) {
-  img {
-    display: none !important;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  img {
-    display: none !important;
-  }
-}

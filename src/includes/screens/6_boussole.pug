@@ -20,8 +20,9 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                             br
                             |  de chaque discipline
                     .axes
-                        p
-                            button(@click="openACon = true") Alignement des connaissances
+                        button.projectSuper(@click="openACon = true")
+                            span Alignement des connaissances
+                            //- Workaround for chrome which doesn't support writing-mode in button
                         .axe
                             button(@click="open1Info = true")
                                 svg.iconPlus
@@ -76,8 +77,8 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                                     use(href="#icon_plus")
                                 p Culture digitale &amp; Projet Intégration
                         span.empty(aria-hidden="true")
-                        p
-                            button(@click="openInt1 = true") Projet pratique d'intégration 1
+                        button.projectSuper(@click="openInt1 = true")
+                            span Projet pratique d'intégration 1
             li.glide__slide
                 article.troisiemeannee
                     .mainWrapper
@@ -112,10 +113,10 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                                     use(href="#icon_plus")
                                 p Culture digitale &amp; Projet Intégration
                         span.empty(aria-hidden="true")
-                        p
-                            button(@click="openInt2 = true") Projet pratique d'intégration 2
-                        h4
-                            button(@click="openTB = true") Travail de Bachelor
+                        button.projectSuper(@click="openInt2 = true")
+                            span Projet pratique d'intégration 2
+                        button.projectTB(@click="openTB = true")
+                            span Travail de Bachelor
     .glide__bullets(data-glide-el='controls[nav]')
         button.glide__bullet(data-glide-dir='=0' aria-label="Première année")
         button.glide__bullet(data-glide-dir='=1' aria-label="Deuxième année")
