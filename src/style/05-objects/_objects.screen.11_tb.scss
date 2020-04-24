@@ -1,0 +1,60 @@
+.tbpage {
+    position: fixed;
+    overflow: auto;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: var(--heig-red);
+    background: #fff;
+
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+
+    &.visible {
+        visibility: visible;
+    }
+
+    p {
+        color: #000;
+    }
+    h2 {
+        margin-top: 2rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        font-size: 1.2rem;
+    }
+
+    li+li {
+        margin-top: 0.5rem;
+    }
+
+    a {
+        font-weight: 700;
+        color: var(--heig-red);
+        text-decoration: none;
+    }
+
+    .close {
+        margin-top: 3rem;
+        text-transform: uppercase;
+        align-self: flex-end;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--heig-red);
+
+        svg {
+            margin-right: 2rem;
+            stroke: var(--heig-red);
+        }
+    }
+}

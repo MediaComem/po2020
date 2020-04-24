@@ -1,1 +1,111 @@
-article.tbachelor
+.tbpage(role="dialog" aria-modal="true" x-show="openTBPage" :class="{ 'visible': openTBPage }")
+    button.close(@click="openTBPage = false")
+        include ../../assets/images/Icon_Close.svg
+    .mainWrapper
+        h2 Les travaux de Bachelor
+        p Après seulement 3 années en ingénierie des médias, nos étudiant·e·s ont réalisé des travaux de Bachelor de qualité. Découvrez-les...
+    .tbs(x-data = " { openTB1: false, openTB2: false, openTB3: false, openTB4: false, openTB5: false, openTB6: false, openTB7: false, openTB8: false } " )
+        .tb
+            button.collapsible(@click="openTB2 = !openTB2")
+                .tbdescr
+                    p.tbtitle JuniorConnect - module de mise en relation entreprises-étudiants : stratégie de communication et interface utilisateur (UX)
+                    p.tbauthor Par Joséphine Chabin
+                .iconplus(x-show="!openTB2")
+                    include ../../assets/images/Icon_Plus.svg
+                .iconplus.less(x-show="openTB2")
+                    include ../../assets/images/Icon_Less.svg
+            .tbcontent(x-show="openTB2")
+                p.tbsummary JuniorConnect souhaite proposer un espace pour les entreprises (Business to Business). Plusieurs outils visant à améliorer l’expérience utilisateur, comme les personas, les scénarios d’utilisation, les mockups et les maquettes ont été nécessaires pour développer le front-end du nouvel espace. 
+                    | Le déploiement d’une Landing Page a permis de promouvoir l’application auprès des entreprises.
+                img(src="assets/images/tb/tb6.png", alt="tb6")
+        .tb
+            button.collapsible(@click="openTB3 = !openTB3")
+                .tbdescr
+                    p.tbtitle Système de gestion des entrées du Cinéma Casino Le Locle
+                    p.tbauthor Par Maic Anthoine
+                .iconplus(x-show="!openTB3")
+                    include ../../assets/images/Icon_Plus.svg
+                .iconplus.less(x-show="openTB3")
+                    include ../../assets/images/Icon_Less.svg
+            .tbcontent(x-show="openTB3")
+                p.tbsummary Cinéma Casino Le Locle est une association qui s’occupe du «Casino», une salle de projection au Locle. Le projet a pour but de simplifier la gestion des billets du cinéma au guichet, grâce à un système d’impression des tickets et de gestion des différents types de billets et agender les différents films disponibles en séances. 
+                    | Le projet est développé sous la forme d’une application web avec la flexibilité des outils de développement web d’aujourd’hui.
+                img(src="assets/images/tb/tb8.png", alt="tb8")
+        .tb
+            button.collapsible(@click="openTB4 = !openTB4")
+                .tbdescr
+                    p.tbtitle Optimisation des examens de la Haute Ecole de santé Vaud visant à évaluer  les compétences cliniques  des étudiants
+                    p.tbauthor Par David Kostic
+                .iconplus(x-show="!openTB4")
+                    include ../../assets/images/Icon_Plus.svg
+                .iconplus.less(x-show="openTB4")
+                    include ../../assets/images/Icon_Less.svg
+            .tbcontent(x-show="openTB4")
+                p.tbsummary La HESAV (Haute Ecole de santé Vaud) propose des formations dans le domaine de la santé.
+                    |  Un outil analysé a été testé pour permettre la gestion informatisée des ECOS (Examen Clinique / Pratique à Objectif Structuré), examen visant à évaluer les compétences cliniques pour plus de 500 étudiants chaque année, afin d’en améliorer la gestion et l’organisation.
+                img(src="assets/images/tb/tb7.png", alt="tb7")
+        .tb
+            button.collapsible(@click="openTB5 = !openTB5")
+                .tbdescr
+                    p.tbtitle Étude de l’utilisabilité de l’Eyetracking d’un site web
+                    p.tbauthor Par Shadia Huggenberger
+                .iconplus(x-show="!openTB5")
+                    include ../../assets/images/Icon_Plus.svg
+                .iconplus.less(x-show="openTB5")
+                    include ../../assets/images/Icon_Less.svg
+            .tbcontent(x-show="openTB5")
+                p.tbsummary Aujourd’hui, l’eyetracking permet de mesurer les mouvements oculaires posés sur les zones les plus vues, lues ou ignorées d’une affiche, d’un site Internet, etc.
+                    |  Les informations collectées et analysées permettent de comprendre le comportement d’un sujet. Ce travail consiste à interpréter l’impact du site de la Vaudoise Assurances et ainsi optimiser son ergonomie, son design et son contenu. De plus, il s’agit de comparer l’efficacité de cet outil en se basant sur les best practice.
+                img(src="assets/images/tb/tb5.png", alt="tb5")
+        .tb
+            button.collapsible(@click="openTB6 = !openTB6")
+                .tbdescr
+                    p.tbtitle Réalisation d’un prototype fonctionnel d’une application mobile dédiée à l’utilisation de services de buanderies collectives
+                    p.tbauthor Par Arthur Verdon
+                .iconplus(x-show="!openTB6")
+                    include ../../assets/images/Icon_Plus.svg
+                .iconplus.less(x-show="openTB6")
+                    include ../../assets/images/Icon_Less.svg
+            .tbcontent(x-show="openTB6")
+                p.tbsummary Un prototype fonctionnel d’une application de paiement et de gestion digitalisée de buanderies collectives a été réalisé.
+                    |  La faisabilité de l’inscription par code QR et de connexion par NFC a également été démontrée grâce à ce travail. Le prototype a été développé à l’aide des technologies éprouvées et populaires que sont Ionic, Angular et Cordova.
+                img(src="assets/images/tb/tb12.png", alt="tb12")
+        .tb
+            button.collapsible(@click="openTB7 = !openTB7")
+                .tbdescr
+                    p.tbtitle Système de vidéos cliquables - « Klik »
+                    p.tbauthor Par Matthieu Harbich
+                .iconplus(x-show="!openTB7")
+                    include ../../assets/images/Icon_Plus.svg
+                .iconplus.less(x-show="openTB7")
+                    include ../../assets/images/Icon_Less.svg
+            .tbcontent(x-show="openTB7")
+                p.tbsummary Messieurs.ch est une agence de réalisation et production audiovisuelle. Ce travail de Bachelor consiste en la réalisation d’un proof of concept « klik ». Il doit permettre aux collaborateurs de Messieurs.ch de dessiner et de faire évoluer des polygones sur une vidéo et de définir quelles seront les zones interactives.
+                    |  Un lecteur conçu spécialement pour les vidéos « klik » permet de bénéficier de la vidéo cliquable. Une librairie qui leur permettra d’implémenter « klik » sur leurs propres sites.
+                img(src="assets/images/tb/tb1.png", alt="tb1")
+        .tb
+            button.collapsible(@click="openTB1 = !openTB1")
+                .tbdescr
+                    p.tbtitle Application de planification des tâches pour une agence de communication
+                    p.tbauthor Par Audrey Huguenin
+                .iconplus(x-show="!openTB1")
+                    include ../../assets/images/Icon_Plus.svg
+                .iconplus.less(x-show="openTB1")
+                    include ../../assets/images/Icon_Less.svg
+            .tbcontent(x-show="openTB1")
+                p.tbsummary L’agence de communication Creatives a souhaité mettre en place une application sur mesure pour la  planification des tâches à l’interne. La gestion de projet est une démarche centrale et relativement complexe pour une agence digitale. 
+                    |L’application développée se base sur les processus propres à l’agence. De plus, elle est en partie nourrie par les données provenant de l’ERP mis en place, et fait écho au système de TimeSheet utilisé.
+                img(src="assets/images/tb/tb9.png", alt="tb9")
+        .tb
+            button.collapsible(@click="openTB8 = !openTB8")
+                .tbdescr
+                    p.tbtitle Réalisation d’un concept  et logiciel pour la création d’une « EscapeRoom » en version mobile
+                    p.tbauthor Par Fabrice Clerc
+                .iconplus(x-show="!openTB8")
+                    include ../../assets/images/Icon_Plus.svg
+                .iconplus.less(x-show="openTB8")
+                    include ../../assets/images/Icon_Less.svg
+            .tbcontent(x-show="openTB8")
+                p.tbsummary Planitswiss propose de nombreuses activités de « teambuilding ». Le défi est de pouvoir adapter le concept d’Escape Room plus seulement à une pièce fixe, mais à différents lieux voire espaces.
+                    |  Un logiciel a été créé pour apporter de nouvelles fonctionnalités ainsi que de l’interaction entre les joueurs et le superviseur. La même Escape Room version mobile pourra ainsi être pratiquée simultanément dans divers lieux.
+                img(src="assets/images/tb/tb2.png", alt="tb2")

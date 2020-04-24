@@ -262,8 +262,9 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
             p À la fin de la formation, vous réaliserez un travail en collaboration avec une entreprise.
                 br
                 | Cette étape clé à la formation vous apportera une expérience professionnalisante et un tremplin vers un premier emploi. Vous pourrez également être confronté·e avec les enjeux réels du monde professionnel et enrichir votre CV pour vos postulations futures.
-            a.tblink(@click="openTBPage = true; openTB = false") Découvrez quelques travaux de bachelor
-    |   <img class="objets2Background" sizes="(max-width: 768) 65vh, (min-width: 769) 120vh, 100vw"
+            a.tblink(@click="openTBPage = true, openTB = false") Découvrez quelques travaux de bachelor
+    include ./11_tb.pug
+    |   <img class="laptopVolant" sizes="(max-width: 768) 65vh, (min-width: 769) 120vh, 100vw"
     |    srcset="assets/images/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_200.png 200w,
     |    assets/images/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_436.png 436w,
     |    assets/images/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_607.png 607w,

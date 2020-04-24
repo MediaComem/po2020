@@ -1,69 +1,46 @@
-.tbpage {
-    position: fixed;
-    overflow: auto;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: var(--heig-red);
-    background: #fff;
-
-    z-index: 10;
-
+.collapsible {
     display: flex;
-    flex-direction: column;
+    background-color: var(--heig-red);
+    border:2px solid var(--heig-red);
+    cursor: pointer;
+    padding: 1.5rem 10vw;
+    text-align: left;
+    outline: none;
+    margin: 0.5rem 0;
 
-    &.visible {
-        visibility: visible;
-    }
-
-    h2,
-    h3 {
-        color: var(--heig-red);
-    }
-
-    h3 {
-        text-align: left;
-        margin-top: 5rem;
-        margin-bottom: 3rem;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    li {
-        font-size: 1.2rem;
-    }
-
-    li+li {
-        margin-top: 0.5rem;
-    }
-
-    a {
-        font-weight: 700;
-        color: var(--heig-red);
-        text-decoration: none;
-    }
-
-    .close {
-        margin-top: 3rem;
-        text-transform: uppercase;
-        align-self: flex-end;
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: var(--heig-red);
-
-        svg {
-            margin-right: 2rem;
-            stroke: var(--heig-red);
+    .tbdescr {
+        p {
+            &.tbtitle {
+                font-weight: 700;
+            }
+            color: #fff;
         }
     }
-}
+
+    .iconplus {
+    width: 5rem;
+    margin-left: 2rem;
+    align-self: center;
+    &.less {
+        stroke: var(--heig-red);
+    }
+    }
+  }
+
+  .collapsible:hover {
+    background-color: #fff;
+    p {
+        color:var(--heig-red);
+    }
+  }
+
+  .tbcontent {
+    padding: 10vw;
+    overflow: hidden;
+    p {
+        color: #000;
+    }
+    img {
+        width: 100%;
+    }
+  }
