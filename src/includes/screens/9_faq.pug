@@ -11,21 +11,21 @@ article.faq#faq(x-data=`{ ${listQuestionNameJoined},openNewQuestion:false }`)
     .questions
         each question, i in questions
             button.question(@click=`openQ${i} = true`) !{question.title_short}
-        button.question.newquestion(@click="openNewQuestion = true") Posez-nous
+        button.question.newquestion(@click="openNewQuestion = true") Posez-nous&nbsp;
             strong vos questions
-    |    <img class="objects2Background" sizes="(max-width: 768) 65vh, (min-width: 769) 120vh, 100vw"
-    |    srcset="assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_200.jpg 200w,
-    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_418.jpg 418w,
-    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_588.jpg 588w,
-    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_727.jpg 727w,
-    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_863.jpg 863w,
-    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_979.jpg 979w,
-    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_1090.jpg 1090w,
-    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_1209.jpg 1209w,
-    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_1313.jpg 1313w,
-    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_1398.jpg 1398w,
-    |    assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_1400.jpg 1400w"
-    |    src="assets/images/Objets2_volant_fz5v83/Objets2_volant_fz5v83_c_scalew_1400.jpg"
+    |    <img class="backgroundObjects2" sizes="(max-width: 768) 65vh, (min-width: 769) 120vh, 100vw"
+    |    srcset="assets/images/backgrounds/objects2/objects_flying2_fz5v83_c_scalew_200.jpg 200w,
+    |    assets/images/backgrounds/objects2/objects_flying2_fz5v83_c_scalew_418.jpg 418w,
+    |    assets/images/backgrounds/objects2/objects_flying2_fz5v83_c_scalew_588.jpg 588w,
+    |    assets/images/backgrounds/objects2/objects_flying2_fz5v83_c_scalew_727.jpg 727w,
+    |    assets/images/backgrounds/objects2/objects_flying2_fz5v83_c_scalew_863.jpg 863w,
+    |    assets/images/backgrounds/objects2/objects_flying2_fz5v83_c_scalew_979.jpg 979w,
+    |    assets/images/backgrounds/objects2/objects_flying2_fz5v83_c_scalew_1090.jpg 1090w,
+    |    assets/images/backgrounds/objects2/objects_flying2_fz5v83_c_scalew_1209.jpg 1209w,
+    |    assets/images/backgrounds/objects2/objects_flying2_fz5v83_c_scalew_1313.jpg 1313w,
+    |    assets/images/backgrounds/objects2/objects_flying2_fz5v83_c_scalew_1398.jpg 1398w,
+    |    assets/images/backgrounds/objects2/objects_flying2_fz5v83_c_scalew_1400.jpg 1400w"
+    |    src="assets/images/backgrounds/objects2/objects_flying2_fz5v83_c_scalew_1400.jpg"
     |    alt="" role="presentation">
 
     each question, i in questions
@@ -41,7 +41,7 @@ article.faq#faq(x-data=`{ ${listQuestionNameJoined},openNewQuestion:false }`)
         .mainWrapper
             h3 Posez-nous
                 br
-                | vos questions&nbsp;:
+                |  vos questions&nbsp;:
             form#newquestion(action='https://formspree.io/xyydgeyo' method='POST')
                 label(for="form_email") Email
                 input#form_email(type='email' name='email')

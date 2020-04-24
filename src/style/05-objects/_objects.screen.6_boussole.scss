@@ -3,15 +3,15 @@ article.boussole {
     .glide__track,
     .glide__slides,
     .glide__slide,
-    article {
-        height: 80vh !important;
+    article,
+    .axes {
+        height: 100%; // height:100% recursively is needed to support this whole screen concept
         margin: 0;
     }
 
     p strong {
         margin-top: 3rem;
         color: var(--heig-red);
-        ;
     }
 
     h2 {
@@ -80,13 +80,10 @@ article.boussole {
         }
     }
 
-    .axes>p,
-    .axes>h4 {
+    .projectSuper,
+    .projectTB{
         grid-row: 1/-1;
-        writing-mode: vertical-rl;
         transform: rotate(180deg);
-        /* Ssideways-rl is not supported everywhere */
-        text-orientation: initial;
         color: var(--main-burgundy);
         font-weight: 700;
         margin: 0;
@@ -95,9 +92,17 @@ article.boussole {
         box-sizing: border-box;
         display: grid;
         place-items: center;
+        font-size: .8rem;
+
+        span{
+            writing-mode: vertical-rl;
+            /* Ssideways-rl is not supported everywhere */
+            text-orientation: initial;
+            margin: auto;
+        }
     }
 
-    .axes>p:nth-of-type(1) {
+    .projectSuper:nth-of-type(1) {
         border-right: 2px solid var(--heig-red);
     }
 
@@ -105,9 +110,12 @@ article.boussole {
         outline: 5px solid rgba(var(--heig-red-rgb), 0.2);
     }
 
-    .axes h4 {
-        color: #fff;
+    .projectTB {
         background: var(--main-burgundy);
+        padding:0;
+
+        color: #fff;
+        font-weight:700;
     }
 
     .boussole_title--desktop-only {
@@ -134,7 +142,7 @@ article.boussole {
         padding-left: $main-padding-left;
     }
 
-    .deuxiemeannee .axes>p {
+    .deuxiemeannee .projectSuper {
         grid-column: 2/3;
     }
 
@@ -148,11 +156,11 @@ article.boussole {
         padding-left: $main-padding-left;
     }
 
-    .troisiemeannee .axes>p {
+    .troisiemeannee .projectSuper {
         grid-column: 2/3;
     }
 
-    .troisiemeannee .axes>h4 {
+    .troisiemeannee .projectTB {
         grid-column: 4/5;
     }
 
@@ -195,7 +203,7 @@ article.boussole {
             font-size: 1.4rem;
         }
 
-        .axes h4 {
+        .projectTB {
             font-size: 0.9rem;
         }
     }
