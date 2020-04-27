@@ -10,13 +10,22 @@ article.atoutsFormation {
         p {
             padding: 0 12vw;
         }
+        a#videoalumnis {
+            padding: 0 12vw;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #000;
+            text-decoration: none;
+            span {
+                padding: 0 12vw;
+                color: var(--heig-red);
+                text-decoration: underline;
+            }
+        }
     }
 
     .encart {
         margin-top: auto;
-    }
-    h3 {
-        color: #fff;
     }
 
     @media only screen and (min-width: 768px) {

@@ -9,22 +9,11 @@ article.schemaCompetences {
         margin-bottom: 2rem;
         align-self: flex-end;
         max-width: 60%;
-
-        a{
-            font-weight: 700;
-            font-size: 1.05rem;
-            color: #000;
-            text-decoration: none;
-            span {
-                color: var(--heig-red);
-                text-decoration: underline;
-            }
-        }
     }
 
     p {
         margin-top: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     img {
@@ -39,10 +28,6 @@ article.schemaCompetences {
         h2, p {
             max-width: 25rem;
             margin: auto;
-        }
-
-        p {
-            margin-top: 1rem;
         }
 
         br {
