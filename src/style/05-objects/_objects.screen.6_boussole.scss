@@ -210,6 +210,15 @@ article.boussole {
 
     @media only screen and (min-width: 1024px) {
 
+        .glide__track,
+        .glide__slides,
+        .glide__slide,
+        article,
+        .axes {
+            height: auto !important; // height:100% recursively is needed to support this whole screen concept
+            margin: 0;
+        }
+
         .glide__track {
             margin-top: auto;
         }
