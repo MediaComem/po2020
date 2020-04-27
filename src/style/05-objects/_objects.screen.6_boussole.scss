@@ -78,6 +78,11 @@ article.boussole {
             --cross-color: var(--heig-red);
             --circle-color: #fff;
         }
+        &.TBPlus {
+            width: 30px;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
     }
 
     .projectSuper,
@@ -195,6 +200,7 @@ article.boussole {
         text-decoration: underline;
         text-align: left;
         max-width: 60%;
+        cursor: pointer;
     }
 
     @media only screen and (min-width: 600px) {
@@ -202,16 +208,12 @@ article.boussole {
         h3 {
             font-size: 1.4rem;
         }
-
-        .projectTB {
-            font-size: 0.9rem;
-        }
     }
 
     @media only screen and (min-width: 1024px) {
 
         .glide__track {
-            margin-top: auto;
+            margin-top: 2rem;
         }
 
         .glide__slides {
