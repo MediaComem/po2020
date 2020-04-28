@@ -16,7 +16,7 @@ html(lang="fr")
     link(rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#e72128")
     link(rel="shortcut icon" href="assets/images/favicon/favicon.ico")
     link(rel="preconnect" href="https://www.google-analytics.com")
-  body(x-data="{ openMenu: false }")
+  body(x-data="{ openMenu: false, open1Info: false, open1Mark: false, open1Gest: false, open1Cult: false, open2Info: false, open2Mark: false, open2Gest: false, open2Cult: false, open3Info: false, open3Mark: false, open3Gest: false, open3Cult: false, openACon: false, openInt1: false, openInt2: false, openTB: false, openTBPage: false }")
     include includes/GTManager_NoScript.html
     include includes/screens/1_cover
     include includes/screens/2_coronavirus
@@ -30,6 +30,7 @@ html(lang="fr")
     include includes/screens/10_futur_ready
 
     include includes/screens/0_menu.pug
+    include includes/screens/11_tb.pug
 
     link(rel="stylesheet" href="style/index.scss")
     script(src="js/main.js")

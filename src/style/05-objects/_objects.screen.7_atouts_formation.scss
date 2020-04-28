@@ -3,27 +3,28 @@ article.atoutsFormation {
     .mainWrapper {
         padding: 0;
         h2 {
-            margin-top: 7rem;
-            margin-bottom: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
             padding: 0 12vw;
         }
         p {
             padding: 0 12vw;
         }
-        a#videoalumnis {
-            padding: 0 12vw;
-            font-weight: 700;
-            font-size: 1.05rem;
-            color: #000;
-            text-decoration: none;
-            span {
+        span {
+            a#videoalumnis {
                 padding: 0 12vw;
+                font-weight: 700;
+                font-size: 1.05rem;
+                color: #000;
+                text-decoration: none;
+            }
+            p {
+                font-weight: 700;
                 color: var(--heig-red);
                 text-decoration: underline;
             }
         }
     }
-
     .encart {
         margin-top: auto;
     }
@@ -74,8 +75,10 @@ article.atoutsFormation {
         }
         .mainWrapper {
             width: 50%;
-            a#videoalumnis {
-                font-size: 0.8rem;
+            .together {
+                a#videoalumnis {
+                    font-size: 0.8rem;
+                }
             }
         }
         .together p {
