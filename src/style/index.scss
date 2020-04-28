@@ -18,7 +18,6 @@
 
 // 05. Objects
 @import '05-objects/_objects.menu';
-@import '05-objects/_objects.backgroundObjects';
 @import '05-objects/_objects.screen.2_coronavirus';
 @import '05-objects/_objects.screen.3_ultra_connect';
 @import '05-objects/_objects.screen.4_deviens_im';
@@ -28,12 +27,16 @@
 @import '05-objects/_objects.screen.8_ecole';
 @import '05-objects/_objects.screen.9_faq';
 @import '05-objects/_objects.screen.10_futur_ready';
+@import '05-objects/_objects.screen.11_tb';
 
 // 06. Components
-@import '06-components/components.encart';
-@import '06-components/components.modal';
-@import '06-components/components.iconScroll';
-@import '06-components/components.slider';
+@import '06-components/_components.backgroundObjects';
+@import '06-components/_components.backgroundCover';
+@import '06-components/_components.encart';
+@import '06-components/_components.modal';
+@import '06-components/_components.iconScroll';
+@import '06-components/_components.slider';
+@import '06-components/_components.tb';
 
 // 99. Utilities
 @import '99-utilities/utilities.base';

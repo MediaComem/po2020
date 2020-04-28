@@ -2,17 +2,17 @@
     {
         "title_short": "De quelles écoles viennent les étudiant·e·s&nbsp;?",
         "title_long": "De quelles écoles viennent les étudiant·e·s&nbsp;?",
-        "content": "<p>Nous accueillons beaucoup d’étudiant·e·s d’horizons différents. Que ce soit en CFC en informatique, en commerce, en médiamatique, du monde de l’art, ou même du gymnase, tout le monde trouve sa place ici.</p><p>Si vous êtes motivé·e·s par la communication digitale alors n’hésitez plus&nbsp;!</p><p>Retrouve plus d’informations sur : <br/><a href='https://heig-vd.ch/admission'>heig-vd.ch/admission</a></p>"
+        "content": "<p>Nous accueillons des étudiant·e·s qui viennent de filières très différentes: CFC en informatique, en commerce, en médiamatique ou en graphisme, baccalauréat de tous types, seul un fort intérêt pour le monde numérique et une motivation sans faille pour s’investir dans une formation riche et intense sont pré-requis&nbsp;!</p><p>Retrouve plus d’informations sur&nbsp;:<br/><a href='https://heig-vd.ch/admission'>heig-vd.ch/admission</a></p>"
     },
     {
         "title_short": "Je suis au gymnase…",
         "title_long": "Je suis au gymnase et j’aimerais faire la formation, je dois faire comment&nbsp;?",
-        "content": "<p>Après le gymnase, il est conseillé de faire un stage. Ainsi, vous pourrez être confronté·e·s au monde professionnel.</p><p>Cepednant, si vous ne trouvez pas de stage, il existe différentes années préparatoires. Pour les filles, il y a l’<a href='https://heig-vd.ch/a-propos/politique/egalite-diversite/programmes-egalite/apfi'><strong>APFI</strong></a> (Année Préparatoire Future Ingénieure) à la HEIG-VD. Sinon, il y a la <a href='https://www.cpnv.ch/formations/mct/'><strong>MCT</strong></a> (Modules complémentaires techniques) au CPNV.</p>"
+        "content": "<p>Après le gymnase, il est indispensable de faire un stage afin d’acquérir une expérience du monde professionnel.</p><p>Cependant, si vous ne trouvez pas de stage, il existe différentes années préparatoires dont&nbsp;: <ul><li><a href='https://heig-vd.ch/a-propos/politique/egalite-diversite/programmes-egalite/apfi'><strong>L'APFI</strong></a> (Année Préparatoire Future Ingénieure) à la HEIG-VD pour les femmes.</li><li><a href='https://www.cpnv.ch/formations/mct/'><strong>MCT</strong></a> (Modules complémentaires techniques) au CPNV.</li></ul></p>"
     },
     {
         "title_short": "Vais-je réaliser des mandats avec de vrais clients&nbsp;?",
         "title_long": "Est-ce que nous allons réaliser des mandats avec de vrais clients&nbsp;?",
-        "content": "<p>Oui&nbsp;!<br/>Durant la formation, les professeurs proposent des exercices avec des clients de diverses entreprises.</p><p>Le but de la formation est de préparer au mieux l’étudiant·e à la vie professionnelle et qu’il/elle soit employable directement après les trois années de Bachelor.</p>"
+        "content": "<p>Oui&nbsp;! Pendant la formation, les professeur·e·s proposent des exercices réels, soit basés sur des mandats passés auxquels ils ou elles ont eu·e·s à répondre, soit avec des clients en direct, notamment lors du projet d’intégration 2. (Voir <a href=\"assets/pdf/ingenieriemedias_apercu_cours2020.pdf\">plan de formation</a>).</p><p>A ce titre, la formation est dite « professionnalisante », c’est-à-dire qu’elle vous prépare au mieux à être employable directement après les trois années de Bachelor.</p>"
     },
     {
         "title_short": "Comment se rendre facilement à Yverdon&nbsp;?",
@@ -20,8 +20,8 @@
         "content": "<p>Yverdon-les-Bains se trouve à 23 minutes en train de Lausanne, à 18 minutes de Neuchâtel et à 26 minutes de Payerne.</p><p>Le bâtiment St-Roch se trouve à 7 minutes à pied de la gare d’Yverdon-les-Bains. Pour les personnes motorisées, un parking est à disposition au prix de 6 CHF la journée.</p>"
     },
     {
-        "title_short": "Il y a combien d’étudiant·e·s par classe&nbsp;?",
-        "title_long": "Il y a combien d’étudiant·e·s par classe&nbsp;?",
-        "content": "<p>Chaque année, nous accueillons une 50ène d’étudiant·e·s en première année. Afin de favoriser le contact entre l’étudiant·e et le professeur, nous favorisons les classes de maximum 30 personnes.</p><p>En ingénierie des médias, nous souhaitons que chaque étudiant·e ait réponse à toutes ses questions.</p>"
+        "title_short": "Combien y a-t-il d’étudiant·e·s par classe&nbsp;?",
+        "title_long": "Combien y a-t-il d’étudiant·e·s par classe&nbsp;?",
+        "content": "<p>Chaque année, nous accueillons une cinquantaine d’étudiant·e·s en première année que nous répartissons dans des classes de maximum 25 étudiant·e·s. En comparaison avec les universités, cette taille réduite permet une interaction directe avec le corps enseignant et le développement d’une dynamique de classe agréable et agile. Chaque étudiant·e peut ainsi pleinement s’immerger dans ses études et dans les projets qu’il ou qu’elle réalise en pouvant compter sur un accompagnement fort des professeur·e·s et des chargé·e·s de cours.</p>"
     }
 ]

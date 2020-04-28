@@ -55,14 +55,15 @@
 
     .close {
         margin-top: 3rem;
+        margin-right:2rem;
         text-transform: uppercase;
         align-self: flex-end;
         font-size: 1.2rem;
         font-weight: 700;
         color: var(--heig-red);
-
-        img {
+        svg {
             margin-right: 2rem;
+            stroke: #fff;
         }
     }
 }

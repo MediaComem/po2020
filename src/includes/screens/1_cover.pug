@@ -1,16 +1,15 @@
 
 article.cover#home
-    .coverBackground(aria-hidden="true")
-    a#heig(href='https://heig-vd.ch/' rel='noopener noreferrer' target='_blank')
-        img.logoHeigvd(src="assets/images/Logo_HEIG-VD_Etiquette_RVB_Rouge.svg" alt="Logo HEIG-VD: Haute Ecole d'Ingénierie et de Gestion du Canton de Vaud")
+    .backgroundCover(aria-hidden="true")
+    div
+        a#heig(href='https://heig-vd.ch/' rel='noopener noreferrer' target='_blank')
+            img.logoHeigvd(src="assets/images/Logo_HEIG-VD_Etiquette_RVB_Rouge.svg" alt="Logo HEIG-VD: Haute Ecole d'Ingénierie et de Gestion du Canton de Vaud")
     button.menuTrigger(aria-label="Ouvrir le menu rapide" @click="openMenu = true")
         img(src="assets/images/Icon_Menu.svg" alt="" role="presentation")
     .mainWrapper
         h1 Devenez acteur·trice
             br
             |  de la transition numérique
-        p La formation HES
-            br
-            | que vous n’êtes pas prêt·e·s d’oublier
+        p L’Ingénierie des Médias est une formation multidisciplinaire de niveau HES, unique en Suisse romande, reconnue au niveau national. Avec votre diplôme en poche, vous aurez toutes les clés du marché du travail, fortement demandeur de profils polyvalents liés à la transition numérique.
     #icon-scroll
         span.arrow-down

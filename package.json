@@ -1,6 +1,6 @@
 {
   "name": "po2020",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "scripts": {
     "dev": "rm -rf dist && parcel src/index.pug",
@@ -27,5 +27,8 @@
   },
   "engines": {
     "node": ">= 12.0.0"
+  },
+  "resolutions": {
+    "imagemin-mozjpeg/mozjpeg": "^6.0.0"
   }
 }

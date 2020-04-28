@@ -1,4 +1,4 @@
-article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark: false, open1Gest: false, open1Cult: false, open2Info: false, open2Mark: false, open2Gest: false, open2Cult: false, open3Info: false, open3Mark: false, open3Gest: false, open3Cult: false }")
+article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark: false, open1Gest: false, open1Cult: false, open2Info: false, open2Mark: false, open2Gest: false, open2Cult: false, open3Info: false, open3Mark: false, open3Gest: false, open3Cult: false, openACon: false, openInt1: false, openInt2: false, openTB: false, openTBPage: false }")
 
     svg(style="display:none")
         symbol(id="icon_plus" viewbox='0 0 37 37')
@@ -12,15 +12,17 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
             li.glide__slide
                 article.premiereannee
                     .mainWrapper
-                        h2.boussole_title--desktop-only Découvrez le contenu des cours
-                        h2#uneformation(aria-labelledby="uneformation en troisans") Découvrez le contenu des cours
+                        h2.boussole_title--desktop-only Découvrez les cours
+                        h2#uneformation(aria-labelledby="uneformation en troisans") Découvrez les cours
                         p
                             strong 1ère année
                         p Apprendre les bases
                             br
                             |  de chaque discipline
                     .axes
-                        p Alignement des connaissances
+                        button.projectSuper(@click="openACon = true")
+                            span Alignement des connaissances
+                            //- Workaround for chrome which doesn't support writing-mode in button
                         .axe
                             button(@click="open1Info = true")
                                 svg.iconPlus
@@ -44,7 +46,7 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
             li.glide__slide
                 article.deuxiemeannee
                     .mainWrapper
-                        h2#en(aria-labelledby="uneformation en troisans") Découvrez le contenu des cours
+                        h2#en(aria-labelledby="uneformation en troisans") Découvrez les cours
                         p
                             strong 2ème année
                         p Approfondir et mettre
@@ -75,11 +77,12 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                                     use(href="#icon_plus")
                                 p Culture digitale &amp; Projet Intégration
                         span.empty(aria-hidden="true")
-                        p Projet pratique d'intégration 1
+                        button.projectSuper(@click="openInt1 = true")
+                            span Projet pratique d'intégration 1
             li.glide__slide
                 article.troisiemeannee
                     .mainWrapper
-                        h2#troisans(aria-labelledby="uneformation en troisans") Découvrez le contenu des cours
+                        h2#troisans(aria-labelledby="uneformation en troisans") Découvrez les cours
                         p
                             strong 3ème année
                         p Mettre en pratique
@@ -110,8 +113,13 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                                     use(href="#icon_plus")
                                 p Culture digitale &amp; Projet Intégration
                         span.empty(aria-hidden="true")
-                        p Projet pratique d'intégration 2
-                        h4 Travail de Bachelor
+                        button.projectSuper(@click="openInt2 = true")
+                            span Projet pratique d'intégration 2
+                        button.projectTB(@click="openTB = true")
+                            span
+                                svg.iconPlus.TBPlus
+                                    use(href="#icon_plus")
+                                | Travail de Bachelor
     .glide__bullets(data-glide-el='controls[nav]')
         button.glide__bullet(data-glide-dir='=0' aria-label="Première année")
         button.glide__bullet(data-glide-dir='=1' aria-label="Deuxième année")
@@ -119,9 +127,30 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
     .mainWrapper.telechargeplan
         a#plandownload(href="assets/pdf/ingenieriemedias_apercu_cours2020.pdf") Téléchargez&nbsp;
             span le plan de cours
-    .modal(role="dialog" aria-modal="true" x-show="open1Info" :class="{ 'visible': open1Info }")
+    .modal(@click="openACon = false" role="dialog" aria-modal="true" x-show="openACon" :class="{ 'visible': openACon }")
+        button.close(@click="openACon = false")
+            include ../../assets/images/Icon_Close.svg
+        .mainWrapper
+            h3 1ère année
+            h2 Alignement des connaissances
+            p Au début de la première année, des cours spécifiques en fonction du profil de chaque étudiant-e permettent de réduire les différences de connaissances techniques ou créatives. Ces cours sont donnés par des professionnel-les de chaque branche.
+    .modal(@click="openInt1 = false" role="dialog" aria-modal="true" x-show="openInt1" :class="{ 'visible': openInt1 }")
+        button.close(@click="openInt1 = false")
+            include ../../assets/images/Icon_Close.svg
+        .mainWrapper
+            h3 2ème année
+            h2 Projet d’intégration 1
+            p Afin d’acquérir de véritables compétences pratiques, vous serez amener à réaliser un projet de groupe qui met en relation les connaissances acquises dans les différents axes de formation. C’est également l’opportunité de développer des compétences relationnelles et de gestion de projet.
+    .modal(@click="openInt2 = false" role="dialog" aria-modal="true" x-show="openInt2" :class="{ 'visible': openInt2 }")
+        button.close(@click="openInt2 = false")
+            include ../../assets/images/Icon_Close.svg
+        .mainWrapper
+            h3 3ème année
+            h2 Projet d’intégration 2
+            p Dans le même esprit que le premier projet d’intégration, vous serez amenez à répondre de manière globale à un mandat réel. Pendant plusieurs semaines, vous serez en immersion avec votre groupe pour élaborer, planifier, créer et présenter une solution à la problématique client proposée. En tant que membre d’un groupe de travail, vous serez autonome et responsable de la qualité et de la pertinence de votre projet.
+    .modal(@click="open1Info = false" role="dialog" aria-modal="true" x-show="open1Info" :class="{ 'visible': open1Info }")
         button.close(@click="open1Info = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            include ../../assets/images/Icon_Close.svg
         .mainWrapper
             h3 1ère année
             h2 Informatique &amp; interfaces
@@ -133,9 +162,9 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                 li Protocoles et environnement Internet
                 li Infrastructure de données
                 li Programmation serveur
-    .modal(role="dialog" aria-modal="true" x-show="open1Mark" :class="{ 'visible': open1Mark }")
+    .modal(@click="open1Mark = false" role="dialog" aria-modal="true" x-show="open1Mark" :class="{ 'visible': open1Mark }")
         button.close(@click="open1Mark = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            include ../../assets/images/Icon_Close.svg
         .mainWrapper
             h3 1ère année
             h2 Marketing &amp; Communication
@@ -146,17 +175,17 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                 li Écriture pour le digital
                 li Bases du marketing digital
                 li Analyse de marché
-    .modal(role="dialog" aria-modal="true" x-show="open1Gest" :class="{ 'visible': open1Gest }")
+    .modal(@click="open1Gest = false" role="dialog" aria-modal="true" x-show="open1Gest" :class="{ 'visible': open1Gest }")
         button.close(@click="open1Gest = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            include ../../assets/images/Icon_Close.svg
         .mainWrapper
             h3 1ère année
             h2 Gestion de projet
             ul
                 li Gestion budgétaire et finance
-    .modal(role="dialog" aria-modal="true" x-show="open1Cult" :class="{ 'visible': open1Cult }")
+    .modal(@click="open1Cult = false" role="dialog" aria-modal="true" x-show="open1Cult" :class="{ 'visible': open1Cult }")
         button.close(@click="open1Cult = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            include ../../assets/images/Icon_Close.svg
         .mainWrapper
             h3 1ère année
             h2 Culture digitale &amp; Projet Intégration
@@ -166,9 +195,9 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                 li Outils et méthodes de travail
                 li Évolution et métiers
                 li Anglais
-    .modal(role="dialog" aria-modal="true" x-show="open2Info" :class="{ 'visible': open2Info }")
+    .modal(@click="open2Info = false" role="dialog" aria-modal="true" x-show="open2Info" :class="{ 'visible': open2Info }")
         button.close(@click="open2Info = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            include ../../assets/images/Icon_Close.svg
         .mainWrapper
             h3 2ème année
             h2 Informatique &amp; interfaces
@@ -179,9 +208,9 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                 li Infrastructure de données
                 li Web des données
                 li Développement de produit média
-    .modal(role="dialog" aria-modal="true" x-show="open2Mark" :class="{ 'visible': open2Mark }")
+    .modal(@click="open2Mark = false" role="dialog" aria-modal="true" x-show="open2Mark" :class="{ 'visible': open2Mark }")
         button.close(@click="open2Mark = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            include ../../assets/images/Icon_Close.svg
         .mainWrapper
             h3 2ème année
             h2 Marketing &amp; Communication
@@ -191,18 +220,18 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                 li Conception UX - Bases
                 li E-commerce
                 li Vendre un projet média
-    .modal(role="dialog" aria-modal="true" x-show="open2Gest" :class="{ 'visible': open2Gest }")
+    .modal(@click="open2Gest = false" role="dialog" aria-modal="true" x-show="open2Gest" :class="{ 'visible': open2Gest }")
         button.close(@click="open2Gest = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            include ../../assets/images/Icon_Close.svg
         .mainWrapper
             h3 2ème année
             h2 Gestion de projet
             ul
                 li Gestion de projet
                 li Business models
-    .modal(role="dialog" aria-modal="true" x-show="open2Cult" :class="{ 'visible': open2Cult }")
+    .modal(@click="open2Cult = false" role="dialog" aria-modal="true" x-show="open2Cult" :class="{ 'visible': open2Cult }")
         button.close(@click="open2Cult = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            include ../../assets/images/Icon_Close.svg
         .mainWrapper
             h3 2ème année
             h2 Culture digitale &amp; Projet Intégration
@@ -212,9 +241,9 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                 li Méthodologie de recherche
                 li Veille sociétale
                 li Projet d’intégration
-    .modal(role="dialog" aria-modal="true" x-show="open3Info" :class="{ 'visible': open3Info }")
+    .modal(@click="open3Info = false" role="dialog" aria-modal="true" x-show="open3Info" :class="{ 'visible': open3Info }")
         button.close(@click="open3Info = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            include ../../assets/images/Icon_Close.svg
         .mainWrapper
             h3 3ème année
             h2 Informatique &amp; interfaces
@@ -223,9 +252,9 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                 li Développement mobile
                 li Programmation VR
                 li Marketing Tech
-    .modal(role="dialog" aria-modal="true" x-show="open3Mark" :class="{ 'visible': open3Mark }")
+    .modal(@click="open3Mark = false" role="dialog" aria-modal="true" x-show="open3Mark" :class="{ 'visible': open3Mark }")
         button.close(@click="open3Mark = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            include ../../assets/images/Icon_Close.svg
         .mainWrapper
             h3 3ème année
             h2 Marketing &amp; Communication
@@ -233,18 +262,18 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                 li Laboratoire tests UX
                 li Conception UX - Avancé
                 li Evaluation de produits média
-    .modal(role="dialog" aria-modal="true" x-show="open3Gest" :class="{ 'visible': open3Gest }")
+    .modal(@click="open3Gest = false" role="dialog" aria-modal="true" x-show="open3Gest" :class="{ 'visible': open3Gest }")
         button.close(@click="open3Gest = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            include ../../assets/images/Icon_Close.svg
         .mainWrapper
             h3 3ème année
             h2 Gestion de projet
             ul
                 li Business plan &amp; startup
                 li Introduction à la systémique
-    .modal(role="dialog" aria-modal="true" x-show="open3Cult" :class="{ 'visible': open3Cult }")
+    .modal(@click="open3Cult = false" role="dialog" aria-modal="true" x-show="open3Cult" :class="{ 'visible': open3Cult }")
         button.close(@click="open3Cult = false")
-            img(src="assets/images/Icon_GoBack.svg" loading="lazy" alt="" role="presentation")
+            include ../../assets/images/Icon_Close.svg
         .mainWrapper
             h3 3ème année
             h2 Culture digitale &amp; Projet Intégration
@@ -253,3 +282,27 @@ article.boussole#formation.boussole_glide(x-data="{ open1Info: false, open1Mark:
                 li Atelier convergence des médias
                 li Projet d’intégration
                 li Stage et Travail de Bachelor
+    .modal(@click="openTB = false" role="dialog" aria-modal="true" x-show="openTB" :class="{ 'visible': openTB }")
+        button.close(@click="openTB = false")
+            include ../../assets/images/Icon_Close.svg
+        .mainWrapper
+            h3 3ème année
+            h2 Travail de Bachelor
+            p À la fin de la formation, vous réaliserez un travail en collaboration avec une entreprise.
+                br
+                | Cette étape clé à la formation vous apportera une expérience professionnalisante et un tremplin vers un premier emploi. Vous pourrez également être confronté·e avec les enjeux réels du monde professionnel et enrichir votre CV pour vos postulations futures.
+            a.tblink(@click="openTBPage = true, openTB = false") Découvrez quelques travaux de bachelor
+    include ./11_tb.pug
+    |   <img class="backgroundObjects" sizes="(max-width: 768) 65vh, (min-width: 769) 120vh, 100vw"
+    |    srcset="assets/images/backgrounds/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_200.png 200w,
+    |    assets/images/backgrounds/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_436.png 436w,
+    |    assets/images/backgrounds/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_607.png 607w,
+    |    assets/images/backgrounds/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_753.png 753w,
+    |    assets/images/backgrounds/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_878.png 878w,
+    |    assets/images/backgrounds/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_994.png 994w,
+    |    assets/images/backgrounds/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_1109.png 1109w,
+    |    assets/images/backgrounds/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_1211.png 1211w,
+    |    assets/images/backgrounds/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_1312.png 1312w,
+    |    assets/images/backgrounds/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_1400.png 1400w"
+    |    src="assets/images/backgrounds/Objets3_volant_sxfk1x/IM-objets3-2000px_sxfk1x_c_scalew_1400.png"
+    |    alt="" role="presentation">
