@@ -35,7 +35,7 @@ article.faq#faq(x-data=`{ ${listQuestionNameJoined},openNewQuestion:false }`)
             .mainWrapper
                 h3 !{question.title_long}
                 | !{question.content}
-    .modal.modal__newquestion(role="dialog" aria-modal="true" x-show="openNewQuestion" :class="{ 'visible': openNewQuestion }")
+    .modal.modal__newquestion(role="dialog" aria-modal="true" x-show="openNewQuestion" x-cloak)
         button.close(aria-label="Fermer" @click="openNewQuestion = false")
             img(src="assets/images/Icon_Close.svg" loading="lazy" alt="" role="presentation")
         .mainWrapper

@@ -120,7 +120,7 @@ article.boussole#formation.boussole_glide
     .mainWrapper.telechargeplan
         a#plandownload(href="assets/pdf/ingenieriemedias_apercu_cours2020.pdf") Téléchargez&nbsp;
             span le plan de cours
-    .modal(@click="openACon = false" role="dialog" aria-modal="true" x-show="openACon" :class="{ 'visible': openACon }")
+    .modal(@click="openACon = false" role="dialog" aria-modal="true" x-show="openACon" x-cloak)
         button.close(@click="openACon = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -128,7 +128,7 @@ article.boussole#formation.boussole_glide
             h3 1ère année
             h2 Alignement des connaissances
             p Au début de la première année, des cours spécifiques en fonction du profil de chaque étudiant-e permettent de réduire les différences de connaissances techniques ou créatives. Ces cours sont donnés par des professionnel-les de chaque branche.
-    .modal(@click="openInt1 = false" role="dialog" aria-modal="true" x-show="openInt1" :class="{ 'visible': openInt1 }")
+    .modal(@click="openInt1 = false" role="dialog" aria-modal="true" x-show="openInt1" x-cloak)
         button.close(@click="openInt1 = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -136,7 +136,7 @@ article.boussole#formation.boussole_glide
             h3 2ème année
             h2 Projet d’intégration 1
             p Afin d’acquérir de véritables compétences pratiques, vous serez amener à réaliser un projet de groupe qui met en relation les connaissances acquises dans les différents axes de formation. C’est également l’opportunité de développer des compétences relationnelles et de gestion de projet.
-    .modal(@click="openInt2 = false" role="dialog" aria-modal="true" x-show="openInt2" :class="{ 'visible': openInt2 }")
+    .modal(@click="openInt2 = false" role="dialog" aria-modal="true" x-show="openInt2" x-cloak)
         button.close(@click="openInt2 = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -144,7 +144,7 @@ article.boussole#formation.boussole_glide
             h3 3ème année
             h2 Projet d’intégration 2
             p Dans le même esprit que le premier projet d’intégration, vous serez amenez à répondre de manière globale à un mandat réel. Pendant plusieurs semaines, vous serez en immersion avec votre groupe pour élaborer, planifier, créer et présenter une solution à la problématique client proposée. En tant que membre d’un groupe de travail, vous serez autonome et responsable de la qualité et de la pertinence de votre projet.
-    .modal(@click="open1Info = false" role="dialog" aria-modal="true" x-show="open1Info" :class="{ 'visible': open1Info }")
+    .modal(@click="open1Info = false" role="dialog" aria-modal="true" x-show="open1Info" x-cloak)
         button.close(@click="open1Info = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -159,7 +159,7 @@ article.boussole#formation.boussole_glide
                 li Protocoles et environnement Internet
                 li Infrastructure de données
                 li Programmation serveur
-    .modal(@click="open1Mark = false" role="dialog" aria-modal="true" x-show="open1Mark" :class="{ 'visible': open1Mark }")
+    .modal(@click="open1Mark = false" role="dialog" aria-modal="true" x-show="open1Mark" x-cloak)
         button.close(@click="open1Mark = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -173,7 +173,7 @@ article.boussole#formation.boussole_glide
                 li Écriture pour le digital
                 li Bases du marketing digital
                 li Analyse de marché
-    .modal(@click="open1Gest = false" role="dialog" aria-modal="true" x-show="open1Gest" :class="{ 'visible': open1Gest }")
+    .modal(@click="open1Gest = false" role="dialog" aria-modal="true" x-show="open1Gest" x-cloak)
         button.close(@click="open1Gest = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -182,7 +182,7 @@ article.boussole#formation.boussole_glide
             h2 Gestion de projet
             ul
                 li Gestion budgétaire et finance
-    .modal(@click="open1Cult = false" role="dialog" aria-modal="true" x-show="open1Cult" :class="{ 'visible': open1Cult }")
+    .modal(@click="open1Cult = false" role="dialog" aria-modal="true" x-show="open1Cult" x-cloak)
         button.close(@click="open1Cult = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -195,7 +195,7 @@ article.boussole#formation.boussole_glide
                 li Outils et méthodes de travail
                 li Évolution et métiers
                 li Anglais
-    .modal(@click="open2Info = false" role="dialog" aria-modal="true" x-show="open2Info" :class="{ 'visible': open2Info }")
+    .modal(@click="open2Info = false" role="dialog" aria-modal="true" x-show="open2Info" x-cloak)
         button.close(@click="open2Info = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -209,7 +209,7 @@ article.boussole#formation.boussole_glide
                 li Infrastructure de données
                 li Web des données
                 li Développement de produit média
-    .modal(@click="open2Mark = false" role="dialog" aria-modal="true" x-show="open2Mark" :class="{ 'visible': open2Mark }")
+    .modal(@click="open2Mark = false" role="dialog" aria-modal="true" x-show="open2Mark" x-cloak)
         button.close(@click="open2Mark = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -222,7 +222,7 @@ article.boussole#formation.boussole_glide
                 li Conception UX - Bases
                 li E-commerce
                 li Vendre un projet média
-    .modal(@click="open2Gest = false" role="dialog" aria-modal="true" x-show="open2Gest" :class="{ 'visible': open2Gest }")
+    .modal(@click="open2Gest = false" role="dialog" aria-modal="true" x-show="open2Gest" x-cloak)
         button.close(@click="open2Gest = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -232,7 +232,7 @@ article.boussole#formation.boussole_glide
             ul
                 li Gestion de projet
                 li Business models
-    .modal(@click="open2Cult = false" role="dialog" aria-modal="true" x-show="open2Cult" :class="{ 'visible': open2Cult }")
+    .modal(@click="open2Cult = false" role="dialog" aria-modal="true" x-show="open2Cult" x-cloak)
         button.close(@click="open2Cult = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -245,7 +245,7 @@ article.boussole#formation.boussole_glide
                 li Méthodologie de recherche
                 li Veille sociétale
                 li Projet d’intégration
-    .modal(@click="open3Info = false" role="dialog" aria-modal="true" x-show="open3Info" :class="{ 'visible': open3Info }")
+    .modal(@click="open3Info = false" role="dialog" aria-modal="true" x-show="open3Info" x-cloak)
         button.close(@click="open3Info = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -257,7 +257,7 @@ article.boussole#formation.boussole_glide
                 li Développement mobile
                 li Programmation VR
                 li Marketing Tech
-    .modal(@click="open3Mark = false" role="dialog" aria-modal="true" x-show="open3Mark" :class="{ 'visible': open3Mark }")
+    .modal(@click="open3Mark = false" role="dialog" aria-modal="true" x-show="open3Mark" x-cloak)
         button.close(@click="open3Mark = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -268,7 +268,7 @@ article.boussole#formation.boussole_glide
                 li Laboratoire tests UX
                 li Conception UX - Avancé
                 li Evaluation de produits média
-    .modal(@click="open3Gest = false" role="dialog" aria-modal="true" x-show="open3Gest" :class="{ 'visible': open3Gest }")
+    .modal(@click="open3Gest = false" role="dialog" aria-modal="true" x-show="open3Gest" x-cloak)
         button.close(@click="open3Gest = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -278,7 +278,7 @@ article.boussole#formation.boussole_glide
             ul
                 li Business plan &amp; startup
                 li Introduction à la systémique
-    .modal(@click="open3Cult = false" role="dialog" aria-modal="true" x-show="open3Cult" :class="{ 'visible': open3Cult }")
+    .modal(@click="open3Cult = false" role="dialog" aria-modal="true" x-show="open3Cult" x-cloak)
         button.close(@click="open3Cult = false")
             svg.iconClose
                 use(href="#icon_close")
@@ -290,7 +290,7 @@ article.boussole#formation.boussole_glide
                 li Atelier convergence des médias
                 li Projet d’intégration
                 li Stage et Travail de Bachelor
-    .modal(@click="openTB = false" role="dialog" aria-modal="true" x-show="openTB" :class="{ 'visible': openTB }")
+    .modal(@click="openTB = false" role="dialog" aria-modal="true" x-show="openTB" x-cloak)
         button.close(@click="openTB = false")
             svg.iconClose
                 use(href="#icon_close")

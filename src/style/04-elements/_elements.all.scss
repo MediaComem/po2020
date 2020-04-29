@@ -4,6 +4,8 @@
   box-sizing: inherit;
 }
 
+[x-cloak] { display: none; }
+
 body>article {
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -96,7 +98,6 @@ p+p {
     font-size: 0.8rem;
   }
 }
-
 
 button {
   border: 0;

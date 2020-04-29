@@ -1,4 +1,4 @@
-.tbpage(role="dialog" aria-modal="true" x-show="openTBPage" :class="{ 'visible': openTBPage }")
+.tbpage(role="dialog" aria-modal="true" x-show="openTBPage" x-cloak)
     button.close(@click="openTBPage = false")
         svg.iconClose
             use(href="#icon_close")
