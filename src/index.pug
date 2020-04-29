@@ -29,6 +29,7 @@ html(lang="fr")
     link(rel="shortcut icon" href="assets/images/favicon/favicon.ico")
     link(rel="preconnect" href="https://www.google-analytics.com")
   body(x-data="{ openMenu: false, open1Info: false, open1Mark: false, open1Gest: false, open1Cult: false, open2Info: false, open2Mark: false, open2Gest: false, open2Cult: false, open3Info: false, open3Mark: false, open3Gest: false, open3Cult: false, openACon: false, openInt1: false, openInt2: false, openTB: false, openTBPage: false }")
+
     include includes/GTManager_NoScript.html
     include includes/screens/1_cover
     include includes/screens/2_coronavirus
@@ -43,6 +44,18 @@ html(lang="fr")
 
     include includes/screens/0_menu.pug
     include includes/screens/11_tb.pug
+
+    svg(style="display:none")
+      symbol(id="icon_close" viewbox='0 0 47 47' fill="#ff" style="fill: var(--fill, #fff)")
+          path(fill-rule="evenodd" clip-rule="evenodd" d="M3.97836 41.4666L39.2225 6.2225L40.6367 7.63672L5.39257 42.8809L3.97836 41.4666Z")
+          path(fill-rule="evenodd" clip-rule="evenodd" d="M6.8771 6.12289L42.1212 41.367L40.707 42.7812L5.46289 7.53711L6.8771 6.12289Z")
+      symbol(id="icon_plus" viewbox='0 0 37 37')
+          circle(cx='18.5' cy='18.5' r='17.5' stroke-width='2' style="stroke: var(--circle-stroke-color, #fff);fill: var(--circle-color, transparent)")
+          line(x1='18.5' y1='10' x2='18.5' y2='27' stroke='#fff' stroke-width='3' style="stroke: var(--cross-color, #fff)")
+          line(x1='27' y1='18.5' x2='10' y2='18.5' stroke='#fff' stroke-width='3' style="stroke: var(--cross-color, #fff)")
+      symbol(id="icon_less" viewbox='0 0 37 37')
+          circle(cx="18.5" cy="18.5" r="17.5" stroke-width="2" style="stroke: var(--circle-stroke-color, #fff);fill: var(--circle-color, transparent)")
+          line(x1="10" y1="18.5" x2="27" y2="18.5" stroke-width="3" style="stroke: var(--line-color, #fff)")
 
     link(rel="stylesheet" href="style/index.scss")
     script(src="js/main.js")

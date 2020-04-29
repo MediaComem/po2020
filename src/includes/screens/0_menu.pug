@@ -1,6 +1,7 @@
 .modal.modal_menu(role="dialog" aria-modal="true" x-show="openMenu" :class="{ 'visible': openMenu }")
     button.close(@click="openMenu = false")
-        include ../../assets/images/Icon_Close.svg
+        svg.iconClose
+            use(href="#icon_close")
     .mainWrapper
         nav
             ul

@@ -1,12 +1,5 @@
 article.boussole#formation.boussole_glide
 
-    svg(style="display:none")
-        symbol(id="icon_plus" viewbox='0 0 37 37')
-            circle(cx='18.5' cy='18.5' r='17.5' stroke='#fff' stroke-width='2' style="fill: var(--circle-color, transparent)")
-            line(x1='18.5' y1='10' x2='18.5' y2='27' stroke='#fff' stroke-width='3' style="stroke: var(--cross-color, #fff)")
-            line(x1='27' y1='18.5' x2='10' y2='18.5' stroke='#fff' stroke-width='3' style="stroke: var(--cross-color, #fff)")
-
-
     .glide__track(data-glide-el='track')
         ul.glide__slides
             li.glide__slide
@@ -129,28 +122,32 @@ article.boussole#formation.boussole_glide
             span le plan de cours
     .modal(@click="openACon = false" role="dialog" aria-modal="true" x-show="openACon" :class="{ 'visible': openACon }")
         button.close(@click="openACon = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 1ère année
             h2 Alignement des connaissances
             p Au début de la première année, des cours spécifiques en fonction du profil de chaque étudiant-e permettent de réduire les différences de connaissances techniques ou créatives. Ces cours sont donnés par des professionnel-les de chaque branche.
     .modal(@click="openInt1 = false" role="dialog" aria-modal="true" x-show="openInt1" :class="{ 'visible': openInt1 }")
         button.close(@click="openInt1 = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 2ème année
             h2 Projet d’intégration 1
             p Afin d’acquérir de véritables compétences pratiques, vous serez amener à réaliser un projet de groupe qui met en relation les connaissances acquises dans les différents axes de formation. C’est également l’opportunité de développer des compétences relationnelles et de gestion de projet.
     .modal(@click="openInt2 = false" role="dialog" aria-modal="true" x-show="openInt2" :class="{ 'visible': openInt2 }")
         button.close(@click="openInt2 = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 3ème année
             h2 Projet d’intégration 2
             p Dans le même esprit que le premier projet d’intégration, vous serez amenez à répondre de manière globale à un mandat réel. Pendant plusieurs semaines, vous serez en immersion avec votre groupe pour élaborer, planifier, créer et présenter une solution à la problématique client proposée. En tant que membre d’un groupe de travail, vous serez autonome et responsable de la qualité et de la pertinence de votre projet.
     .modal(@click="open1Info = false" role="dialog" aria-modal="true" x-show="open1Info" :class="{ 'visible': open1Info }")
         button.close(@click="open1Info = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 1ère année
             h2 Informatique &amp; interfaces
@@ -164,7 +161,8 @@ article.boussole#formation.boussole_glide
                 li Programmation serveur
     .modal(@click="open1Mark = false" role="dialog" aria-modal="true" x-show="open1Mark" :class="{ 'visible': open1Mark }")
         button.close(@click="open1Mark = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 1ère année
             h2 Marketing &amp; Communication
@@ -177,7 +175,8 @@ article.boussole#formation.boussole_glide
                 li Analyse de marché
     .modal(@click="open1Gest = false" role="dialog" aria-modal="true" x-show="open1Gest" :class="{ 'visible': open1Gest }")
         button.close(@click="open1Gest = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 1ère année
             h2 Gestion de projet
@@ -185,7 +184,8 @@ article.boussole#formation.boussole_glide
                 li Gestion budgétaire et finance
     .modal(@click="open1Cult = false" role="dialog" aria-modal="true" x-show="open1Cult" :class="{ 'visible': open1Cult }")
         button.close(@click="open1Cult = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 1ère année
             h2 Culture digitale &amp; Projet Intégration
@@ -197,7 +197,8 @@ article.boussole#formation.boussole_glide
                 li Anglais
     .modal(@click="open2Info = false" role="dialog" aria-modal="true" x-show="open2Info" :class="{ 'visible': open2Info }")
         button.close(@click="open2Info = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 2ème année
             h2 Informatique &amp; interfaces
@@ -210,7 +211,8 @@ article.boussole#formation.boussole_glide
                 li Développement de produit média
     .modal(@click="open2Mark = false" role="dialog" aria-modal="true" x-show="open2Mark" :class="{ 'visible': open2Mark }")
         button.close(@click="open2Mark = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 2ème année
             h2 Marketing &amp; Communication
@@ -222,7 +224,8 @@ article.boussole#formation.boussole_glide
                 li Vendre un projet média
     .modal(@click="open2Gest = false" role="dialog" aria-modal="true" x-show="open2Gest" :class="{ 'visible': open2Gest }")
         button.close(@click="open2Gest = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 2ème année
             h2 Gestion de projet
@@ -231,7 +234,8 @@ article.boussole#formation.boussole_glide
                 li Business models
     .modal(@click="open2Cult = false" role="dialog" aria-modal="true" x-show="open2Cult" :class="{ 'visible': open2Cult }")
         button.close(@click="open2Cult = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 2ème année
             h2 Culture digitale &amp; Projet Intégration
@@ -243,7 +247,8 @@ article.boussole#formation.boussole_glide
                 li Projet d’intégration
     .modal(@click="open3Info = false" role="dialog" aria-modal="true" x-show="open3Info" :class="{ 'visible': open3Info }")
         button.close(@click="open3Info = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 3ème année
             h2 Informatique &amp; interfaces
@@ -254,7 +259,8 @@ article.boussole#formation.boussole_glide
                 li Marketing Tech
     .modal(@click="open3Mark = false" role="dialog" aria-modal="true" x-show="open3Mark" :class="{ 'visible': open3Mark }")
         button.close(@click="open3Mark = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 3ème année
             h2 Marketing &amp; Communication
@@ -264,7 +270,8 @@ article.boussole#formation.boussole_glide
                 li Evaluation de produits média
     .modal(@click="open3Gest = false" role="dialog" aria-modal="true" x-show="open3Gest" :class="{ 'visible': open3Gest }")
         button.close(@click="open3Gest = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 3ème année
             h2 Gestion de projet
@@ -273,7 +280,8 @@ article.boussole#formation.boussole_glide
                 li Introduction à la systémique
     .modal(@click="open3Cult = false" role="dialog" aria-modal="true" x-show="open3Cult" :class="{ 'visible': open3Cult }")
         button.close(@click="open3Cult = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 3ème année
             h2 Culture digitale &amp; Projet Intégration
@@ -284,7 +292,8 @@ article.boussole#formation.boussole_glide
                 li Stage et Travail de Bachelor
     .modal(@click="openTB = false" role="dialog" aria-modal="true" x-show="openTB" :class="{ 'visible': openTB }")
         button.close(@click="openTB = false")
-            include ../../assets/images/Icon_Close.svg
+            svg.iconClose
+                use(href="#icon_close")
         .mainWrapper
             h3 3ème année
             h2 Travail de Bachelor

@@ -17,20 +17,25 @@
         }
     }
 
-    .iconplus {
-    width: 5rem;
-    margin-left: 2rem;
-    align-self: center;
-    &.less {
-        stroke: var(--heig-red);
-    }
+    .iconPlus,
+    .iconLess {
+        width: 2rem;
+        margin-left: 2rem;
+        align-self: center;
+        flex-shrink:0;
     }
   }
 
   .collapsible:hover {
     background-color: #fff;
+
     p {
         color:var(--heig-red);
+    }
+
+    .iconPlus,
+    .iconLess{
+        --circle-color:var(--heig-red);
     }
   }
 
