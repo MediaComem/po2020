@@ -25,13 +25,13 @@
     }
 
     nav:hover {
-        a {
+        a, button {
             color: rgba(255, 255, 255, 0.6);
         }
     }
 
-    a:hover
-    button:hover {
+    li:hover
+    a:hover, button:hover {
         color: #fff !important;
     }
 
