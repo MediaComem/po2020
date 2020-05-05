@@ -1,0 +1,56 @@
+article.etudiannts {
+
+    .mainWrapper {
+        padding: 4rem 10vw 0 10vw;
+        a {
+            color: #000;
+        }
+        #five, #bold {
+            font-weight: 700;
+            text-decoration: none;
+            display: block;
+            margin: 0.5rem 0;
+            strong {
+                color: var(--heig-red);
+                text-decoration: underline;
+            }
+        }
+    }
+    .encart {
+        margin-top: auto;
+        h3 {
+            color:#fff;
+        }
+        .studentsgallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            a {
+                display: flex;
+                max-width: calc(33.3% - 0.4rem);
+                margin: 0.2rem;
+                &:hover img {
+                    filter: none;
+                }
+            }
+            img {
+                filter: grayscale(100%);
+            }
+        }
+    }
+
+
+    @media only screen and (min-width: 768px) {
+        .encart .studentsgallery {
+            a {
+                max-width: calc(20% - 0.4rem);
+            }
+        }
+        #five, #bold {
+            font-size: 0.8rem;
+        }
+        .mainWrapper #five {
+            margin-top: 2rem;
+        }
+    }
+}
