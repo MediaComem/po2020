@@ -118,8 +118,8 @@ article.boussole#formation.boussole_glide
         button.glide__bullet(data-glide-dir='=1' aria-label="Deuxième année")
         button.glide__bullet(data-glide-dir='=2' aria-label="Troisièmre année")
     .mainWrapper.telechargeplan
-        a#plandownload(href="assets/pdf/ingenieriemedias_apercu_cours2020.pdf") Téléchargez&nbsp;
-            span le plan de cours
+        a#plandownload(href="assets/pdf/ingenieriemedias_apercu_cours2020.pdf" target="_blank") Téléchargez&nbsp;
+            span le plan de formation
     .modal(@click="openACon = false" role="dialog" aria-modal="true" x-show="openACon" x-cloak)
         button.close(@click="openACon = false")
             svg.iconClose

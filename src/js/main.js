@@ -18,9 +18,21 @@ var boussole = new Glide('.boussole_glide',{
     }
 });
 
+var etudiants = new Glide('.etudiants_glide',{
+    gap: 0,
+    breakpoints:{
+        1023: {
+            perView: 1
+        },
+        5000: {
+            perView: 5
+        }
+    }
+});
+
 boussole.mount({ Breakpoints, Controls, Swipe });
 deviensIm.mount({ Controls, Autoplay, Swipe });
-
+etudiants.mount({ Breakpoints, Controls, Swipe });
 
 /* Form from Formspree */
 

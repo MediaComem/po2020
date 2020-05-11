@@ -2,39 +2,127 @@ article.etudiannts#etudiants
     .mainWrapper
         h2 Nos étudiant·e·s gagnent des prix
         p Pour l’édition 2019 du 
-            a(href="https://www.lemeilleurduweb.ch/le-meilleur-du-web-des-ecoles-2019-2/") 
+            a(href="https://www.lemeilleurduweb.ch/le-meilleur-du-web-des-ecoles-2019-2/" target="_blank") 
                 strong Meilleur du Web des Écoles
             | , deux équipes formées d’étudiant·e·s en ingénierie des médias ont participé avec succèes.
-            | L’équipe FIVE a remporté le CUBE, et l’équipe Bold a été shortlistée (seconde place).
-        a#five(href="https://youtu.be/OR4wPvxVBcw") Proposition de l’équipe FIVE 
-            strong en vidéo
-        a#bold(href="https://youtu.be/OR4wPvxVBcw") Proposition de l’équipe Bold 
-            strong en vidéo
-    .encart
+            | L’équipe FIVE a remporté le CUBE, et l’équipe BOLD a été shortlistée (seconde place).
+        a#five(href="https://youtu.be/Kot-WqeWZnY" target="_blank") Proposition de l’équipe FIVE&nbsp;
+            span en vidéo
+        a#bold(href="https://youtu.be/v08JMIrcIVw" target="_blank") Proposition de l’équipe BOLD&nbsp;
+            span en vidéo
+    .encart(x-data = " { photo1: false, photo2: false, photo3: true, photo4: false, photo5: false, openPhoto: false } ")
         h3 La formation en images
         .studentsgallery
-            a(href="#")
+            button(@click ="photo5 = false, photo4 = false, photo3 = false, photo2 = false, photo1 = true, openPhoto = true")
                 img(sizes="(max-width: 799px) 100vw, 799px"
                 src="assets/images/students/code/code_w_799.jpg"
                 srcset="assets/images/students/code/code_w_200.jpg 200w, assets/images/students/code/code_w_460.jpg 460w, assets/images/students/code/code_w_650.jpg 650w, assets/images/students/code/code_w_799.jpg 799w"
                 alt="Students coding")
-            a(href="#")
+            button(@click ="photo1 = false, photo5 = false, photo4 = false, photo3 = false, photo2 = true, openPhoto = true")
                 img(sizes="(max-width: 799px) 100vw, 799px"
                 src="assets/images/students/creation/creation_w_799.jpg"
                 srcset="assets/images/students/creation/creation_w_200.jpg 200w, assets/images/students/creation/creation_w_460.jpg 460w, assets/images/students/creation/creation_w_657.jpg 657w, assets/images/students/creation/creation_w_799.jpg 799w"
                 alt="Student creating game")
-            a(href="#")
+            button(@click ="photo1 = false, photo2 = false, photo5 = false, photo4 = false, photo3 = true, openPhoto = true")
                 img(sizes="(max-width: 799px) 100vw, 799px"
                 src="assets/images/students/gestion/gestion_w_799.jpg"
                 srcset="assets/images/students/gestion/gestion_w_200.jpg 200w, assets/images/students/gestion/gestion_w_460.jpg 460w, assets/images/students/gestion/gestion_w_650.jpg 650w, assets/images/students/gestion/gestion_w_799.jpg 799w"
                 alt="Students managing project with scrum")
-            a(href="#")
+            button(@click ="photo1 = false, photo2 = false, photo3 = false, photo5 = false, photo4 = true, openPhoto = true")
                 img(sizes="(max-width: 799px) 100vw, 799px"
                 src="assets/images/students/group/group_w_799.jpg"
                 srcset="assets/images/students/group/group_w_200.jpg 200w, assets/images/students/group/group_w_455.jpg 455w, assets/images/students/group/group_w_651.jpg 651w, assets/images/students/group/group_w_799.jpg 799w"
                 alt="Students together for group project")
-            a(href="#")
+            button(@click ="photo1 = false, photo2 = false, photo3 = false, photo4 = false, photo5 = true, openPhoto = true")
                 img(sizes="(max-width: 799px) 100vw, 799px"
                 src="assets/images/students/presentation/presentation_w_799.jpg"
                 srcset="assets/images/students/presentation/presentation_w_200.jpg 200w, assets/images/students/presentation/presentation_w_487.jpg 487w, assets/images/students/presentation/presentation_w_697.jpg 697w, assets/images/students/presentation/presentation_w_799.jpg 799w"
                 alt="Students practicing presentation")
+        .studentsphoto
+            figure.figure(x-show= "photo1")
+                img(sizes="(max-width: 799px) 100vw, 799px"
+                    src="assets/images/students/code/code_w_799.jpg"
+                    srcset="assets/images/students/code/code_w_200.jpg 200w, assets/images/students/code/code_w_460.jpg 460w, assets/images/students/code/code_w_650.jpg 650w, assets/images/students/code/code_w_799.jpg 799w"
+                    alt="Students coding")
+                figcaption Les étudiant·e·s apprenent à programmer pour le web à travers des projets pratiques.
+            figure.figure(x-show= "photo2")
+                img(sizes="(max-width: 799px) 100vw, 799px"
+                    src="assets/images/students/creation/creation_w_799.jpg"
+                    srcset="assets/images/students/creation/creation_w_200.jpg 200w, assets/images/students/creation/creation_w_460.jpg 460w, assets/images/students/creation/creation_w_657.jpg 657w, assets/images/students/creation/creation_w_799.jpg 799w"
+                    alt="Student creating game")
+                figcaption L'ingénierie des médias demande de la créativité. Il est demandé à nos étudiants de savoir concevoir des interfaces, des contenus visuels et textuels pour le web, et de développer leur sens d'analyse.
+            figure.figure(x-show= "photo3")
+                img(sizes="(max-width: 799px) 100vw, 799px"
+                    src="assets/images/students/gestion/gestion_w_799.jpg"
+                    srcset="assets/images/students/gestion/gestion_w_200.jpg 200w, assets/images/students/gestion/gestion_w_460.jpg 460w, assets/images/students/gestion/gestion_w_650.jpg 650w, assets/images/students/gestion/gestion_w_799.jpg 799w"
+                    alt="Students managing project with scrum")
+                figcaption Grâce à des projets pratiques, les étudiant·e·s apprennent les méthodologies de gestion de projet populaires dans le monde du numérique.
+            figure.figure(x-show= "photo4")
+                img(sizes="(max-width: 799px) 100vw, 799px"
+                    src="assets/images/students/group/group_w_799.jpg"
+                    srcset="assets/images/students/group/group_w_200.jpg 200w, assets/images/students/group/group_w_455.jpg 455w, assets/images/students/group/group_w_651.jpg 651w, assets/images/students/group/group_w_799.jpg 799w"
+                    alt="Students together for group project")
+                figcaption Les travaux de groupes sont encouragés durant toute la formation. Savoir travailler en équipe tout en étant capable de travailler de manière autonome est un atout très demandé sur le marché du travail.
+            figure.figure(x-show= "photo5")
+                img(sizes="(max-width: 799px) 100vw, 799px"
+                    src="assets/images/students/presentation/presentation_w_799.jpg"
+                    srcset="assets/images/students/presentation/presentation_w_200.jpg 200w, assets/images/students/presentation/presentation_w_487.jpg 487w, assets/images/students/presentation/presentation_w_697.jpg 697w, assets/images/students/presentation/presentation_w_799.jpg 799w"
+                    alt="Students practicing presentation")
+                figcaption Les présentations orales comme écrites sont exercées régulièrement durant tout le cursus. Savoir présenter et défendre un concept auprès d'un client est crucial.
+        .studentsphotomobile.modal.etudiants_glide(x-show = "openPhoto")
+            button.close(aria-label="Fermer" @click="openPhoto = false")
+                img(src="assets/images/Icon_Close.svg" loading="lazy" alt="" role="presentation")
+            h2  La formation en images
+            .glide__track(data-glide-el='track')
+                ul.glide__slides
+                    li.glide__slide
+                        article
+                            .mainWrapper
+                                figure.figure
+                                    img(sizes="(max-width: 799px) 100vw, 799px"
+                                        src="assets/images/students/code/code_w_799.jpg"
+                                        srcset="assets/images/students/code/code_w_200.jpg 200w, assets/images/students/code/code_w_460.jpg 460w, assets/images/students/code/code_w_650.jpg 650w, assets/images/students/code/code_w_799.jpg 799w"
+                                        alt="Students coding")
+                                    figcaption Les étudiant·e·s apprenent à programmer pour le web à travers des projets pratiques.
+                    li.glide__slide
+                        article
+                            .mainWrapper
+                                figure.figure
+                                    img(sizes="(max-width: 799px) 100vw, 799px"
+                                        src="assets/images/students/creation/creation_w_799.jpg"
+                                        srcset="assets/images/students/creation/creation_w_200.jpg 200w, assets/images/students/creation/creation_w_460.jpg 460w, assets/images/students/creation/creation_w_657.jpg 657w, assets/images/students/creation/creation_w_799.jpg 799w"
+                                        alt="Student creating game")
+                                    figcaption L'ingénierie des médias demande de la créativité. Il est demandé à nos étudiants de savoir concevoir des interfaces, des contenus visuels et textuels pour le web, et de développer leur sens d'analyse.
+                    li.glide__slide
+                        article
+                            .mainWrapper
+                                 figure.figure
+                                    img(sizes="(max-width: 799px) 100vw, 799px"
+                                        src="assets/images/students/gestion/gestion_w_799.jpg"
+                                        srcset="assets/images/students/gestion/gestion_w_200.jpg 200w, assets/images/students/gestion/gestion_w_460.jpg 460w, assets/images/students/gestion/gestion_w_650.jpg 650w, assets/images/students/gestion/gestion_w_799.jpg 799w"
+                                        alt="Students managing project with scrum")
+                                    figcaption Grâce à des projets pratiques, les étudiant·e·s apprennent les méthodologies de gestion de projet populaires dans le monde du numérique.
+                    li.glide__slide
+                        article
+                            .mainWrapper
+                                 figure.figure
+                                    img(sizes="(max-width: 799px) 100vw, 799px"
+                                        src="assets/images/students/group/group_w_799.jpg"
+                                        srcset="assets/images/students/group/group_w_200.jpg 200w, assets/images/students/group/group_w_455.jpg 455w, assets/images/students/group/group_w_651.jpg 651w, assets/images/students/group/group_w_799.jpg 799w"
+                                        alt="Students together for group project")
+                                    figcaption Les travaux de groupes sont encouragés durant toute la formation. Savoir travailler en équipe tout en étant capable de travailler de manière autonome est un atout très demandé sur le marché du travail.
+                    li.glide__slide
+                        article
+                            .mainWrapper
+                                 figure.figure
+                                    img(sizes="(max-width: 799px) 100vw, 799px"
+                                        src="assets/images/students/presentation/presentation_w_799.jpg"
+                                        srcset="assets/images/students/presentation/presentation_w_200.jpg 200w, assets/images/students/presentation/presentation_w_487.jpg 487w, assets/images/students/presentation/presentation_w_697.jpg 697w, assets/images/students/presentation/presentation_w_799.jpg 799w"
+                                        alt="Students practicing presentation")
+                                    figcaption Les présentations orales comme écrites sont exercées régulièrement durant tout le cursus. Savoir présenter et défendre un concept auprès d'un client est crucial.
+            .glide__bullets(data-glide-el='controls[nav]')
+                button.glide__bullet(data-glide-dir='=0' aria-labelledby="photo1")
+                button.glide__bullet(data-glide-dir='=1' aria-labelledby="photho2")
+                button.glide__bullet(data-glide-dir='=2' aria-labelledby="photo3")
+                button.glide__bullet(data-glide-dir='=3' aria-labelledby="photo4")
+                button.glide__bullet(data-glide-dir='=4' aria-labelledby="photo5")
