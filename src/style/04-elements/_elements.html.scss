@@ -1,6 +1,5 @@
 html,
 body {
-  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-x: hidden;
   height: 100%;
@@ -8,5 +7,6 @@ body {
 }
 
 body {
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }

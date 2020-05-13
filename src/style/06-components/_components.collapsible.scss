@@ -13,6 +13,9 @@
             &.tbtitle {
                 font-weight: 700;
             }
+            &.tbauthor {
+                margin-bottom: 0;
+            }
             color: #fff;
         }
     }
@@ -40,12 +43,38 @@
   }
 
   .tbcontent {
-    padding: 10vw;
+    padding: 1rem 10vw;
     overflow: hidden;
     p {
         color: #000;
     }
     img {
         width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .tb {
+        margin: 0.5rem 10vw;
+    }
+    .collapsible {
+        width: 100%;
+        padding: 0;
+        .tbdescr {
+            padding: 2rem;
+            width: 80%;
+        }
+        svg {
+            margin-right: 1rem;
+        }
+    }
+    .tbcontent {
+        padding: 2rem;
+        display: flex;
+        align-items: flex-start;
+        p {
+            width: 100%;
+            margin-right: 2rem;
+        }
     }
   }

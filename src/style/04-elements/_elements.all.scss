@@ -54,7 +54,7 @@ p {
   letter-spacing: -0.03em;
 }
 
-p {
+p, figcaption {
   line-height: 140%;
 }
 
@@ -76,7 +76,7 @@ h3 {
   margin-bottom: 1rem;
 }
 
-p {
+p, figcaption {
   font-weight: 500;
   font-size: 1.05rem;
 }
@@ -94,7 +94,7 @@ p+p {
     font-size: 1.5rem;
   }
 
-  p {
+  p, figcaption {
     font-size: 0.8rem;
   }
 }
