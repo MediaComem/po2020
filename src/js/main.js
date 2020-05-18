@@ -18,8 +18,15 @@ var boussole = new Glide('.boussole_glide',{
     }
 });
 
+/* function selectPic(pic) {
+    console.log("holaaa");
+    glide.update({
+        startAt: pic
+      })
+} */
 var etudiants = new Glide('.etudiants_glide',{
     gap: 0,
+    startAt: 0,
     breakpoints:{
         1023: {
             perView: 1
@@ -37,7 +44,6 @@ etudiants.mount({ Breakpoints, Controls, Swipe });
 /* Form from Formspree */
 
 window.addEventListener("DOMContentLoaded", function () {
-
     // get the form elements defined in your form HTML above
 
     var form = document.getElementById("newquestion");
