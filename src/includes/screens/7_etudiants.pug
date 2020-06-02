@@ -69,7 +69,7 @@ article.etudiannts#etudiants
                     srcset="assets/images/students/presentation/presentation_w_200.jpg 200w, assets/images/students/presentation/presentation_w_487.jpg 487w, assets/images/students/presentation/presentation_w_697.jpg 697w, assets/images/students/presentation/presentation_w_799.jpg 799w"
                     alt="Students practicing presentation")
                 figcaption Les présentations orales comme écrites sont exercées régulièrement durant tout le cursus. Savoir présenter et défendre un concept auprès d'un client est crucial.
-        .studentsphotomobile.modal.etudiants_glide(x-show = "openPhoto")
+        .studentsphotomobile.modal.etudiants_glide(x-show = "openPhoto" x-cloak)
             button.close(aria-label="Fermer" @click="openPhoto = false")
                 img(src="assets/images/Icon_Close.svg" loading="lazy" alt="" role="presentation")
             h2  La formation en images
