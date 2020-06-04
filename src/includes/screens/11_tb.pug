@@ -2,10 +2,62 @@
     button.close(@click="openTBPage = false")
         svg.iconClose
             use(href="#icon_close")
-    .mainWrapper
+    .mainWrapper(x-cloak)
         h2 Les travaux de Bachelor
         p Après seulement 3 années en ingénierie des médias, nos étudiant·e·s ont réalisé des travaux de Bachelor de qualité.
-    .tbs(x-data = " { openTB1: false, openTB2: false, openTB3: false, openTB4: false, openTB5: false, openTB6: false, openTB7: false, openTB8: false } " )
+    .tbs(x-data = " { openTB1: false, openTB2: false, openTB3: false, openTB4: false, openTB5: false, openTB6: false, openTB7: false, openTB8: false } " x-cloak)
+        .tb
+            button.collapsible(@click="openTB8 = !openTB8")
+                .tbdescr
+                    p.tbtitle Réalisation d’un concept et logiciel pour la création d’une « EscapeRoom » en version mobile
+                    p.tbauthor Par Fabrice Clerc
+                svg.iconPlus(x-show="!openTB8")
+                    use(href="#icon_plus")
+                svg.iconLess(x-show="openTB8")
+                    use(href="#icon_less")
+            .tbcontent(x-show="openTB8")
+                p.tbsummary Planitswiss propose de nombreuses activités de « teambuilding ». Le défi est de pouvoir adapter le concept d’Escape Room plus seulement à une pièce fixe, mais à différents lieux voire espaces.
+                    |  Un logiciel a été créé pour apporter de nouvelles fonctionnalités ainsi que de l’interaction entre les joueurs et le superviseur. La même Escape Room version mobile pourra ainsi être pratiquée simultanément dans divers lieux.
+                img(src="assets/images/tb/tb2.png", alt="tb2")
+        .tb
+            button.collapsible(@click="openTB5 = !openTB5")
+                .tbdescr
+                    p.tbtitle Étude de l’utilisabilité de l’Eyetracking d’un site web pour la Vaudoise Assurance
+                    p.tbauthor Par Shadia Huggenberger
+                svg.iconPlus(x-show="!openTB5")
+                    use(href="#icon_plus")
+                svg.iconLess(x-show="openTB5")
+                    use(href="#icon_less")
+            .tbcontent(x-show="openTB5")
+                p.tbsummary Aujourd’hui, l’eyetracking permet de mesurer les mouvements oculaires posés sur les zones les plus vues, lues ou ignorées d’une affiche, d’un site Internet, etc.
+                    |  Les informations collectées et analysées permettent de comprendre le comportement d’un sujet. Ce travail consiste à interpréter l’impact du site de la Vaudoise Assurances et ainsi optimiser son ergonomie, son design et son contenu. De plus, il s’agit de comparer l’efficacité de cet outil en se basant sur les best practice.
+                img(src="assets/images/tb/tb5.png", alt="tb5")
+        .tb
+            button.collapsible(@click="openTB7 = !openTB7")
+                .tbdescr
+                    p.tbtitle Système de vidéos cliquables - « Klik »
+                    p.tbauthor Par Matthieu Harbich
+                svg.iconPlus(x-show="!openTB7")
+                    use(href="#icon_plus")
+                svg.iconLess(x-show="openTB7")
+                    use(href="#icon_less")
+            .tbcontent(x-show="openTB7")
+                p.tbsummary Messieurs.ch est une agence de réalisation et production audiovisuelle. Ce travail de Bachelor consiste en la réalisation d’un proof of concept « klik ». Il doit permettre aux collaborateurs de Messieurs.ch de dessiner et de faire évoluer des polygones sur une vidéo et de définir quelles seront les zones interactives.
+                    |  Un lecteur conçu spécialement pour les vidéos « klik » permet de bénéficier de la vidéo cliquable. Une librairie qui leur permettra d’implémenter « klik » sur leurs propres sites.
+                img(src="assets/images/tb/tb1.png", alt="tb1")
+        .tb
+            button.collapsible(@click="openTB1 = !openTB1")
+                .tbdescr
+                    p.tbtitle Application de planification des tâches pour une agence de communication
+                    p.tbauthor Par Audrey Huguenin
+                svg.iconPlus(x-show="!openTB1")
+                    use(href="#icon_plus")
+                svg.iconLess(x-show="openTB1")
+                    use(href="#icon_less")
+            .tbcontent(x-show="openTB1")
+                p.tbsummary L’agence de communication Creatives a souhaité mettre en place une application sur mesure pour la  planification des tâches à l’interne. La gestion de projet est une démarche centrale et relativement complexe pour une agence digitale.
+                    | L’application développée se base sur les processus propres à l’agence. De plus, elle est en partie nourrie par les données provenant de l’ERP mis en place, et fait écho au système de TimeSheet utilisé.
+                img(src="assets/images/tb/tb9.png", alt="tb9")
         .tb
             button.collapsible(@click="openTB8 = !openTB8")
                 .tbdescr
