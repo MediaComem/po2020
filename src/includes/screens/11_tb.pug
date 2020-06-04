@@ -2,10 +2,10 @@
     button.close(@click="openTBPage = false")
         svg.iconClose
             use(href="#icon_close")
-    .mainWrapper
+    .mainWrapper(x-cloak)
         h2 Les travaux de Bachelor
         p Après seulement 3 années en ingénierie des médias, nos étudiant·e·s ont réalisé des travaux de Bachelor de qualité.
-    .tbs(x-data = " { openTB1: false, openTB2: false, openTB3: false, openTB4: false, openTB5: false, openTB6: false, openTB7: false, openTB8: false } " )
+    .tbs(x-data = " { openTB1: false, openTB2: false, openTB3: false, openTB4: false, openTB5: false, openTB6: false, openTB7: false, openTB8: false } " x-cloak)
         .tb
             button.collapsible(@click="openTB8 = !openTB8")
                 .tbdescr

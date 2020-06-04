@@ -1,12 +1,12 @@
 article.ecole {
-    .map {
-        width: 100%;
-        height: 30vh;
-        background-image: url("/assets/images/map_yvedon_anim_1.gif");
-        background-position-x: left;
-        background-position-y: -7vh;
-        background-size: 75vh;
-        background-repeat: no-repeat;
+    .videoWrapper {
+        position: absolute;
+        height: 33vh;
+        overflow: hidden;
+    }
+    video#map {
+        margin-top: -5vh;
+        width: 140vw;
     }
 
     .mainWrapper {
@@ -26,26 +26,19 @@ article.ecole {
         color: var(--heig-red);
     }
 
-    .carte {
-        position: absolute;
-        top: -40vh;
-        transform: translateY(50%);
-        left: 35vw;
-        width: 80vh;
-    }
-
     @media only screen and (min-width: 768px) {
         h2 {
             margin-top: 0;
         }
-        .map {
+        .videoWrapper {
             position: absolute;
-            right: 0;
-            width: 50%;
+            left:50%;
+            height: 100%;
+        }
+        video#map {
+            margin-top: 0;
             height: 100vh;
-            background-position: left;
-            background-size: cover;
-            background-repeat: no-repeat;
+            width: auto;
         }
 
         .mainWrapper {
@@ -53,12 +46,6 @@ article.ecole {
             top:initial;
             margin: auto 0;
             max-width:20rem; // Necessary to let place for the map interactivity
-        }
-
-        .carte {
-            top: -75vh;
-            width:150vh;
-            left:50vw;
         }
     }
 }
