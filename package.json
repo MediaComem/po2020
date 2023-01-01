@@ -15,8 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
-    "parcel-plugin-imagemin": "^4.0.1",
-    "postcss-modules": "^2.0.0",
+    "parcel-plugin-imagemin": "^4.0.2",
+    "postcss-modules": "^6.0.0",
     "pug": "^2.0.4",
     "sass": "^1.26.5"
   },
